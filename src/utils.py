@@ -1,4 +1,5 @@
 import os
+import time
 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
@@ -22,3 +23,9 @@ def get_driver() -> Chrome:
     driver = Chrome(executable_path=CHROMEDRIVER_PATH, options=options)
 
     return driver
+
+
+def wait_until_reached(driver: Chrome, destination_url: str) -> None:
+    """Keeps `driver` alive until it reaches the `destination_url`. Used to allow user to log in manually to Durham Uni Outlook account."""
+    while driver.current_url != destination_url:
+        time.sleep(2)
