@@ -4,6 +4,9 @@ import time
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 # The chromedriver executable should be located at root of project.
@@ -23,6 +26,13 @@ def get_driver() -> Chrome:
     driver = Chrome(executable_path=CHROMEDRIVER_PATH, options=options)
 
     return driver
+
+
+def await_element(driver, selector, timeout_secs=10) -> None:
+    """Waits until an element with CSS selector `selector` appears, and returns it. Waits for `timeout_secs` seconds"""
+    wait = WebDriverWait(driver, timeout_secs)
+    element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
+    return element
 
 
 def wait_until_reached(driver: Chrome, destination_url: str) -> None:
