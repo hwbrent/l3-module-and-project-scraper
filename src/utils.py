@@ -6,7 +6,9 @@ from selenium.webdriver.chrome.options import Options
 
 
 # The chromedriver executable should be located at root of project.
-CHROMEDRIVER_PATH = os.path.join(os.getcwd(), "chromedriver")
+_this_directory = os.path.dirname(__file__)
+_project_root = os.path.abspath(os.path.join(_this_directory, os.pardir))
+CHROMEDRIVER_PATH = os.path.join(_project_root, "chromedriver")
 
 
 def get_driver() -> Chrome:
