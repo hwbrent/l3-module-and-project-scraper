@@ -46,6 +46,8 @@ def main():
     wait_until_reached(driver, PROJECTS_SITE_URL)
     time.sleep(1)
 
+    # For some reason, none of the tables seem to load unless you refresh
+    # the page after it first loads.
     driver.refresh()
     time.sleep(1)
 
