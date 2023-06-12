@@ -25,14 +25,11 @@ def parse_unclicked_project_row(row, staff_proposer):
     # We set maxsplit as 1 because there are some project names that include
     # ": " in them, e.g.:
     # "No Such Thing as Normal: Anomaly Detection with Anomaly Class Selection"
-    theme_name, project_name = row_text.split(": ", 1)
-
-    theme_code = theme_name.replace("Theme ", "")
+    project_title = row_text.replace("Theme: ", "")
 
     return {
         "id": id,
-        "theme_code": theme_code,
-        "project_name": project_name,
+        "project_title": project_title,
         "staff_proposer": staff_proposer,
     }
 
