@@ -1,10 +1,40 @@
-from utils import get_driver, wait_until_reached, await_element
 import time
+from pprint import PrettyPrinter
+
+from utils import get_driver, wait_until_reached, await_element
 
 from selenium.webdriver.common.by import By
 
+pp = PrettyPrinter(indent=4)
 
 PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/student/"
+
+
+def parse_unclicked_project_row(row, staff_proposer):
+    # This is the HTML id attribute of the <tr>.
+    id = row.get_attribute("id")
+
+    # Each <tr> contains a singular <td>. The text inside this <td> is the
+    # data that we want to scrape.
+    row_text = row.find_element(By.TAG_NAME, "td").text
+    print(id, row_text)
+
+    # row_text should be something like "Theme EA-1: Connectivity of interval
+    # temporal networks".
+
+    # We set maxsplit as 1 because there are some project names that include
+    # ": " in them, e.g.:
+    # "No Such Thing as Normal: Anomaly Detection with Anomaly Class Selection"
+    theme_name, project_name = row_text.split(": ", 1)
+
+    theme_code = theme_name.replace("Theme ", "")
+
+    return {
+        "id": id,
+        "theme_code": theme_code,
+        "project_name": project_name,
+        "staff_proposer": staff_proposer,
+    }
 
 
 def main():
@@ -49,9 +79,22 @@ def main():
             </tbody>
         </table>
         """
-        print(professor_table)
-        # print()
-        # print()
+
+        rows = professor_table.find_elements(By.TAG_NAME, "tr")
+
+        # The first row of each table contains the name of the staff proposer.
+        # We can just grab it out of there once and reuse it for each project
+        # row in this table. The text will be something like
+        # "Staff Proposer: Eleni Akrida".
+        staff_proposer_name = (
+            rows[0].find_element(By.TAG_NAME, "td").text.replace("Staff Proposer: ", "")
+        )
+
+        for row in rows[1:]:
+            initial_project_data = parse_unclicked_project_row(row, staff_proposer_name)
+            pp.pprint(initial_project_data)
+            print()
+        # project_data = [parse_project_row(row, staff_proposer_name) for row in rows[1:]]
 
     driver.quit()
 
