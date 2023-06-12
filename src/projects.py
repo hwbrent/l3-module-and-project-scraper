@@ -91,7 +91,11 @@ def main():
             initial_project_data = parse_unclicked_project_row(row, staff_proposer_name)
             pp.pprint(initial_project_data)
             print()
-        # project_data = [parse_project_row(row, staff_proposer_name) for row in rows[1:]]
+
+            # At this point, we have the data of the unclicked row. Which
+            # essentially means we only have the project title. Now we
+            # need to click the row and parse the table at the top of the
+            # page.
 
     driver.quit()
 
