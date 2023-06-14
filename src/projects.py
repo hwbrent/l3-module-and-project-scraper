@@ -1,7 +1,7 @@
 import time
 from pprint import PrettyPrinter
 
-from utils import get_driver, wait_until_reached, await_element
+from utils import get_driver, wait_until_reached, await_element, write_to_json
 
 pp = PrettyPrinter(indent=4)
 
@@ -81,6 +81,7 @@ def main():
         aggregate_data.append(new_dict)
 
     pp.pprint(aggregate_data)
+    write_to_json(aggregate_data, "projects")
 
     driver.quit()
 
