@@ -1,7 +1,13 @@
 import time
 from pprint import PrettyPrinter
 
-from utils import get_driver, wait_until_reached, await_element, write_to_json
+from utils import (
+    get_driver,
+    wait_until_reached,
+    await_element,
+    write_to_json,
+    parse_dotenv,
+)
 
 pp = PrettyPrinter(indent=4)
 
@@ -16,6 +22,19 @@ def main():
     # been redirected to the microsoft online login page. At this point, it's
     # easier to just wait until the user manually logs in than try any fancy
     # stuff.
+
+    dotenv = parse_dotenv()
+
+    if bool(dotenv):
+        USERNAME = dotenv["USERNAME"]
+        PASSWORD = dotenv["PASSWORD"]
+
+        await_element(driver, 'input[type="email"]').send_keys(USERNAME)
+        await_element(driver, 'input[type="submit"]').click()
+        time.sleep(1)
+        await_element(driver, 'input[type="password"]').send_keys(PASSWORD)
+        time.sleep(1)
+        driver.execute_script("document.forms[0].submit()")
 
     wait_until_reached(driver, PROJECTS_SITE_URL)
     time.sleep(1)

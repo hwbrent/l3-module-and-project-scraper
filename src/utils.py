@@ -61,7 +61,6 @@ def parse_dotenv() -> dict:
     with open(dotenv_path, "r") as f:
         for line in f:
             line = line.strip()
-            print(line)
 
             key_raw, value_raw = line.split("=")
 
