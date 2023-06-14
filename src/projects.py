@@ -43,7 +43,16 @@ def main():
     }
     """
     all_projects = driver.execute_script(
-        'return await $.ajax ({type: "GET",dataType: "json", url: "Registers.php",data: { "query": "allProjects"}})'
+        """
+        return await $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: "Registers.php",
+            data: {
+                "query": "allProjects"
+            }
+        })
+        """
     )
 
     for project in all_projects:
@@ -53,9 +62,17 @@ def main():
         # For some reason, even though we're specifying we want the data for
         # one project, it returns a dictionary within a list. Hence the "[0]".
         in_depth_info = driver.execute_script(
-            'return await $.ajax ({type: "GET",dataType: "json", url: "Registers.php",data: { "query": "oneProject", "theme":'
-            + str(id)
-            + "}})"
+            f"""
+            return await $.ajax({{
+                type: "GET",
+                dataType: "json",
+                url: "Registers.php",
+                data: {{
+                    "query": "oneProject",
+                    "theme": {id}
+                }}
+            }})
+            """
         )[0]
 
         # This essentially merges the two dictionaries into one.
