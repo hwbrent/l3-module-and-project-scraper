@@ -28,10 +28,10 @@ def get_driver() -> Chrome:
     return driver
 
 
-def await_element(driver, selector, timeout_secs=10) -> None:
-    """Waits until an element with CSS selector `selector` appears, and returns it. Waits for `timeout_secs` seconds"""
+def await_element(driver, selector, by=By.CSS_SELECTOR, timeout_secs=10) -> None:
+    """Waits until an element with selector `selector` appears, and returns it. Waits for `timeout_secs` seconds"""
     wait = WebDriverWait(driver, timeout_secs)
-    element = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, selector)))
+    element = wait.until(EC.presence_of_element_located((by, selector)))
     return element
 
 
