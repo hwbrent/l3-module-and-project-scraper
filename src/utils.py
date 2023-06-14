@@ -47,3 +47,27 @@ def write_to_json(data: list, file_name) -> None:
     destination = os.path.join(_project_root, file_name + ".json")
     with open(destination, "w") as f:
         json.dump(data, f, indent=4)
+
+
+def parse_dotenv() -> dict:
+    """Parses a .env file (if it exists) and return the values in a `dict`."""
+    dotenv_path = os.path.join(_project_root, ".env")
+
+    if not os.path.exists(dotenv_path):
+        return {}
+
+    keys_and_values = {}
+
+    with open(dotenv_path, "r") as f:
+        for line in f:
+            line = line.strip()
+            print(line)
+
+            key_raw, value_raw = line.split("=")
+
+            key = key_raw.strip()
+            value = value_raw.strip().replace('"', "")
+
+            keys_and_values[key] = value
+
+    return keys_and_values
