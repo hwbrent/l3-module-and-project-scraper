@@ -1,4 +1,5 @@
 import time
+import json
 from pprint import PrettyPrinter
 
 from utils import (
@@ -14,7 +15,7 @@ pp = PrettyPrinter(indent=4)
 PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/student/"
 
 
-def main():
+def scrape_raw_data():
     driver = get_driver()
     driver.get(PROJECTS_SITE_URL)
 
@@ -103,6 +104,67 @@ def main():
     write_to_json(aggregate_data, "projects")
 
     driver.quit()
+
+
+def format_raw_data():
+    # with open("/Users/henrybrent/Documents/compsci/Level 3/projects.json") as f:
+    #     data = json.load(f)
+
+    all_reformatted = []
+
+    # The showTitles function does this:
+    """
+    var staffID = "";
+    var localThemeID = 0;
+
+    for (i = 1; i < (data.length) + 1; i++) {
+        if (staffID == "") {
+            staffID = data[i-1]['staff']
+            var forename = data[i-1]['forename'];
+            var surname = data[i-1]['surname'];
+            text.innerHTML = "Staff Proposer: " + forename + " " + surname;
+        } else if (staffID != data[i-1]['staff']) {
+            staffID = data[i-1]['staff']
+            var forename = data[i-1]['forename'];
+            var surname = data[i-1]['surname'];
+            text.innerHTML = "Staff Proposer: " + forename + " " + surname;
+            localThemeID = 0;
+        }
+        row.name = data[i-1]['theme'];
+        localThemeID++;
+        var themeNumber = data[i-1]['initials'] + "-" + localThemeID;
+        row.id = themeNumber;
+        text.innerHTML = "Theme " + themeNumber + ": " + data[i-1]['title'];
+    }
+    """
+    # And the getProjectDetails function does this:
+    """
+    for (i = 0; i < data.length; i++) {
+        // Row 0
+        title.innerHTML = "Project Theme/Title";
+        text.innerHTML = themeNumber + ": " + data[i]['title'];
+        // Row 1
+        desc.innerHTML = "Description";
+        text.innerHTML = data[i]['description'];
+        // Row 2
+        url.innerHTML = "Reference URLs"
+        text.innerHTML = data[i]['url'];
+        // Row 3
+        out.innerHTML = "Anticipated Outcomes"
+        text.innerHTML = data[i]['outcomes'];
+        // Row 4
+        skills.innerHTML = "Requirements"
+        text.innerHTML = data[i]['skills'];
+        // Row 5
+        max.innerHTML = "Keywords"
+        text.innerHTML = data[i]['keywords'];
+    """
+    pass
+
+
+def main():
+    # scrape_raw_data()
+    format_raw_data()
 
 
 if __name__ == "__main__":
