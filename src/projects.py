@@ -1,4 +1,5 @@
 import time
+import json
 from pprint import PrettyPrinter
 
 from utils import (
@@ -14,7 +15,7 @@ pp = PrettyPrinter(indent=4)
 PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/student/"
 
 
-def main():
+def scrape_raw_data():
     driver = get_driver()
     driver.get(PROJECTS_SITE_URL)
 
@@ -103,6 +104,93 @@ def main():
     write_to_json(aggregate_data, "projects")
 
     driver.quit()
+
+
+def format_raw_data(data: list[dict]) -> list[dict]:
+    """Receives a `list` of `dict`s representing the server information, and returns a `list` of `dict`s representing the information seen in the DOM."""
+    all_reformatted = []
+
+    # The showTitles function does this:
+    """
+    var staffID = "";
+    var localThemeID = 0;
+
+    for (i = 1; i < (data.length) + 1; i++) {
+        if (staffID == "") {
+            staffID = data[i-1]['staff']
+            var forename = data[i-1]['forename'];
+            var surname = data[i-1]['surname'];
+            text.innerHTML = "Staff Proposer: " + forename + " " + surname;
+        } else if (staffID != data[i-1]['staff']) {
+            staffID = data[i-1]['staff']
+            var forename = data[i-1]['forename'];
+            var surname = data[i-1]['surname'];
+            text.innerHTML = "Staff Proposer: " + forename + " " + surname;
+            localThemeID = 0;
+        }
+        row.name = data[i-1]['theme'];
+        localThemeID++;
+        var themeNumber = data[i-1]['initials'] + "-" + localThemeID;
+        row.id = themeNumber;
+        text.innerHTML = "Theme " + themeNumber + ": " + data[i-1]['title'];
+    }
+    """
+    # And the getProjectDetails function does this:
+    """
+    for (i = 0; i < data.length; i++) {
+        // Row 0
+        title.innerHTML = "Project Theme/Title";
+        text.innerHTML = themeNumber + ": " + data[i]['title'];
+        // Row 1
+        desc.innerHTML = "Description";
+        text.innerHTML = data[i]['description'];
+        // Row 2
+        url.innerHTML = "Reference URLs"
+        text.innerHTML = data[i]['url'];
+        // Row 3
+        out.innerHTML = "Anticipated Outcomes"
+        text.innerHTML = data[i]['outcomes'];
+        // Row 4
+        skills.innerHTML = "Requirements"
+        text.innerHTML = data[i]['skills'];
+        // Row 5
+        max.innerHTML = "Keywords"
+        text.innerHTML = data[i]['keywords'];
+    """
+
+    # The sub-number of the project.
+    # i.e. the number of the project with respect to the other projects
+    # offered by this staff member. Professors generally offer multiple
+    # projects, so this represents the n-th project that a given member
+    # of staff offers.
+    localThemeId = 0
+
+    for index, entry in enumerate(data):
+        this_staff = entry["staff"]
+        prev_staff = data[index - 1]["staff"] if index > 0 else this_staff
+        if this_staff != prev_staff:
+            localThemeId = 0
+        localThemeId += 1
+
+        # AA-7, NBe-2, SSD-3, etc.
+        themeNumber = entry["initials"] + "-" + str(localThemeId)
+
+        # fmt: off
+        all_reformatted.append({
+            "Project Theme/Title":  themeNumber + ": " + entry["title"],
+            "Description":          entry["description"],
+            "Reference URLs":       entry["url"],
+            "Anticipated Outcomes": entry["outcomes"],
+            "Requirements":         entry["skills"],
+            "Keywords":             entry["keywords"],
+        })
+        # fmt: on
+
+    return all_reformatted
+
+
+def main():
+    pass
 
 
 if __name__ == "__main__":
