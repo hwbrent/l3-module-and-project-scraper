@@ -106,10 +106,8 @@ def scrape_raw_data():
     driver.quit()
 
 
-def format_raw_data():
-    # with open("/Users/henrybrent/Documents/compsci/Level 3/projects.json") as f:
-    #     data = json.load(f)
-
+def format_raw_data(data: list[dict]) -> list[dict]:
+    """Receives a `list` of `dict`s representing the server information, and returns a `list` of `dict`s representing the information seen in the DOM."""
     all_reformatted = []
 
     # The showTitles function does this:
@@ -159,12 +157,40 @@ def format_raw_data():
         max.innerHTML = "Keywords"
         text.innerHTML = data[i]['keywords'];
     """
-    pass
+
+    # The sub-number of the project.
+    # i.e. the number of the project with respect to the other projects
+    # offered by this staff member. Professors generally offer multiple
+    # projects, so this represents the n-th project that a given member
+    # of staff offers.
+    localThemeId = 0
+
+    for index, entry in enumerate(data):
+        this_staff = entry["staff"]
+        prev_staff = data[index - 1]["staff"] if index > 0 else this_staff
+        if this_staff != prev_staff:
+            localThemeId = 0
+        localThemeId += 1
+
+        # AA-7, NBe-2, SSD-3, etc.
+        themeNumber = entry["initials"] + "-" + str(localThemeId)
+
+        # fmt: off
+        all_reformatted.append({
+            "Project Theme/Title":  themeNumber + ": " + entry["title"],
+            "Description":          entry["description"],
+            "Reference URLs":       entry["url"],
+            "Anticipated Outcomes": entry["outcomes"],
+            "Requirements":         entry["skills"],
+            "Keywords":             entry["keywords"],
+        })
+        # fmt: on
+
+    return all_reformatted
 
 
 def main():
-    # scrape_raw_data()
-    format_raw_data()
+    pass
 
 
 if __name__ == "__main__":
