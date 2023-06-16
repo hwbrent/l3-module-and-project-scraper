@@ -9,6 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+import pandas as pd
+
 
 # The chromedriver executable should be located at root of project.
 _this_directory = os.path.dirname(__file__)
@@ -70,3 +72,11 @@ def parse_dotenv() -> dict:
             keys_and_values[key] = value
 
     return keys_and_values
+
+
+def write_to_excel(data: list[dict]) -> None:
+    """Writes the `data` to a .xlsx document"""
+    df = pd.DataFrame.from_dict(data, orient="columns")
+    df.to_excel(
+        "/Users/henrybrent/Documents/compsci/Level 3/projects.xlsx", index=False
+    )
