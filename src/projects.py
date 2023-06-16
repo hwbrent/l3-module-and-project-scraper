@@ -8,6 +8,7 @@ from utils import (
     await_element,
     write_to_json,
     parse_dotenv,
+    write_to_excel,
 )
 
 pp = PrettyPrinter(indent=4)
@@ -100,10 +101,9 @@ def scrape_raw_data():
 
         aggregate_data.append(new_dict)
 
-    pp.pprint(aggregate_data)
-    write_to_json(aggregate_data, "projects")
-
     driver.quit()
+
+    return aggregate_data
 
 
 def format_raw_data(data: list[dict]) -> list[dict]:
@@ -190,7 +190,10 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 
 def main():
-    pass
+    raw = scrape_raw_data()
+    write_to_json(raw, "projects")
+    formatted = format_raw_data(raw)
+    write_to_excel(formatted)
 
 
 if __name__ == "__main__":
