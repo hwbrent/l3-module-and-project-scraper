@@ -193,7 +193,7 @@ def main():
     raw = scrape_raw_data()
     write_to_json(raw, "projects")
     formatted = format_raw_data(raw)
-    write_to_excel(formatted)
+    write_to_excel(formatted, "projects")
 
 
 if __name__ == "__main__":
