@@ -77,6 +77,5 @@ def parse_dotenv() -> dict:
 def write_to_excel(data: list[dict], file_name: str) -> None:
     """Writes the `data` to a .xlsx document"""
     df = pd.DataFrame.from_dict(data, orient="columns")
-    df.to_excel(
-        f"/Users/henrybrent/Documents/compsci/Level 3/{file_name}.xlsx", index=False
-    )
+    destination = os.path.join(_project_root, file_name + ".xlsx")
+    df.to_excel(destination, index=False)
