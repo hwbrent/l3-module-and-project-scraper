@@ -79,3 +79,12 @@ def write_to_excel(data: list[dict], file_name: str) -> None:
     df = pd.DataFrame.from_dict(data, orient="columns")
     destination = os.path.join(_project_root, file_name + ".xlsx")
     df.to_excel(destination, index=False)
+
+
+def find_el_by_inner_text(driver, text: str):
+    """
+    Finds and returns an element containing `text`.
+
+    See https://stackoverflow.com/a/18701085/17406886.
+    """
+    return driver.find_elements(By.XPATH, f"//*[contains(text(), '{text}')]")
