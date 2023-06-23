@@ -107,8 +107,8 @@ def get_base_url(url: str) -> str:
     e.g if the whole url is https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/COMP3XXX-Intro-to-Music-Processing.aspx,
     this will return https://durhamuniversity.sharepoint.com
 
-    See https://stackoverflow.com/a/9626596/17406886.
+    See https://stackoverflow.com/a/20728813/17406886.
     """
     splitted = urlsplit(url)
-    base_url = f"{splitted.scheme}://{splitted.netloc}/"
+    base_url = f"{splitted.scheme}://{splitted.netloc}"
     return base_url
