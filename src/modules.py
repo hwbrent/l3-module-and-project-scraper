@@ -14,11 +14,12 @@ from utils import (
 
 pp = PrettyPrinter(indent=4)
 
-MODULES_SITE_URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/Level-3-M.aspx"
+SHAREPOINT_URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/Level-3-M.aspx"
+HANDBOOK_URL_PREFIX = "https://apps.dur.ac.uk/faculty.handbook/2023/UG/module/"
 
 
 def get_sharepoint_pages(driver):
-    assert driver.current_url == MODULES_SITE_URL
+    assert driver.current_url == SHAREPOINT_URL
 
     # There is a bullet-point list near the top of the page of all the
     # modules offered. We want to get that list. It doesn't have an ID,
@@ -66,7 +67,7 @@ def get_sharepoint_pages(driver):
 
 def scrape_raw_data():
     driver = get_driver()
-    driver.get(MODULES_SITE_URL)
+    driver.get(SHAREPOINT_URL)
 
     # Even though we tried to navigate to the modules webpage, we will have
     # been redirected to the microsoft online login page. At this point, it's
@@ -86,7 +87,7 @@ def scrape_raw_data():
         time.sleep(1)
         driver.execute_script("document.forms[0].submit()")
 
-    wait_until_reached(driver, MODULES_SITE_URL)
+    wait_until_reached(driver, SHAREPOINT_URL)
     time.sleep(1)
 
     pp.pprint(get_sharepoint_pages(driver))
