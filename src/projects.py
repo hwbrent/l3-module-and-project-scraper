@@ -106,6 +106,20 @@ def scrape_raw_data():
     return aggregate_data
 
 
+def get_project_type(l3_raw: int, l4_raw: int) -> str:
+    """
+    Parses the `l3` and `l4` values from the server and turns them into a
+    user-facing string.
+
+    The server's response object has properties `l3` and `l4`. As far as I
+    can tell, if the project is available at that level, the value will be
+    `1`, else `0`.
+    """
+    l3_yes_no = "Yes" if bool(l3_raw) else "No"
+    l4_yes_no = "Yes" if bool(l4_raw) else "No"
+    return f"CS Level 3: {l3_yes_no}, CS Level 4: {l4_yes_no}"
+
+
 def format_raw_data(data: list[dict]) -> list[dict]:
     """Receives a `list` of `dict`s representing the server information, and returns a `list` of `dict`s representing the information seen in the DOM."""
     all_reformatted = []
@@ -182,6 +196,7 @@ def format_raw_data(data: list[dict]) -> list[dict]:
             "Reference URLs":       entry["url"],
             "Anticipated Outcomes": entry["outcomes"],
             "Requirements":         entry["skills"],
+            "Project Type":         get_project_type(entry['l3'], entry['l4']),
             "Keywords":             entry["keywords"],
         })
         # fmt: on
