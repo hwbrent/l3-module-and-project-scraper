@@ -120,6 +120,18 @@ def get_project_type(l3_raw: int, l4_raw: int) -> str:
     return f"CS Level 3: {l3_yes_no}, CS Level 4: {l4_yes_no}"
 
 
+def get_interview_required(interview: int) -> str:
+    """
+    Parses the `interview` value from the server and turns it into a
+    user-facing string.
+
+    The server's response object has a property `interview`. As far as I
+    can tell, if the project requires an interview, the value will be
+    `1`, else `0`.
+    """
+    return "Yes" if bool(interview) else "No"
+
+
 def format_raw_data(data: list[dict]) -> list[dict]:
     """Receives a `list` of `dict`s representing the server information, and returns a `list` of `dict`s representing the information seen in the DOM."""
     all_reformatted = []
@@ -198,6 +210,7 @@ def format_raw_data(data: list[dict]) -> list[dict]:
             "Requirements":         entry["skills"],
             "Project Type":         get_project_type(entry['l3'], entry['l4']),
             "Keywords":             entry["keywords"],
+            "Interview Required":   get_interview_required(entry["interview"])
         })
         # fmt: on
 
