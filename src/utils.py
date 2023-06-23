@@ -90,3 +90,10 @@ def find_el_by_inner_text(driver, text: str):
     return driver.find_element(
         By.XPATH, f"//body//*[not(self::script) and contains(text(), '{text}')]"
     )
+
+
+def get_el_parent(element):
+    """
+    Given an `element`, returns the parent of that element.
+    """
+    return element.find_element(By.XPATH, "..")
