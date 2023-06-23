@@ -12,6 +12,8 @@ from utils import (
 
 pp = PrettyPrinter(indent=4)
 
+MODULES_SITE_URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/Level-3-M.aspx"
+
 
 def scrape_raw_data():
     driver = get_driver()
