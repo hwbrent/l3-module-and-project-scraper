@@ -2,6 +2,8 @@ import os
 import time
 import json
 
+from urllib.parse import urlsplit
+
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -97,3 +99,16 @@ def get_el_parent(element):
     Given an `element`, returns the parent of that element.
     """
     return element.find_element(By.XPATH, "..")
+
+
+def get_base_url(url: str) -> str:
+    """
+    Given a `url`, returns the "base" url.
+    e.g if the whole url is https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/COMP3XXX-Intro-to-Music-Processing.aspx,
+    this will return https://durhamuniversity.sharepoint.com
+
+    See https://stackoverflow.com/a/9626596/17406886.
+    """
+    splitted = urlsplit(url)
+    base_url = f"{splitted.scheme}://{splitted.netloc}/"
+    return base_url
