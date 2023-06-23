@@ -17,7 +17,7 @@ pp = PrettyPrinter(indent=4)
 MODULES_SITE_URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/SitePages/Level-3-M.aspx"
 
 
-def get_module_page_urls(driver):
+def get_sharepoint_pages(driver):
     assert driver.current_url == MODULES_SITE_URL
 
     # There is a bullet-point list near the top of the page of all the
@@ -89,7 +89,7 @@ def scrape_raw_data():
     wait_until_reached(driver, MODULES_SITE_URL)
     time.sleep(1)
 
-    pp.pprint(get_module_page_urls(driver))
+    pp.pprint(get_sharepoint_pages(driver))
 
 
 def main():
