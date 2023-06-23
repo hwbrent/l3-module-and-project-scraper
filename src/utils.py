@@ -87,4 +87,4 @@ def find_el_by_inner_text(driver, text: str):
 
     See https://stackoverflow.com/a/18701085/17406886.
     """
-    return driver.find_elements(By.XPATH, f"//*[contains(text(), '{text}')]")
+    return driver.find_element(By.XPATH, f"//body//*[contains(text(), '{text}')]")
