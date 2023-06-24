@@ -238,6 +238,7 @@ def sanitise_for_markdown(raw_value: str) -> str:
     formatted_text = formatted_text.replace(
         "\t", "    "
     )  # Add four spaces for tab in Markdown
+    formatted_text = formatted_text.strip()
     return formatted_text
 
 
