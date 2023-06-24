@@ -217,6 +217,25 @@ def format_raw_data(data: list[dict]) -> list[dict]:
     return all_reformatted
 
 
+def sanitise_for_markdown(raw_value: str) -> str:
+    """
+    This function accepts the value corresponding to one of the keys in a
+    project's `dict` and reformats it so that it works in markdown.
+
+    As part of `write_to_markdown` we want to be able to construct a table
+    for each project like you see on the original webpage when you click the
+    unexpanded project title. However, the values that the server returns
+    include things lile newlines which, if left, cause the formatting of
+    the tables we generate to break. Therefore we need to sanitise the string
+    for use in markdown.
+    """
+    # fmt: off
+    return raw_value \
+        .strip() \
+        .replace('\n', '<br/>')
+    # fmt: on
+
+
 def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = []
     contents.append("## Contents\n")
@@ -252,8 +271,7 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         items = list(entry.items())[1:]
 
         for index, (key, value) in enumerate(items):
-            key = key.strip()
-            value = value.strip()
+            value = sanitise_for_markdown(value)
 
             md_row = f"| {key} | {value} |"
             table.append(md_row)
