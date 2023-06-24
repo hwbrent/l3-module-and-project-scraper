@@ -220,6 +220,8 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = []
 
+    tables = []
+
     for entry in data:
         # We need to generate an entry for the table of contents at the top
         # of the file.
@@ -232,6 +234,36 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         # This is the raw markdown that we will put in the file.
         md_bullet_point = f" * [{title}]({link})"
         contents.append(md_bullet_point)
+
+        # Now we generate the markdown table corresponding to the current
+        # project.
+        table = []
+
+        # First, we add a header above the table so that we can link to this
+        # specific table.
+        table.append(f"### {title}\n")
+
+        # Now, we generate the actual table.
+
+        # There's no point in adding the title to the table seeing as it's
+        # in the header above the table. So we skip the first key/value pair
+        # in the entry.
+        items = list(entry.items())[1:]
+
+        for index, (key, value) in enumerate(items):
+            key = key.strip()
+            value = value.strip()
+
+            md_row = f"| {key} | {value} |"
+            table.append(md_row)
+
+            # After the first row, we need to add the weird row where the
+            # cells only contain dashes.
+            if index == 0:
+                table.append("| - | - |")
+
+        table = "\n".join(table)
+        tables.append(table)
 
 
 def main():
