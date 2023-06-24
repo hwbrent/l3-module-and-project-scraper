@@ -229,11 +229,16 @@ def sanitise_for_markdown(raw_value: str) -> str:
     the tables we generate to break. Therefore we need to sanitise the string
     for use in markdown.
     """
-    # fmt: off
-    return raw_value \
-        .strip() \
-        .replace('\n', '<br/>')
-    # fmt: on
+
+    # Convert special characters to Markdown equivalents
+    formatted_text = raw_value.replace(
+        "\n", "  \n"
+    )  # Add two spaces at the end for line break in Markdown
+    formatted_text = formatted_text.replace("\r", "")
+    formatted_text = formatted_text.replace(
+        "\t", "    "
+    )  # Add four spaces for tab in Markdown
+    return formatted_text
 
 
 def write_to_markdown(data: list[dict], file_name: str) -> None:
