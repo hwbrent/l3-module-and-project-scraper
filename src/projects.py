@@ -218,7 +218,20 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 
 def write_to_markdown(data: list[dict], file_name: str) -> None:
-    pass
+    contents = []
+
+    for entry in data:
+        # We need to generate an entry for the table of contents at the top
+        # of the file.
+        # The idea is to have a bullet point with the title of the project
+        # and a link to the table further down in the document.
+
+        title = entry["Project Theme/Title"]
+        link = "#" + title.replace(" ", "-")
+
+        # This is the raw markdown that we will put in the file.
+        md_bullet_point = f" * [{title}]({link})"
+        contents.append(md_bullet_point)
 
 
 def main():
