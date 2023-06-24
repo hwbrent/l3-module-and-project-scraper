@@ -219,6 +219,7 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = []
+    contents.append("## Contents\n")
 
     tables = []
 
@@ -264,6 +265,17 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
 
         table = "\n".join(table)
         tables.append(table)
+
+    contents = "\n".join(contents)
+    tables = "\n\n".join(tables)
+
+    file = contents + "\n<hr>\n" + tables
+
+    with open(
+        "/Users/henrybrent/Documents/GitHub/l3-module-and-project-scraper/projects.md",
+        "w",
+    ) as f:
+        f.write(file)
 
 
 def main():
