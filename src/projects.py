@@ -232,12 +232,13 @@ def sanitise_for_markdown(raw_value: str) -> str:
 
     # Convert special characters to Markdown equivalents
     formatted_text = raw_value.replace(
-        "\n", "  \n"
+        "\n", "<br>"
     )  # Add two spaces at the end for line break in Markdown
     formatted_text = formatted_text.replace("\r", "")
     formatted_text = formatted_text.replace(
         "\t", "    "
     )  # Add four spaces for tab in Markdown
+    formatted_text = formatted_text.strip()
     return formatted_text
 
 
