@@ -79,7 +79,3 @@ def write_to_excel(data: list[dict], file_name: str) -> None:
     df = pd.DataFrame.from_dict(data, orient="columns")
     destination = os.path.join(_project_root, file_name + ".xlsx")
     df.to_excel(destination, index=False)
-
-
-def write_to_markdown(data: list[dict], file_name: str) -> None:
-    pass
