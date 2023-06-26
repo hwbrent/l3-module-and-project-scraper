@@ -65,6 +65,21 @@ def get_module_params(driver) -> list[dict[str, str]]:
     return param_fields
 
 
+def get_timetable_page(driver, choices):
+    printstyle = None
+    object = None
+    objectstr = None
+    days = None
+    weekstr = None
+    periods = None
+    template = None
+
+    # This template url can be seen in the getTimetable function in the JS
+    # file, i.e. https://timetable.dur.ac.uk/js/form.js
+    url = f"https://timetable.dur.ac.uk/reporting/{printstyle};{object};name;{objectstr}?days={days}&weeks={weekstr}&periods={periods}&template={template}&height=100&week=100"
+    driver.get(url)
+
+
 def main():
     driver = get_driver()
     module_params = get_module_params(driver)
