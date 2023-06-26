@@ -131,3 +131,29 @@ def get_parent(element):
     Given a `element` (i.e. a Web Element), this function returns the parent.
     """
     return element.find_element(By.XPATH, "./..")
+
+
+def get_previous_sibling(element):
+    """
+    Given an `element`, this function returns the previous sibling.
+
+    It does this by finding the parent, then iterating through the parent's
+    children til it hits the element passed in as a parameter, then it
+    returns the element before that one.
+    """
+    parent = get_parent(element)
+    children = parent.find_elements(By.XPATH, "./child::*")
+
+    for index, child in enumerate(children):
+        if element != child:
+            continue
+
+        # If the 'element' provided in the params is the first child of its
+        # parent, return None.
+        if index == 0:
+            return None
+
+        # Else, return the child before this one.
+        return children[index - 1]
+
+    return None
