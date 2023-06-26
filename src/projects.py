@@ -9,6 +9,7 @@ from utils import (
     write_to_json,
     parse_dotenv,
     write_to_excel,
+    login_to_page,
 )
 
 pp = PrettyPrinter(indent=4)
@@ -18,27 +19,7 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 
 def scrape_raw_data():
     driver = get_driver()
-    driver.get(PROJECTS_SITE_URL)
-
-    # Even though we tried to navigate to the projects webpage, we will have
-    # been redirected to the microsoft online login page. At this point, it's
-    # easier to just wait until the user manually logs in than try any fancy
-    # stuff.
-
-    dotenv = parse_dotenv()
-
-    if bool(dotenv):
-        USERNAME = dotenv["USERNAME"]
-        PASSWORD = dotenv["PASSWORD"]
-
-        await_element(driver, 'input[type="email"]').send_keys(USERNAME)
-        await_element(driver, 'input[type="submit"]').click()
-        time.sleep(1)
-        await_element(driver, 'input[type="password"]').send_keys(PASSWORD)
-        time.sleep(1)
-        driver.execute_script("document.forms[0].submit()")
-
-    wait_until_reached(driver, PROJECTS_SITE_URL)
+    login_to_page(driver, PROJECTS_SITE_URL)
     time.sleep(1)
 
     # For some reason, none of the tables seem to load unless you refresh
