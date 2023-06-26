@@ -14,9 +14,9 @@ from utils import (
 MODULE_TIMETABLE_URL = "https://timetable.dur.ac.uk/module.htm"
 
 
-def get_module_params(driver) -> dict[dict[str, str]]:
+def get_module_params(driver) -> list[dict[str, str]]:
     """
-    This function navigates to `MODULE_TIMETABLE_URL` and scrapes the
+    This function navigates to `MODULE_TIMETABLE_URL`, and scrapes & returns the
     data within the <select> and <option> elements.
 
     These elements' values are used to send to the server to get the
@@ -25,7 +25,7 @@ def get_module_params(driver) -> dict[dict[str, str]]:
 
     login_to_page_with_url_auth(driver, MODULE_TIMETABLE_URL)
 
-    param_fields = {}
+    param_fields = []
 
     # The different selection options are stored in <select> elements, each
     # of which has multiple <option> elements which store the user-facing
@@ -60,8 +60,7 @@ def get_module_params(driver) -> dict[dict[str, str]]:
 
             subfield_params[key] = value
 
-        # param_fields[name] = subfield_params
-        param_fields[label] = subfield_params
+        param_fields.append({"name": name, "label": label, "values": subfield_params})
 
     return param_fields
 
