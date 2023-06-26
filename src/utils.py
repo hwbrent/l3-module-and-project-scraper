@@ -44,6 +44,29 @@ def wait_until_reached(driver: Chrome, destination_url: str) -> None:
         time.sleep(2)
 
 
+def login_to_page(driver: Chrome, url: str) -> None:
+    """
+    Gets the `driver` past the login stage to get to the `url` provided.
+    """
+    driver.get(url)
+    dotenv = parse_dotenv()
+
+    # If there's a username and password in a .env file at the root of the
+    # project, use those to autofill the login fields and submit them.
+    if bool(dotenv):
+        USERNAME = dotenv["USERNAME"]
+        PASSWORD = dotenv["PASSWORD"]
+
+        await_element(driver, 'input[type="email"]').send_keys(USERNAME)
+        await_element(driver, 'input[type="submit"]').click()
+        time.sleep(1)
+        await_element(driver, 'input[type="password"]').send_keys(PASSWORD)
+        time.sleep(1)
+        driver.execute_script("document.forms[0].submit()")
+
+    wait_until_reached(driver, url)
+
+
 def write_to_json(data: list, file_name) -> None:
     """Outputs `data` to a JSON file."""
     destination = os.path.join(_project_root, file_name + ".json")
