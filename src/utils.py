@@ -18,15 +18,17 @@ _project_root = os.path.abspath(os.path.join(_this_directory, os.pardir))
 CHROMEDRIVER_PATH = os.path.join(_project_root, "chromedriver")
 
 
-def get_driver() -> Chrome:
+def get_driver(options: list[str] = []) -> Chrome:
     """Initialises a new instance of the Chrome webdriver and returns it."""
     # Create options object.
     # Allows you to configure options (who would have thought)
     # e.g. whether chrome should run headlessly (is that a word?).
-    options = Options()
     # options.add_argument("--headless")
+    driver_opts = Options()
+    for option in options:
+        driver_opts.add_argument(option)
 
-    driver = Chrome(executable_path=CHROMEDRIVER_PATH, options=options)
+    driver = Chrome(executable_path=CHROMEDRIVER_PATH, options=driver_opts)
 
     return driver
 
