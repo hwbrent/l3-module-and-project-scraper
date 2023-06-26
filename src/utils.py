@@ -44,7 +44,7 @@ def wait_until_reached(driver: Chrome, destination_url: str) -> None:
         time.sleep(2)
 
 
-def login_to_page(driver: Chrome, url: str) -> None:
+def login_to_page_with_MFA(driver: Chrome, url: str) -> None:
     """
     Gets the `driver` past the login stage to get to the `url` provided.
     """
@@ -63,6 +63,26 @@ def login_to_page(driver: Chrome, url: str) -> None:
         await_element(driver, 'input[type="password"]').send_keys(PASSWORD)
         time.sleep(1)
         driver.execute_script("document.forms[0].submit()")
+
+    wait_until_reached(driver, url)
+
+
+def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
+    """
+    Gets the `driver` past the login stage to get to the `url` provided.
+    """
+    dotenv = parse_dotenv()
+
+    # If there's a username and password in a .env file at the root of the
+    # project, use those to autofill the login fields and submit them.
+    if bool(dotenv):
+        USERNAME = dotenv["USERNAME"].replace("@durham.ac.uk", "")
+        PASSWORD = dotenv["PASSWORD"]
+
+        username_and_password = f"{USERNAME}:{PASSWORD}@"
+        url = url.replace("https://", "https://" + username_and_password)
+        print(url)
+        driver.get(url)
 
     wait_until_reached(driver, url)
 
