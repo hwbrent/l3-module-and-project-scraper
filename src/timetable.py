@@ -14,8 +14,14 @@ from utils import (
 MODULE_TIMETABLE_URL = "https://timetable.dur.ac.uk/module.htm"
 
 
-def main():
-    driver = get_driver()
+def get_module_params(driver) -> dict[dict[str, str]]:
+    """
+    This function navigates to `MODULE_TIMETABLE_URL` and scrapes the
+    data within the <select> and <option> elements.
+
+    These elements' values are used to send to the server to get the
+    module timetable which is why we want this data (obviously).
+    """
 
     login_to_page_with_url_auth(driver, MODULE_TIMETABLE_URL)
 
@@ -57,8 +63,13 @@ def main():
         # param_fields[name] = subfield_params
         param_fields[label] = subfield_params
 
-    pp.pprint(param_fields)
     return param_fields
+
+
+def main():
+    driver = get_driver()
+    module_params = get_module_params(driver)
+    pp.pprint(module_params)
 
 
 if __name__ == "__main__":
