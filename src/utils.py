@@ -122,3 +122,10 @@ def write_to_excel(data: list[dict], file_name: str) -> None:
     df = pd.DataFrame.from_dict(data, orient="columns")
     destination = os.path.join(_project_root, file_name + ".xlsx")
     df.to_excel(destination, index=False)
+
+
+def get_parent(element):
+    """
+    Given a `element` (i.e. a Web Element), this function returns the parent.
+    """
+    return element.find_element(By.XPATH, "./..")
