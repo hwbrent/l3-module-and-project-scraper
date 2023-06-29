@@ -225,20 +225,12 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 
 def main():
-    # raw = scrape_raw_data()
-
-    with open(
-        "/Users/henrybrent/Documents/GitHub/l3-module-and-project-scraper/projects.json",
-        "r",
-    ) as f:
-        raw = json.load(f)
-
+    raw = scrape_raw_data()
     formatted = format_raw_data(raw)
 
+    write_to_json(raw, "projects")
     write_to_markdown(formatted, "projects")
-
-    # write_to_json(raw, "projects")
-    # write_to_excel(formatted, "projects")
+    write_to_excel(formatted, "projects")
 
 
 if __name__ == "__main__":
