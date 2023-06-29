@@ -162,6 +162,11 @@
  * [TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks](#tv-4-achieving-distance-independent-entanglement-rates-in-quantum-networks)
  * [TV-5: Energy Efficient Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-5-energy-efficient-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
  * [TV-6: Robustness of the Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-6-robustness-of-the-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
+ * [JW-1: An educational game application](#jw-1-an-educational-game-application)
+ * [JW-2: educational data analysis](#jw-2-educational-data-analysis)
+ * [JW-3: An AI_based automatic writing assistant system for supporting language learning](#jw-3-an-aibased-automatic-writing-assistant-system-for-supporting-language-learning)
+ * [JW-4: An AI-based speech feedback system for second language learners](#jw-4-an-ai-based-speech-feedback-system-for-second-language-learners)
+ * [JW-5: A learning support application for Autism spectrum disorder (ASD) pupils](#jw-5-a-learning-support-application-for-autism-spectrum-disorder-asd-pupils)
 <hr>
 
 ### EA-1: Connectivity of interval temporal networks
@@ -1944,4 +1949,59 @@
 | Requirements | Networks and Systems, Data Science, Design of Algorithms and Data Structures |
 | Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Detection, Sensor, Fusion, Robust, Energy |
+| Interview Required | No |
+
+### JW-1: An educational game application
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>In recent years, educational digital games or serious games constituting supportive, engaging and motivational contexts for learning, are used in various fields. The student(s) doing this project will implement an educational VR game. This game will allow the single learner to play aganist AI or multiple learners to play a digital game together. The design should also allow instructors to manage the teaching materials and modify the rules of the educational game.</span> |
+| :- | :- |
+| Reference URLs | <br>https://www.pygame.org/wiki/tutorials<br><br>https://www.sciencedirect.com/science/article/abs/pii/S036013151730043X |
+| Anticipated Outcomes | Implementation of an educational VR game. |
+| Requirements | C#, interest in game design |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | interactive game, Gamification in education |
+| Interview Required | No |
+
+### JW-2: educational data analysis
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Concept map/ knowledge map can be used as assessment tool for learner achievement. However, few assessments are done automatically. In this project, the student needs to perform a supervised learning to datasets of knowledge maps created by learners who study with the same target contents, and present a model for automatically predicting learnerâ€™s understanding level of the target e-book.</span> |
+| :- | :- |
+| Reference URLs | <br>http://faculty.marshall.usc.edu/gareth-james/ISL/<br><br>https://www.coursera.org/learn/machine-learning |
+| Anticipated Outcomes | the learner outcome analyzing and a prediction model |
+| Requirements | python/Java, interested in machine learning and data analystic |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
+| Keywords | knowledge map, machine learning, supervised learning |
+| Interview Required | No |
+
+### JW-3: An AI_based automatic writing assistant system for supporting language learning
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Design and implement an automatic assistant function to support learners in essay writing or sentence translating. The system should also record all the learner behaviour and report the analysis result in a dashboard.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Design and implement an automatic writing assistant system |
+| Requirements | Python/Java, interested in NLP and Data analytic |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
+| Keywords | writing assistant, Data analytic |
+| Interview Required | No |
+
+### JW-4: An AI-based speech feedback system for second language learners
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The student(s) doing this project will design an audio model and implement an AI-based speech feedback system. This system will give feedback to the learner who inputs an audio record. The feedback will help the learner better identify their speech issues. Sample audio recordings and corresponding feedback will be provided by an expert(Dr Kaoru Umezawa, Assisstant Professor (Teaching) in Japanese, Centre for Foreign Language Studies Study (CFLS), School of Modern Languages & Cultures (MLaC), durham university) for training the model.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | an audio model and an AI-based speech feedback system. |
+| Requirements | python/Java, interested in Audio signal processing |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
+| Keywords | audio, second language speaker, automatic feedback |
+| Interview Required | No |
+
+### JW-5: A learning support application for Autism spectrum disorder (ASD) pupils
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Explore, design, and implement a supportive game/application/system addressing the learning difficulty of ASD pupils considering they are more sensitive to sounds or lights. The system should be also able to record the learning behavior and report to the learners or their carers through a dashboard. VR technique could be considered. This is a joint project with Professor BRADLEY STEVEN in CS department, and Professor RIBY DEBORAH and Dr Mary Hanley in the Department of Psychology.</span> |
+| :- | :- |
+| Reference URLs | https://link.springer.com/article/10.1007/s10639-019-10050-0<br>https://rua.ua.es/dspace/bitstream/10045/73035/1/2018_Fernandez-Herrero_etal_Bibliometric-Study-Use-Virtual-Reality.pdf<br>https://ieeexplore.ieee.org/abstract/document/8010470<br>https://link.springer.com/article/10.1007/s40489-021-00259-6 |
+| Anticipated Outcomes | Implementation of a learning support game /application/system for ASD pupils. |
+| Requirements | Python/Java/C# |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | learning support, data analysis, Autism spectrum disorder (ASD) |
 | Interview Required | No |
