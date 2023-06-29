@@ -1,5 +1,6 @@
 import time
 import json
+import string
 from pprint import PrettyPrinter
 
 from bs4 import BeautifulSoup
@@ -296,6 +297,37 @@ def format_project_type_for_markdown(project_type: str) -> str:
     return project_type
 
 
+def get_markdown_header_id(text: str) -> str:
+    """
+    Given the name of a project, this function generates the id for that
+    project's entry.
+
+    For example:
+    AA-6: Can surgery revitalize the eyes?
+    becomes
+    #aa-6-can-surgery-revitalize-the-eyes
+
+    See: https://stackoverflow.com/a/38507669/17406886.
+    """
+
+    # Remove any leading/trailing whitespace.
+    text = text.strip()
+
+    # Make everything lowercase.
+    text = text.lower()
+
+    # Remove any punctuation which isn't a hyphen.
+    # (Thanks ChatGPT for this solution <3)
+    punctuation = string.punctuation.replace("-", "")
+    translator = str.maketrans("", "", punctuation)
+    text = text.translate(translator)
+
+    # Replace spaces with hyphens
+    text = text.replace(" ", "-")
+
+    return text
+
+
 def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = []
     contents.append("## Contents\n")
@@ -313,10 +345,10 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         # and a link to the table further down in the document.
 
         title = entry["Project Theme/Title"]
-        link = "#" + title.replace(" ", "-")
+        link = get_markdown_header_id(title)
 
         # This is the raw markdown that we will put in the file.
-        md_bullet_point = f" * [{title}]({link})"
+        md_bullet_point = f" * [{title}](#{link})"
         contents.append(md_bullet_point)
 
         # Now we generate the markdown table corresponding to the current
