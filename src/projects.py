@@ -2,6 +2,8 @@ import time
 import json
 from pprint import PrettyPrinter
 
+from bs4 import BeautifulSoup
+
 from utils import (
     get_driver,
     wait_until_reached,
@@ -230,15 +232,33 @@ def sanitise_for_markdown(raw_value: str) -> str:
     for use in markdown.
     """
 
+    # First, strip any whitespace off the ends
+    formatted_text = raw_value.strip()
+
+    # Then handle any HTML elements. If it's an <a> we replace it with its
+    # 'href', otherwise we replace it with its inner text. Credit goes to
+    # ChatGPT for this <3
+    soup = BeautifulSoup(formatted_text, "html.parser")
+    for element in soup.find_all(True):
+        if element.name == "a":
+            href = element.get("href")
+            if href:
+                element.string = href
+            else:
+                element.extract()
+        else:
+            element.unwrap()
+    formatted_text = soup.get_text()
+
     # Convert special characters to Markdown equivalents
-    formatted_text = raw_value.replace(
+    formatted_text = formatted_text.replace(
         "\n", "<br>"
     )  # Add two spaces at the end for line break in Markdown
     formatted_text = formatted_text.replace("\r", "")
     formatted_text = formatted_text.replace(
         "\t", "    "
     )  # Add four spaces for tab in Markdown
-    formatted_text = formatted_text.strip()
+
     return formatted_text
 
 
