@@ -382,7 +382,7 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
             # After the first row, we need to add the weird row where the
             # cells only contain dashes.
             if index == 0:
-                table.append("| - | - |")
+                table.append("| :- | :- |")
 
         table = "\n".join(table)
         tables.append(table)
