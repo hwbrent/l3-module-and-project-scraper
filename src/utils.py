@@ -265,8 +265,6 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
 
     file = contents + "\n<hr>\n\n" + tables
 
-    with open(
-        "/Users/henrybrent/Documents/GitHub/l3-module-and-project-scraper/projects.md",
-        "w",
-    ) as f:
+    destination = os.path.join(_project_root, file_name + ".md")
+    with open(destination, "w") as f:
         f.write(file)
