@@ -10,11 +10,15 @@ from utils import (
     parse_dotenv,
     write_to_excel,
     login_to_page,
+    write_to_markdown,
 )
 
 pp = PrettyPrinter(indent=4)
 
 PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/student/"
+
+
+# ------------------------------
 
 
 def scrape_raw_data():
@@ -198,10 +202,15 @@ def format_raw_data(data: list[dict]) -> list[dict]:
     return all_reformatted
 
 
+# ------------------------------
+
+
 def main():
     raw = scrape_raw_data()
-    write_to_json(raw, "projects")
     formatted = format_raw_data(raw)
+
+    write_to_json(raw, "projects")
+    write_to_markdown(formatted, "projects")
     write_to_excel(formatted, "projects")
 
 
