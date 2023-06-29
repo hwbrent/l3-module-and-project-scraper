@@ -259,6 +259,11 @@ def sanitise_for_markdown(raw_value: str) -> str:
         "\t", "    "
     )  # Add four spaces for tab in Markdown
 
+    # Vertical bars are used in Markdown to format tables, so if the text
+    # to go into a table cell contains a vertical bar, it needs to be
+    # escaped to stop it breaking the whole table.
+    formatted_text = formatted_text.replace("|", "\|")
+
     return formatted_text
 
 
