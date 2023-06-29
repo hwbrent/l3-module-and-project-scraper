@@ -390,7 +390,7 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = "\n".join(contents)
     tables = "\n\n".join(tables)
 
-    file = contents + "\n<hr>\n" + tables
+    file = contents + "\n<hr>\n\n" + tables
 
     with open(
         "/Users/henrybrent/Documents/GitHub/l3-module-and-project-scraper/projects.md",

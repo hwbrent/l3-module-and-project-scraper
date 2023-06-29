@@ -163,6 +163,7 @@
  * [TV-5: Energy Efficient Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-5-energy-efficient-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
  * [TV-6: Robustness of the Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-6-robustness-of-the-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
 <hr>
+
 ### EA-1: Connectivity of interval temporal networks
 
 | Description | An interval temporal network is a network whose edges are active for one or more time intervals and inactive the rest of the time. Work has been done previously on instantaneous connectivity of interval temporal networks, where the network is considered to be connected during a period of time [x,y], if it is connected for all time instances within the continuous time interval [x,y]. This project will look at the implementation of existing and possible development of new approaches to preserve connectivity of an interval temporal network over time (by maintaining a 'bank' of extra edges, available during certain time intervals, which can reconnect the network in case it becomes disconnected). |
