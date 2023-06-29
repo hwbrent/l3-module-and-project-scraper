@@ -178,7 +178,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.worldscientific.com/doi/pdf/10.1142/S0129626419500099 |
 | Anticipated Outcomes | Implementation and evaluation of existing algorithms with possible development of new approaches. |
 | Requirements | An interest and background knowledge in graph theory and graph algorithms |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | temporal graph, graph connectivity, algorithm |
 | Interview Required | No |
 
@@ -189,7 +189,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/pdf/1805.04713.pdf |
 | Anticipated Outcomes | Implementation and evaluation of existing algorithms with possible development of new approaches. |
 | Requirements | An interest and background knowledge in graph theory and graph algorithms, and good programming skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | temporal graph, graph exploration, approximation algorithm |
 | Interview Required | No |
 
@@ -200,7 +200,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/abs/1503.00805 |
 | Anticipated Outcomes | Implementation of a way to input the graph and the hidden treasure location and then implementation of the search on such an input.<br><br>The student shall implement both the search procedure and the 'help' given to the search procedure. The student should at least implement and test the search process on trees of arbitrary size. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | binary search, graph algorithms |
 | Interview Required | No |
 
@@ -211,7 +211,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www-apr.lip6.fr/~buixuan/files/BFJ03.pdf<br>https://arxiv.org/pdf/2112.08797.pdf<br>https://www.sciencedirect.com/science/article/pii/S0022000021000155 |
 | Anticipated Outcomes | Implementation and evaluation of existing algorithms with possible development of new approaches. |
 | Requirements | An interest in temporal graphs and background knowledge in graph theory and graph algorithms. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | temporal graphs; paths; graphs; algorithms |
 | Interview Required | No |
 
@@ -222,7 +222,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | Report outlining results of the research into effects of image enhancement techniques on the performance of neural networks. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Convolutional Neural Networks, Image Enhancement |
 | Interview Required | No |
 
@@ -233,7 +233,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1]    D. Huang, E.A. Swanson, C.P. Lin, J.S. Schuman, W.G. Stinson, W. Chang, M.R. Hee, T. Flotte, K. Gregory, C.A. Puliafito, J.G. Fujimoto, Optical Coherence Tomography, Science (80-. ). 254 (1991) 1178â€“1181. https://doi.org/10.1126/science.1957169.<br>[2]    W. Drexler, J.G. Fujimoto, State-of-the-art retinal optical coherence tomography., Prog. Retin. Eye Res. 27 (2008) 45â€“88. https://doi.org/10.1016/j.preteyeres.2007.07.005.<br>[3]    Kafieh, R., Rakhshani, S., Hogg, J., Lawson, R. A., Pavese, N., Innes, W., ... & Hurlbert, A. (2022). A robust, flexible retinal segmentation algorithm designed to handle neuro-degenerative disease pathology (NDD-SEG). Investigative Ophthalmology & Visual Science, 63(7), 2080-F0069.<br>[4]    Yadav, S. K., Kafieh, R., Zimmermann, H. G., Kauer-Bonin, J., Nouri-Mahdavi, K., Mohammadzadeh, V., ... & Brandt, A. U. (2022). Intraretinal Layer Segmentation Using Cascaded Compressed U-Nets. Journal of Imaging, 8(5), 139. |
 | Anticipated Outcomes | Report outlining results and conclusions of the research. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks and libraries needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Medical Imaging, OCT, Deep Learning |
 | Interview Required | No |
 
@@ -244,7 +244,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] Zhou, K., Gao, S., Cheng, J., Gu, Z., Fu, H., Tu, Z., ... & Liu, J. (2020, April). Sparse-gan: Sparsity-constrained generative adversarial network for anomaly detection in retinal oct image. In 2020 IEEE 17th International Symposium on Biomedical Imaging (ISBI) (pp. 1227-1231). IEEE.<br><br>[2] Akcay, S., Atapour-Abarghouei, A., & Breckon, T. P. (2019). Ganomaly: Semi-supervised anomaly detection via adversarial training. In Computer Vision–ACCV 2018: 14th Asian Conference on Computer Vision, Perth, Australia, December 2–6, 2018, Revised Selected Papers, Part III 14 (pp. 622-637). Springer International Publishing.<br><br>[3] https://arxiv.org/pdf/2007.02500.pdf<br><br>[4] https://github.com/openvinotoolkit/anomalib |
 | Anticipated Outcomes | Report outlining results and conclusions of the research. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks and libraries needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Medical Imaging, Deep Learning, Anomaly Detection |
 | Interview Required | No |
 
@@ -255,7 +255,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] W. Drexler, J.G. Fujimoto, State-of-the-art retinal optical coherence tomography., Prog. Retin. Eye Res. 27 (2008) 45–88. https://doi.org/10.1016/j.preteyeres.2007.07.005.  <br>[2] Kafieh, R., Rakhshani, S., Hogg, J., Lawson, R. A., Pavese, N., Innes, W., ... & Hurlbert, A. (2022). A robust, flexible retinal segmentation algorithm designed to handle neuro-degenerative disease pathology (NDD-SEG). Investigative Ophthalmology & Visual Science, 63(7), 2080-F0069. <br>[3] Ghadiri, N. J., Stanojcic, N., Raja, M. S. A., & Burton, B. J. (2019). A triad of retinal signs in Alport syndrome: the ‘stair-case’fovea, choroidal thinning and peripheral schisis. European Journal of Ophthalmology, 29(1_suppl), 10-14. |
 | Anticipated Outcomes | Report outlining results and conclusions of the research. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks and libraries needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Medical Imaging, Deep Learning |
 | Interview Required | No |
 
@@ -267,7 +267,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://en.wikipedia.org/wiki/Where's_Wally<br>https://github.com/vc1492a/Hey-Waldo<br>https://arxiv.org/pdf/1610.02391.pdf |
 | Anticipated Outcomes | Report outlining results of the research into effects of clutter on the performance of neural networks. The outcome will include results of experimentation and analysis and software artifacts. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Convolutional Neural Network, Object Detection, Semantic Segmentation, Cluttered Scenes |
 | Interview Required | No |
 
@@ -278,7 +278,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] W. Drexler, J.G. Fujimoto, State-of-the-art retinal optical coherence tomography., Prog. Retin. Eye Res. 27 (2008) 45–88. https://doi.org/10.1016/j.preteyeres.2007.07.005.  <br>[2] Kafieh, R., Rakhshani, S., Hogg, J., Lawson, R. A., Pavese, N., Innes, W., ... & Hurlbert, A. (2022). A robust, flexible retinal segmentation algorithm designed to handle neuro-degenerative disease pathology (NDD-SEG). Investigative Ophthalmology & Visual Science, 63(7), 2080-F0069. <br>[3] Spaide, R. F. (2022). Healing Mechanisms after Macular Hole Repair Suggests Process of Foveation. RETINA, 10-1097. |
 | Anticipated Outcomes | Report outlining results and conclusions of the research. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks and libraries needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Medical Imaging, OCT, Deep Learning |
 | Interview Required | No |
 
@@ -289,7 +289,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] Young; Smithson. Emulated retinal image capture (ERICA) to test, train and validate processing of retinal images. Scientific Reports, 11, 11225 (2021). |
 | Anticipated Outcomes | Report outlining results and conclusions of the research. The outcome will include results of experimentation and analysis, software artifacts and potential publication. |
 | Requirements | The student should be familiar with the principles of machine learning, deep learning, image processing, computer vision and the frameworks and libraries needed for implementation (e.g. PyTorch, TensorFlow / Keras, etc.) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image Processing, Computer Vision, Medical Imaging, Deep Learning |
 | Interview Required | No |
 
@@ -300,7 +300,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://ieeexplore.ieee.org/abstract/document/7949095<br>https://ieeexplore.ieee.org/abstract/document/8278252<br>https://www.sciencedirect.com/science/article/pii/S0167739X17321581<br>https://www.sciencedirect.com/science/article/pii/S0743731517302149 |
 | Anticipated Outcomes | This project will aim to realise a sustainable mechanism to handle the energy demands of cloud data centres using renewable energy sources based on carbon intelligent computing. This project will help to prioritise cleaner grids, and maximise the proportion of carbon-free energy that powers their applications by choosing regions with better carbon-free energy scores. |
 | Requirements | A little knowledge or interest in a) Cloud Computing, b) Machine/deep learning, and c) MATLAB, will be sufficient. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Carbon Intelligent Computing, Cloud Computing, Artificial Intelligence, Cloud Data Centres |
 | Interview Required | No |
 
@@ -311,7 +311,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.sciencedirect.com/science/article/pii/S1389128618304900<br>https://www.sciencedirect.com/science/article/abs/pii/S138912861831106X |
 | Anticipated Outcomes | This project aims to design a hybrid IoT-Edge-Cloud data management framework to support real-time sensing, collection, transmission of energy-use data of CIs and energy-production data of EVs. We foresee that such data sets will be monitored via IoT sensors connected to: (i) CIs including smart meters, rooftop micro grids, phasor management units, humidity, temperature, and lighting and (ii) EVs including battery unit monitoring sensors, state of charge sensors, and tyre pressure sensors. This project also aims to develop (IoT-Edge-Cloud) resource capacity-aware learning algorithms and computational models for deriving the context and the real-time energy-consumption behavioural patterns of (CIs) and energy-production patterns of EVs. Finally, using the above to outcomes, this project aims at a larger goal to develop data-driven, energy-consumption (CIs) and energy-production (EVs), real-time time decision making techniques for scheduling and coordination of EVs movement in order to restore energy to CIs during disasters. |
 | Requirements | Basic knowledge about IoT, Edge and Cloud paradigms is necessary. Moreover, some experience on working with energy problems, data management algorithms, machine/deep learning is also preferable. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Electric Vehicles, Edge Computing, Cloud Computing, Critical Infrastructures, Internet of Things |
 | Interview Required | No |
 
@@ -322,7 +322,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://ieeexplore.ieee.org/abstract/document/9250321 |
 | Anticipated Outcomes | The outcomes of the project are focussed on the design of a compliance-aware cloud application engineering covering, three dimensions, namely, compliance provsioning, compliance monitoring, compliance verification and logging using blockchain. |
 | Requirements | Basic knowledge related to multi-cloud environment, virtualisation or docker environment, and blockchain (ethereum or hyper ledger fabric). |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -333,7 +333,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | 1. Chang, Shuchih E., and Yichian Chen. "When blockchain meets supply chain: A systematic literature review on current development and potential applications." IEEE Access 8 (2020): 62478-62494.â€ <br>2. Kshetri, Nir. "1 Blockchainâ€™s roles in meeting key supply chain management objectives." International Journal of information management 39 (2018): 80-89. |
 | Anticipated Outcomes | 1. A scalable blockchain framework to control and coordinate the data and decision flow in the circular SC ecosystem.<br>2. Implement and validate the circular SC ecosystem using a realistic use case scenario based on various performance indicators |
 | Requirements | Knowledge about blockchain, smart contracts, solidity (would be useful), python. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -344,7 +344,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Carlier, Alexandre, Martin Danelljan, Alexandre Alahi, and Radu Timofte. "DeepSVG: A Hierarchical Generative Network for Vector Graphics Animation". In Advances in Neural Information Processing Systems, 33:16351-61. 2020. https://proceedings.neurips.cc/paper/2020/hash/bcf9d6bd14a2095866ce8c950b702341-Abstract.html<br>Carter, et al., "Experiments in Handwriting with a Neural Network", Distill, 2016. http://doi.org/10.23915/distill.00004<br><br> |
 | Anticipated Outcomes | The student will be expected to identify, collect, create or otherwise curate a dataset of handwritten non-text annotations, choose and implement a suitable generative model, and evaluate its performance using standard techniques. |
 | Requirements | COMP3527 Computer Vision OR COMP3547 Deep Learning |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | computer vision, document analysis, semantic segmentation, handwriting, generative modelling |
 | Interview Required | No |
 
@@ -355,7 +355,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>Haigh, Thomas, and Paul E. Ceruzzi. A New History of Modern Computing. History of Computing. Cambridge, Mass.: The MIT Press, 2021.<br>Marino, Mark C. Critical Code Studies. Cambridge, Mass.: MIT Press, 2020.<br>Montfort, Nick, Patsy Baudoin, John Bell, Ian Bogost, Jeremy Douglass, Mark C. Marino, Michael Mateas, Casey Reas, Mark Sample, and Noah Vawter. 10 PRINT CHR$(205.5+RND(1));: GOTO 10. Cambridge, Mass.: MIT Press, 2012.<br> |
 | Anticipated Outcomes | An extended piece of written work deriving from the quantitative and/or qualitative analysis of technical primary sources (i.e. source code listings) identified by the project student, with the support of the supervisor. Students are welcome to prepare interactive supporting material for this project, including but not limited to online digital exhibitions, blog posts, and/or screencasted walkthroughs. |
 | Requirements | No formal prerequisites but project students must have excellent written expression and attention to detail in report-writing, curiosity about the history of computing, as well as a capacity to interpret and analyse code examples written in obsolete, unfamiliar, and often poorly documented programming languages. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | history of computing, critical code studies, digital humanities |
 | Interview Required | Yes |
 
@@ -366,7 +366,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>Vliegendhart, Raynor, Martha Larson, Babak Loni, and Alan Hanjalic. ‘Exploiting the Deep-Link Commentsphere to Support Non-Linear Video Access’. IEEE Transactions on Multimedia 17, no. 8 (August 2015): 1372–84. https://doi.org/10.1109/TMM.2015.2449086.<br>Yarmand, Matin, Dongwook Yoon, Samuel Dodson, Ido Roll, and Sidney S. Fels. ‘“Can You Believe [1:21]?!”: Content and Time-Based Reference Patterns in Video Comments’. In Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems, 1–12. CHI ’19. New York, NY, USA: Association for Computing Machinery, 2019. https://doi.org/10.1145/3290605.3300719.<br> |
 | Anticipated Outcomes | To be discussed with supervisor |
 | Requirements | (COMP2271 Data Science OR COMP2261 Artificial Intelligence). Desirable (for L3 project students, as co-requisite): COMP3517 Computational Modelling in the Humanities and Social Sciences. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | online multimedia, comments, NLP, digital humanities |
 | Interview Required | No |
 
@@ -377,7 +377,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>Lisena, Pasquale, Albert Meroño-Peñuela, and Raphaël Troncy. ‘MIDI2vec: Learning MIDI Embeddings for Reliable Prediction of Symbolic Music Metadata’. Semantic Web 13, no. 3 (2022): 357–77. https://doi.org/10.3233/SW-210446.<br>Raffel, Colin, and Daniel P. W. Ellis. ‘Extracting Ground-Truth Information from MIDI Files: A MIDIfesto.’ Proceedings of the 17th International Society for Music Information Retrieval Conference. New York City, United States, August 2016. https://doi.org/10.5281/zenodo.1418233.<br> |
 | Anticipated Outcomes | To be discussed with supervisor |
 | Requirements | (COMP2271 Data Science OR COMP2261 Artificial Intelligence). <br><br>Desirable (either as pre-requisite or co-requisite): COMP3517 Computational Modelling in the Humanities and Social Sciences OR COMP3717 Introduction to Music Processing |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | MIDI, music processing |
 | Interview Required | No |
 
@@ -388,7 +388,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://manifesto-project.wzb.eu/datasets <br> https://manifesto-project.wzb.eu/publications/all <br> https://www.pnas.org/doi/10.1073/pnas.1720347115  <br> https://aclanthology.org/K19-1024.pdf <br> |
 | Anticipated Outcomes | Potential outcomes may include: descriptive, predictive and/or explanatory data analytics; building prediction models based the manifestos and or related open datasets (e.g. government, news, google ngrams, ParlaSpeech Corpus, Hansard Speeches and Sentiment dataset); exploring political and other forms of bias in word embeddings trained on the manifestos data; visualisation of the data for a user-facing system. |
 | Requirements | Some understanding of data analytics and NLP; some level of experience with pandas, Matplotlib, Seaborn, R, PyTorch, Keras or similar is useful. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | data analytics, NLP, visualisation, politics, bias, visualisation |
 | Interview Required | No |
 
@@ -399,7 +399,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>Hansard Speeches and Sentiment V3.0.1 -https://zenodo.org/record/4843485#.YgVcG33P3_Q <br>ParlaSpeech Corpus  - https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/L4OAKN <br>ParlaSpeech Corpus notes - https://dataverse.harvard.edu/file.xhtml?persistentId=doi:10.7910/DVN/L4OAKN/C2TWCZ&version=1.0 <br>https://www.tandfonline.com/doi/pdf/10.1080/10584609.2020.1833121?<br>https://www-sciencedirect-com.ezphost.dur.ac.uk/science/article/pii/S246869642200012X <br>https://www.cambridge.org/core/journals/political-analysis/article/creating-and-comparing-dictionary-word-embedding-and-transformerbased-models-to-measure-discrete-emotions-in-german-political-text/2DA41C0F09DE1CA600B3DCC647302637 <br> https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9651887 <\li><br> |
 | Anticipated Outcomes | Potential outcomes may include:  <br><br> descriptive, predictive and/or explanatory data analytics; <br> building prediction models based on the debate datasets and related open datasets (e.g. party manifestos, news, google books corpus); <br> measuring emotion in political debate; <br>political view point analysis; <br> a diachronic lexical analysis; <br> a visualisation of the data for a user-facing system, e.g. a visualisation of sentiment and topic composition of the data; representing the changing participation of women in British politics, including points in time where the number of women MPs suddenly increased (e.g. 1997 election); a geographical representation of the prominent concerns in different regions; a visualisation of the coverage and narrative strategies used in relation to one more topic (e.g. climate change or art vs science) or comparing different countries. <br> an interface to facilitate argument exploration, or for exploring the use of subjective versus objective language in the debates. <br> |
 | Requirements | Some understanding of data analytics and NLP; some level of experience with Seaborn, R, PyTorch, Keras or similar is useful. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | NLP, data analysis, politics, debates, computational social science |
 | Interview Required | No |
 
@@ -410,7 +410,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://aclanthology.org/2022.law-1.14.pdf <\li><br>https://osf.io/snpcg/ <\li><br>https://onlinelibrary.wiley.com/doi/pdf/10.1002/ejsp.2903 <\li><br>https://dl-acm-org.ezphost.dur.ac.uk/doi/abs/10.1145/3543873.3587534 <\li><br><\ul> |
 | Anticipated Outcomes |  |
 | Requirements | Some understanding of data analytics and NLP; some level of experience with Seaborn, R, PyTorch, Keras or similar is useful. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -421,7 +421,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.hesa.ac.uk/data-and-analysis/students USA Based Data https://data.world/nces/postsecondary-programs-courses/workspace/project-summary?agentid=nces&datasetid=postsecondary-programs-courses <br>https://data.world/nces/postsecondary-programs-courses/workspace/project-summary?agentid=nces&datasetid=postsecondary-programs-courses <br> <br>https://link.springer.com/article/10.1007/s10639-018-9828-x <br>https://ieeexplore.ieee.org/document/9497185 |
 | Anticipated Outcomes | An understanding of the equality issues faced by potential students and an implementation of an interface to display said data. |
 | Requirements | An understanding of machine learning techniques |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Machine Learning, Education |
 | Interview Required | No |
 
@@ -432,7 +432,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://mermaid-js.github.io/mermaid/#/ <br>https://ieeexplore.ieee.org/document/4634384  |
 | Anticipated Outcomes | An understanding of the equality issues faced by potential students and the benefits of accessible classes. An understanding of Machine learning classification techniques. A product which outputs Mermaid style markdown. |
 | Requirements | An understanding of machine learning techniques and the ability to use pre-existing APIs |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Machine Learning, API, Image Processing |
 | Interview Required | No |
 
@@ -443,7 +443,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.nature.com/articles/nature24270<br>https://arxiv.org/abs/1712.01815 |
 | Anticipated Outcomes | An implementation of one or more computer players for a game chosen by the student. |
 | Requirements | Interest in Machine Learning. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Machine Learning, Reinforcement Learning, Neural Networks, Monte Carlo Tree Search, Alpha Go Zero, Deep Q Learning |
 | Interview Required | No |
 
@@ -454,7 +454,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://cs.stanford.edu/people/jure/pubs/graphrnn-icml18.pdf |
 | Anticipated Outcomes | An implementation of (a modification of) the GraphRNN model. |
 | Requirements | Interest in Machine Learning and Graph Theory. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Machine Learning, Graph Theory. |
 | Interview Required | No |
 
@@ -465,7 +465,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://leanprover.github.io/theorem_proving_in_lean/<br>http://wwwf.imperial.ac.uk/~buzzard/xena/natural_number_game/ |
 | Anticipated Outcomes | Lean code that constitutes valid proofs of certain theorems in TCS or Maths. |
 | Requirements | Interest in Mathematics or Theoretical Computer Science, and formal proofs in particular. Willingness to learn a new programming language. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Automated Theorem Proving, Lean Theorem Prover |
 | Interview Required | No |
 
@@ -476,7 +476,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | This project will be strongly related to the content of COMP4227 Distributed Network Computing and Algorithms. For background reading on LOCAL/CONGEST algorithms, see the textbook by Juho Hirvonen and Jukka Suomela (available free online at https://jukkasuomela.fi/da2020/da2020.pdf) |
 | Anticipated Outcomes | Implement a framework on which CONGEST and LOCAL algorithms can be simulated.<br>Implement some classic CONGEST and LOCAL algorithms (e.g. Luby's MIS algorithm, simple randomized coloring).<br>(Extension) Implement some more advanced algorithms, and compare performance (e.g. Ghaffari's MIS algorithm, sublogarithmic coloring algorithms).<br>(Extension) Implement a system for visualising distributed graph algorithms in progress. |
 | Requirements | COMP4227 Distributed Network Computing and Algorithms |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Distributed Graph Algorithms, Simulation, Visualisation |
 | Interview Required | No |
 
@@ -487,7 +487,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | See here for the paper that introduced MPC to model MapReduce: https://theory.stanford.edu/~sergei/papers/soda10-mrc.pdf |
 | Anticipated Outcomes | Implement algorithms designed for MPC within MapReduce, including (potentially) sorting, maximal independent set, and graph coloring algorithms.<br><br>Evaluate the performance of these algorithms, on massive graphs and highly parallel systems. |
 | Requirements | COMP3557 Design of Algorithms and Data Structures would be helpful but not essential. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | MapReduce, Massively Parallel Computation, Graph Algorithms |
 | Interview Required | No |
 
@@ -498,7 +498,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | Implement some algorithms for discrete logarithm (Shank's algorithm, Pollard Rho, Pohlig Hellman, Index Calculus).<br>Compare the performance of these algorithms over inputs with a variety of sizes and characteristics. |
 | Requirements | COMP 3697 Cryptography |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Cryptography, Discrete Logarithm |
 | Interview Required | No |
 
@@ -509,7 +509,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | Implement some algorithms for factoring, e.g. Pollard p-1, Pollard Rho, Quadratic Sieve, Galois Field Number Sieve). Compare the performance of these algorithms over inputs with a variety of sizes and characteristics. Potentially propose and test novel heuristics. |
 | Requirements | COMP 3697 Cryptography |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Cryptography, Factoring, RSA |
 | Interview Required | No |
 
@@ -520,7 +520,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | See here for an article introducing the concept: https://dl.acm.org/doi/pdf/10.1145/3528087. A list of papers about algorithms with predictions is here: https://algorithms-with-predictions.github.io/ |
 | Anticipated Outcomes | Implement algorithms with predictions for a problem (or problems) of your choice. Compare the performance of these algorithms against existing techniques, for a range of inputs and prediction qualities. |
 | Requirements | COMP3557 Design of Algorithms and Data Structures would be helpful but not essential. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Algorithms with Predictions, Implementation |
 | Interview Required | No |
 
@@ -531,7 +531,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/abs/0802.2855<br>https://arxiv.org/abs/2206.15201 |
 | Anticipated Outcomes | Implementation and experimental evaluation of the performance of one or several algorithms for the problem;<br>Presentation of experimental results using suitable plots and tables |
 | Requirements | Programming skills in Python, java, C++ or another suitable language; basic understanding of graph theory (minimum spanning trees) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | graph algorithms, query strategies, implementation and evaluation of algorithms |
 | Interview Required | No |
 
@@ -542,7 +542,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/abs/2305.09245 |
 | Anticipated Outcomes | Implementation and experimental evaluation of the performance of one or several algorithms for the problem; Presentation of experimental results using suitable plots and tables |
 | Requirements | Programming skills in Python, java, C++ or another suitable language; basic understanding of probability |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | computing with uncertain data, algorithm implementation, algorithm evaluation |
 | Interview Required | No |
 
@@ -553,7 +553,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/10.1145/3098822.3098838 |
 | Anticipated Outcomes | Implementation of a tool to simulate and evaluate actively reconfigurable networks;<br>Evaluation of different approaches to the design of reconfigurable network topologies |
 | Requirements | Programming experience in python, java, C++ or another suitable programming language; basic knowledge of graphs and networks. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | networking, graphs, time-varying networks |
 | Interview Required | No |
 
@@ -564,7 +564,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.patatconference.org/patat2016/files/proceedings/paper_30.pdf |
 | Anticipated Outcomes | A web application that allows the conference organizers to enter information about the schedule and the accepted papers, and that allows conference participants to enter their preferences regarding which talks they wish to attend. The application should then generate a conference schedule that minimizes conflicts and possibly also optimizes other suitable criteria. |
 | Requirements | Interest in applying combinatorial optimization techniques to a real-world problem. Ability to implement a web application with an automatic schedule generation method in a suitable programming language. A report presenting the design and evaluation of the automatic schedule generation method. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | optimisation, algorithms, scheduling |
 | Interview Required | No |
 
@@ -575,7 +575,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | A software system that implements the automatic generation of a good group allocation. A report describing the design and implementation of the software as well as a suitable experimental evaluation. |
 | Requirements | Interest in algorithms for allocation problems with preferences. Programming skills in a suitable programming language. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Matching under preferences |
 | Interview Required | No |
 
@@ -586,7 +586,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://doi.org/10.1007/978-3-030-54921-3_8 |
 | Anticipated Outcomes | Design, implementation and experiments with algorithms for temporal graph exploration.<br>Possibly also theoretical results about the exploration time in different settings, or about the computational complexity for different special cases. |
 | Requirements | Interest in graph algorithms.<br>Familiarity with at least one suitable programming language (for example, Python). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | temporal graph, temporal exploration, graph algorithms |
 | Interview Required | No |
 
@@ -597,7 +597,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.worldscientific.com/worldscibooks/10.1142/8591#t=aboutBook |
 | Anticipated Outcomes | Design, implementation and experimental (and/or theoretical) evaluation of algorithms for selecting queries in a suitable matching problem with uncertain preferences.<br><br>Report including literature survey, problem formulation, and results obtained. |
 | Requirements | Interest in algorithms and combinatorial problems<br>Implementation skills in a suitable programming language (e.g. python, java, C++) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | stable marriage, matching with preferences, explorable uncertainty |
 | Interview Required | No |
 
@@ -608,7 +608,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2017.2973<br>https://arxiv.org/abs/1709.02592 |
 | Anticipated Outcomes | Design, implementation and experimental evaluation of scheduling algorithms.<br>Potential to obtain theoretical results regarding upper and lower bounds on the best achieveable performance guarantees for a scheduling algorithm in this setting.<br>Report including literature survey, problem definition, algorithm descriptions, and results of experimental evaluation. |
 | Requirements | Interest in algorithms and scheduling.<br>Programming skills in a suitable programming language (e.g. python, java, C++). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | explorable uncertainty, scheduling with sum of completion times |
 | Interview Required | No |
 
@@ -619,7 +619,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Akcay, S., Ameln, D., Vaidya, A., Lakshmanan, B., Ahuja, N. and Genc, U., 2022. Anomalib: A Deep Learning Library for Anomaly Detection. arXiv preprint arXiv:2202.08341.<br><br>Zavrtanik, V., Kristan, M. and SkoÄaj, D., 2021. Draem-a discriminatively trained reconstruction embedding for surface anomaly detection. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 8330-8339).<br><br>Yu, J., Zheng, Y., Wang, X., Li, W., Wu, Y., Zhao, R. and Wu, L., 2021. Fastflow: Unsupervised anomaly detection and localization via 2d normalizing flows. arXiv preprint arXiv:2111.07677. |
 | Anticipated Outcomes | A working software demonstrator, open source contribution and technical evaluation of anomaly detecion using deep CNN architectures via X-ray Security Imagery |
 | Requirements | Students must have taken or be taking Image Processing, Computer Vision and ideally Machine Learning / Deep Learning and be comfortable with (or able to readily pickup) python/C++ to be able to leverage existing implementations. A familiarity with OpenCV, modern machine learning tools and the Linux operating system is of benefit. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | computer vision, image processing, machine learning , deep learning, convolutional neural networks, object detection, anomaly detection |
 | Interview Required | No |
 
@@ -630,7 +630,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Chen, Kai, Jiaqi Wang, Jiangmiao Pang, Yuhang Cao, Yu Xiong, Xiaoxiao Li, Shuyang Sun et al. "MMDetection: Open mmlab detection toolbox and benchmark." arXiv preprint arXiv:1906.07155 (2019).<br><br>Zhu, Pengfei, Longyin Wen, Dawei Du, Xiao Bian, Heng Fan, Qinghua Hu, and Haibin Ling. "Detection and tracking meet drones challenge." IEEE Transactions on Pattern Analysis and Machine Intelligence 44, no. 11 (2021): 7380-7399.<br><br>Akcay, Samet, Dick Ameln, Ashwin Vaidya, Barath Lakshmanan, Nilesh Ahuja, and Utku Genc. "Anomalib: A deep learning library for anomaly detection." In 2022 IEEE International Conference on Image Processing (ICIP), pp. 1706-1710. IEEE, 2022. |
 | Anticipated Outcomes | A working software demonstrator, open source contribution and technical evaluation of anomaly detecion using deep CNN architectures via drone imagery. |
 | Requirements | Students must have taken or be taking Image Processing, Computer Vision and ideally Machine Learning / Deep Learning and be comfortable with (or able to readily pickup) python/C++ to be able to leverage existing implementations. A familiarity with OpenCV, modern machine learning tools and the Linux operating system is of benefit. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | computer vision, image processing, machine learning , deep learning, convolutional neural networks, object detection, anomaly detection |
 | Interview Required | No |
 
@@ -641,7 +641,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://mtosmt.org/issues/mto.19.25.2/mto.19.25.2.temperley.html |
 | Anticipated Outcomes | Build on existing neural network working (LSTM);<br>Apply new models;<br>Tests hypotheses in one or more domains (music, prose, ...);<br>Produce publishable write-up. |
 | Requirements | Solid machine learning experience;<br>Familiarity with & interest in  music and/or language (preferably both) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Uniform Information Density, language, music, NLP, surprisal |
 | Interview Required | Yes |
 
@@ -652,7 +652,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Many. E.g., if working with harmonic analyses:<br>http://github.com/MarkGotham/When-in-Rome/ |
 | Anticipated Outcomes |  |
 | Requirements | Basic complexity theory; entropy. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Music, complexity, entropy, analysis |
 | Interview Required | No |
 
@@ -663,7 +663,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Many. E.g., if working with harmonic analyses: http://github.com/MarkGotham/When-in-Rome/ |
 | Anticipated Outcomes |  |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -674,7 +674,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://github.com/OpenScore/Lieder |
 | Anticipated Outcomes |  |
 | Requirements | Solid machine learning experience;<br>Familiarity with & interest in  music and/or language (preferably both) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | Yes |
 
@@ -685,7 +685,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.setlist.fm/<br>https://github.com/nyphilarchive/PerformanceHistory |
 | Anticipated Outcomes |  |
 | Requirements | Strong statistics |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | setlist, music, performance, live, gig |
 | Interview Required | No |
 
@@ -696,7 +696,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://musescore.org/en; https://www.audacityteam.org/ |
 | Anticipated Outcomes | Design of research agenda;<br>Preparation of new code;<br>Successful PR. |
 | Requirements | Essential: Strong C++ and Qt skills (the languages of these softwares) by the start of the project.<br>Essential: Strong domain knowledge (music notation for a project on MuseScore; audio signal processing for a project on Audacity).<br>Desirable: Experience in music information retrieval is an advantage. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Music notation, audio editing, open source, algorithms |
 | Interview Required | Yes |
 
@@ -707,7 +707,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/pdf/10.1145/3285029; https://www.sciencedirect.com/science/article/pii/S0950705116300727 |
 | Anticipated Outcomes | Implementation of a DL-based Recommender System; <br>Evaluation of the proposed RS - against alternative models/techniques, and/or in alternative domains (different datasets). |
 | Requirements | recommender systems, machine learning, deep learning, programming skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | recommender systems, deep learning, deep neural networks, machine learning |
 | Interview Required | No |
 
@@ -718,7 +718,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://link.springer.com/chapter/10.1007/978-0-387-85820-3_7; https://ieeexplore.ieee.org/abstract/document/8374807; <br>https://link.springer.com/chapter/10.1007/978-1-4939-0530-0_6; https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7904698;<br>https://link.springer.com/chapter/10.1007/978-1-4899-7637-6_21;<br>https://grouplens.org/datasets/personality-2018/;<br>https://zenodo.org/record/3248543#.Xhjy385zyM8;<br>http://www.cp.jku.at/datasets/musicmicro/index.html;<br>https://github.com/irecsys/CARSKit/tree/master/context-aware_data_sets;<br>https://www.yelp.com/dataset |
 | Anticipated Outcomes | Evaluation and selection of tools for affect/personality acquisition; <br>Performing an offline experiment (on existing datasets) and/or an online experiment (user study - requires obtaining ethical approval);<br>Implementation of affect- or personality-aware RS; <br>Evaluation of the proposed RS solution on suitable/relevant evaluation metrics, against state-of-the-art models/techniques, alternative datasets or affect/personality features. |
 | Requirements | recommender systems, machine learning, programming |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | recommender system, context-aware recommender system, machine learning, psychology, HCI, personality, emotion, affect, affective computing, FFM |
 | Interview Required | No |
 
@@ -729,7 +729,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/pdf/10.1145/641007.641038; https://www.sciencedirect.com/science/article/pii/S1071581903000478;<br>https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed;<br>https://dl.acm.org/doi/proceedings/10.1145/3411764#heading20;<br>https://www.sciencedirect.com/science/article/pii/B9780125587044500104;<br>https://www.sciencedirect.com/science/article/abs/pii/0005791694900639;<br>https://link.springer.com/chapter/10.1007/978-3-319-66790-4_1;<br>https://link.springer.com/article/10.3758/s13428-016-0715-3;<br>https://iui-lecture.org/<br>https://www.youtube.com/watch?v=NOazEIijXTo&list=PLsZdV05-bvLHcePpoXlIVFNfT7q2Y1kOx&index=34 |
 | Anticipated Outcomes | Intelligent affect-adaptive system; Multimodal affect recognition method; System evaluation based on HCI principles |
 | Requirements | machine learning, computer vision, human AI interaction, programming |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | human-computer interaction, HCI, affect, adaptation, affective user modelling, intelligent systems, adaptive agents, user interface design, usability testing, multimodal emotion recognition, privacy, bias, mental health, anxiety, depression |
 | Interview Required | No |
 
@@ -740,7 +740,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://ieeexplore.ieee.org/abstract/document/8594883; <br>https://dl.acm.org/doi/abs/10.1145/3331184.3331211; <br>https://hcixaitutorial.github.io/;<br>https://interactivesystems.info/publications/ubo_mods_00161373;<br>http://ceur-ws.org/Vol-2682/paper2.pdf;<br>https://iui-lecture.org/lmu2021/IUI-2021-01-21-pub/IUI_Explainable_AI.mp4;<br>https://www.netflix.com/gb/title/81328723<br>https://dl.acm.org/doi/pdf/10.1145/3184558.3186949<br>https://link.springer.com/chapter/10.1007/978-1-0716-2197-4_18<br>https://www.sciencedirect.com/science/article/pii/S0306457321001503<br>https://arxiv.org/pdf/1910.10045.pdf |
 | Anticipated Outcomes | Recommender system (RS) with explainable recommendations; RS evaluation via an offline experiment (preferably additionally a user study performed); RS to be evaluated from responsible AI perspective (metrics including explainability, fairness, trust, diversity) |
 | Requirements | recommender systems, machine learning, deep learning, AI |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | recommender systems, explainability, transparency, fairness, trust, bias, machine learning, AI |
 | Interview Required | No |
 
@@ -751,7 +751,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/abs/10.1145/3240508.3240546; <br>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7985599/;<br>https://ojs.aaai.org/index.php/AAAI/article/view/10509;<br>https://ieeexplore.ieee.org/abstract/document/8215493;<br>https://ieeexplore.ieee.org/abstract/document/6608496;<br>https://dl.acm.org/doi/abs/10.1145/3173574.3174201;<br>https://iui-lecture.org/;<br>https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed |
 | Anticipated Outcomes | Fashion recommender system OR Personal Stylist application with integrated CARS; Evaluation results for the proposed RS solution |
 | Requirements | recommender systems, machine learning, deep learning, programming, Human-AI interaction |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | recommender system, context-aware recommendation, HCI, fashion, clothing, deep learning, machine learning, user interface design, user satisfaction |
 | Interview Required | No |
 
@@ -762,7 +762,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://doi.org/10.1017/S0033291719000151 |
 | Anticipated Outcomes | The project should deliver:<br>a best performing machine learning model that predicts and/or detects the aimed at mental health outcome(s)<br>explanations/guidelines/rules/visualizations indicating key factors/predictors that can assist mental health professionals in detection or treatment<br>Project report<br> |
 | Requirements | machine learning, programming in Python, data preparation and analysis |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | machine learning, predictive models, text analysis, mental health |
 | Interview Required | No |
 
@@ -773,7 +773,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | R. Szeliski. Computer Vision: Algorithms and Applications. Springer, 2010. Chapters: 4 (Feature detection and matching) and 9 (Image stitching). https://www.cs.ccu.edu.tw/~damon/tmp/SzeliskiBook_20100903_draft.pdf<br><br>Brown, M., & Lowe, D. G. (2007). Automatic panoramic image stitching using invariant features. International journal of computer vision, 74, 59-73. http://matthewalunbrown.com/papers/ijcv2007.pdf<br><br>https://courses.cs.washington.edu/courses/cse455/09wi/Lects/lect7.pdf |
 | Anticipated Outcomes | A system that will run a program to form a high-quality spheric mosaic (photosphere) from a set of sequential images. This system should be able to both run from a live-streaming PTZ camera or from a set of input images taken from that camera. |
 | Requirements | Computer Vision (COMP3527) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Image stitching, mosaicking, photosphere, |
 | Interview Required | No |
 
@@ -784,7 +784,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://en.wikipedia.org/wiki/Thomson_problem |
 | Anticipated Outcomes | Implementation and evaluation of existing iterative algorithms for simulations of the Thomson problem.<br>Possibility for further development and improvement of them. |
 | Requirements | None. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Thomson problem, simulation, optimisation |
 | Interview Required | No |
 
@@ -795,7 +795,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/10.1145/228503.228512 |
 | Anticipated Outcomes | Implementation of a cryptocurrency, based on one of the open source tools for developing blockchain applications. |
 | Requirements | None. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Cryptocurrencies, bitcoin |
 | Interview Required | No |
 
@@ -806,7 +806,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.liveness.com |
 | Anticipated Outcomes | Implementation of an existing liveness test algorithm.<br>Possibility for further development and improvement of the implemented algorithm. |
 | Requirements | None. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Face recognition, liveness test, user verification |
 | Interview Required | No |
 
@@ -817,7 +817,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/abs/2006.08819.pdf |
 | Anticipated Outcomes | At a first stage, the student will use existing, flat, 3D printed objects, with QR-code style watermarks on them, and implement computer vision algorithms for extracting the watermarks.<br>At a second stage the project will develop methods for embedding similar watermarks on cylindrical or spherical objects, will 3D print the watermarked objects, and modify appropriately the computer vision algorithms for watermark extraction. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | 3D printing, watermarking, computer vision |
 | Interview Required | No |
 
@@ -828,7 +828,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://ori.hhs.gov/education/products/n_illinois_u/datamanagement/dhtopic.html<br>https://www.ibm.com/uk-en/topics/what-is-blockchain |
 | Anticipated Outcomes | A blockchain based system, using smart contract written in Solidity, for handling the data of a research project. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Blockchain, smart contracts, Solidity, data handling, ethical data usage |
 | Interview Required | No |
 
@@ -839,7 +839,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] A. Jindal, N. Kumar, and J. J. P. C. Rodrigues, \"A Heuristic-based Smart HVAC Energy Management Scheme for University Buildings,\'\' IEEE Transactions on Industrial Informatics, vol. 14, no. 11, pp. 5074-5086, 2018.<br>[2] A. Jindal, M. Singh, and N. Kumar, \"Consumption-Aware Data Analytical Demand Response Scheme for Peak Load Reduction in Smart Grid,\'\' IEEE Transactions on Industrial Electronics,vol. 65, no. 11, pp. 8993-9004, 2018. |
 | Anticipated Outcomes | Anticipated outcomes include:<br>- Energy bill reduction for the consumer<br>- Energy optimisation for the utility provider<br>- Demand response management<br>- Load balancing at grid/distribution level<br>- Self-sustainable consumers/buildings |
 | Requirements | There are no pre-requirements, however, one should have interest in the project and the willingness to learn the techniques. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Smart cities; smart energy management |
 | Interview Required | No |
 
@@ -850,7 +850,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | Anticipated outcomes include:<br>- Machine learning/AI/data analytics models<br>- Internet of things (IoT) framework <br>- Energy harvesting/effective resource (computation/communication) utilisation. |
 | Requirements | There are no pre-requirements, however, one should have interest in the project and the willingness to learn the techniques. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | machine learning; internet of things |
 | Interview Required | No |
 
@@ -861,7 +861,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] A. Jindal, A. Dua, N. Kumar, A. K. Das, A. V. Vasilakos, and J. J. P. C. Rodrigues, "Providing Healthcare-as-a-Service Using Fuzzy Rule-Based Big Data Analytics in Cloud Computing," IEEE Journal of Biomedical and Health Informatics, vol. 22, no. 5, pp. 1605-1618, 2018. |
 | Anticipated Outcomes | - Improved healthcare services<br>- Prediction and prevention of diseases<br>- Improved accuracy of data analytical models |
 | Requirements | - There are no pre-requirements, however, one should have interest in the project and the willingness to learn the techniques.<br>- Students are also encouraged to search for different healthcare related datasets on UCI ML repository or other similar datasets. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Healthcare; data analytics |
 | Interview Required | No |
 
@@ -872,7 +872,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] A. Jindal, G. S. Aujla, N. Kumar, R. Chaudhary, M. S. Obaidat, and I. You, "SeDaTiVe: SDN-enabled Deep Learning Architecture for Network Traffic Control in Vehicular Cyber-Physical Systems," IEEE Network, vol. 32, no. 6, pp. 66-73, 2018. |
 | Anticipated Outcomes | Anticipate outcomes inculde:<br>- Models for managing networking resources<br>- Use of advanced networking paradigms in sensor/IoT networks<br>- Improved quality of service of the network |
 | Requirements | Pre-requisites:<br>- Prior knowledge of concepts involved in networking and communication.<br>- Interest in the project and the willingness to learn the techniques and tools.<br><br>Desirable:<br>- Experience with programming languages or tools such as Python, R, MATLAB, Java.<br>- Working knowledge of tools like Mininet/Omnet/NS2/NS3/SUMO/etc. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | IoT; wireless networks; resource management; network control |
 | Interview Required | No |
 
@@ -883,7 +883,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] G. S Aujla and A. Jindal, "A Decoupled Blockchain Approach for Edge-envisioned IoT-based Healthcare Monitoring," IEEE Journal on Selected Areas in Communications, vol. 39, no. 2, pp. 491-499,  2021.<br>[2] A. Jindal, A. K. Marnerides, A. Scott, and D. Hutchison, "Identifying Security Challenges in Renewable Energy Systems: A Wind Turbine Case Study," in 10th ACM International Conference on Future Energy Systems (ACM e-Energy), Phoenix, AZ, USA, June 2019, pp. 370-372.<br>[3] A. Dua, R. Chaudhary, G. S. Aujla, A. Jindal, N. Kumar, and J. J.P.C. Rodrigues, "LEASE: Lattice and ECC-based Authentication and Integrity Verification Scheme in E-Healthcare," in IEEE Global Communications Conference (GLOBECOM), Abu Dhabi, UAE, Dec. 2018, pp. 1-6. |
 | Anticipated Outcomes | Anticipated outcomes include:<br>- Complement existing cyber-security techniques <br>- Improved security<br>- Privacy preservation<br>- New cybersecurity models |
 | Requirements | Pre-requisites:<br>- Experience with programming languages or tools such as Python, R, MATLAB, Java. <br>- Fundamental knowledge of data communication and computer security.<br>- Willingness to learn the tools as mentioned in the desirable.<br><br>Desirable:<br>- Working knowledge of security protocol validation tools such as AVISPA/Scyther/etc.<br>- Working knowledge of hyperledger(s) (for blockchain-related projects). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | cybersecurity; IoT; machine learning |
 | Interview Required | No |
 
@@ -894,7 +894,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://doi.org/10.1186/s40537-019-0197-0 |
 | Anticipated Outcomes | A comprehensive report on the performance and characteristics of various data augmentation techniques based on an experimental evaluation using various state-of-the-art CNN architectures on various image datasets. |
 | Requirements | Interest in computer vision and image processing, basic knowledge of machine learning, knowledge of the Python programming language |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Computer vision, image processing, machine learning, CNNs |
 | Interview Required | No |
 
@@ -905,7 +905,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://doi.org/10.1080/17483107.2019.1615999<br>https://doi.org/10.1109/GHTC.2017.8239225<br>https://doi.org/10.1109/ICCAR.2019.8813508<br>https://en.wikipedia.org/wiki/White_cane<br>https://wewalk.io/en/<br> |
 | Anticipated Outcomes | <br>A working prototype smart white cane, equipped with various sensors and input/output devices for monitoring the location of the user, detecting surrounding objects, providing alerts for potential obstacles or other dangers, and helping the user navigate in everyday surroundings.<br>The required software for accessing the sensors' data, processing them, and providing feedback to the user based on them.<br> |
 | Requirements | Basic knowledge of hardware, electronics, machine learning. Knowledge of Python or equivalent programming language. Interest in prototyping platforms like Arduino and Raspberry Pi. |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | IoT, handicapped aids, sensors, machine learning |
 | Interview Required | No |
 
@@ -916,7 +916,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://doi.org/10.1109/ACCESS.2020.3010287<br>https://doi.org/10.1016/j.media.2020.101794<br>https://dx.doi.org/10.1016%2Fj.compbiomed.2020.103792<br>https://www.kaggle.com/datasets/nih-chest-xrays/data<br> |
 | Anticipated Outcomes | <br>Trained machine learning models for automated diagnosis using chest x-rays.<br>A comparative evaluation of the designed models against the state of the art.<br>A piece of software for automated diagnosis using chest x-rays.<br> |
 | Requirements | Interest in computer vision and image processing, basic knowledge of machine learning, knowledge of the Python programming language |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Computer vision, image processing, machine learning, deep learning |
 | Interview Required | No |
 
@@ -927,7 +927,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://doi.org/10.1109/JIOT.2021.3061727<br>https://doi.org/10.5281/zenodo.4309472<br>https://doi.org/10.1109/LSP.2016.2516043<br>https://doi.org/10.1109/LSP.2019.2906826<br> |
 | Anticipated Outcomes | <br>Trained machine learning models for EEG-based subject identification or authentication.<br>A comparative evaluation of the designed models against the state of the art.<br>A piece of software to demonstrate a prototype EEG-based biometrics system.<br> |
 | Requirements | Interest in signal processing and bioinformatics, basic knowledge of machine learning, knowledge of the Python programming language |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | signal processing, bioinformatics, electroencephalography, EEG, machine learning, deep learning |
 | Interview Required | No |
 
@@ -938,7 +938,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>https://doi.org/10.1109/TETC.2021.3104555<br>https://engineering.purdue.edu/~bouman/UAV_Dataset/<br>https://doi.org/10.1109/IROS.2016.7759733<br>https://doi.org/10.2352/ISSN.2470-1173.2018.10.IMAWM-466<br> |
 | Anticipated Outcomes | <br>Algorithms for detection and tracking of target UAVs from cameras mounted on flying UAV.<br>A comparative evaluation of the designed algorithms against the state of the art.<br>A piece of software to demonstrate the developed detection and tracking algorithms.<br> |
 | Requirements | Interest in image and video processing, basic knowledge of machine learning, knowledge of the Python programming language |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | image processing, video processing, Unmanned Aerial Vehicles, UAV, machine learning, deep learning |
 | Interview Required | No |
 
@@ -949,7 +949,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://ieeexplore.ieee.org/abstract/document/6375029<br>https://ieeexplore.ieee.org/abstract/document/1565423 |
 | Anticipated Outcomes | A piece of software that can pre-correct images/slides for arbitrary projection surface geometries and environmental lighting conditions using a projector-camera pair. |
 | Requirements | Interest in Computer Vision and Computer Graphics. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Camera/Projector calibration, Homographies |
 | Interview Required | No |
 
@@ -960,7 +960,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://dl.acm.org/doi/10.1145/3275476.3275488<br>https://ieeexplore.ieee.org/abstract/document/7463168 |
 | Anticipated Outcomes | A piece of hardware and an accompanying demo application in Unity 3D. |
 | Requirements | An interest in Computer Graphics and Human Computer Interaction. |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Human-centred computing, Haptic devices |
 | Interview Required | No |
 
@@ -971,7 +971,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://forums.cs.tau.ac.il/~hezy/Vision%20Seminar/pyramid83.pdf<br>https://dl.acm.org/doi/10.1145/1186954.1187029<br>https://ieeexplore.ieee.org/abstract/document/710815 |
 | Anticipated Outcomes | In this project a theoretical foundation for an inverse tone mapping operator will be devised that enhances dark scene regions in legacy LDR video sequences. The operator will generate a plausible HDR radiance map from a single-exposure video frame and then boost the luminance levels optimally in dark regions in order to improve perceived contrast and the appearance of details. |
 | Requirements | An interest in Computer Graphics, Image Processing and Computer Vision. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Computer Graphics, Image Processing, Tone Mapping |
 | Interview Required | No |
 
@@ -982,7 +982,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://advances.utc.sk/index.php/AEEE/article/view/1125 |
 | Anticipated Outcomes | An FPGA-based Graphic Processor for low power applications will be developed on Vidor 4000. |
 | Requirements | An interest in Computer Graphics and hardware. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | 3D Graphics Pipeline, FPGA |
 | Interview Required | No |
 
@@ -993,7 +993,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.sciencedirect.com/science/article/pii/S0165027006005772 |
 | Anticipated Outcomes | A piece of software that can be used to run a variety of experiments related to Vision Science. |
 | Requirements | An interest in Human Computer Interaction. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Psychophysics, Human Computer Interaction |
 | Interview Required | No |
 
@@ -1004,7 +1004,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.human-competitive.org/sites/default/files/sipper-gp-gammon-final.pdf<br>https://skatgame.net/mburo/ps/STAR-B.pdf |
 | Anticipated Outcomes | Implementation of a computer backgammon player with adjustable luck |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | AI, games, backgammon |
 | Interview Required | No |
 
@@ -1015,7 +1015,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://www.karlin.mff.cuni.cz/~stanovsk/math/gpoly.htm |
 | Anticipated Outcomes | Implementation of a flexible and usable software tool to search for special graph polymorphisms. |
 | Requirements | Interest in AI, strong maths background |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Graph theory, algorithms, AI search, automated reasoning |
 | Interview Required | No |
 
@@ -1026,7 +1026,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://library.dur.ac.uk/record=b2846691~S1<br>https://www.sciencedirect.com/science/article/pii/S0165168409003648?via%3Dihub |
 | Anticipated Outcomes | Implementation and evaluation of existing steganographic algorithms. Possibility for further development and improvement of them. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Steganography, Watermarking, Steganalysis |
 | Interview Required | No |
 
@@ -1037,7 +1037,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://www.unil.ch/de/files/live/sites/de/files/working-papers/14.07.pdf<br>http://eprints.gla.ac.uk/121248/7/121248.pdf |
 | Anticipated Outcomes | Implementation and comparison of the performance of algorithmic approaches to variations of the Hospitals/Residents matching problems. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Matching problems, algorithms, heuristics |
 | Interview Required | No |
 
@@ -1048,7 +1048,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.cs.utexas.edu/~marijn/publications/eternity.pdf |
 | Anticipated Outcomes | Solutions of various edge-matching problems via encodings into SAT. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | SAT solving, algorithms, heuristics |
 | Interview Required | No |
 
@@ -1059,7 +1059,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://library.dur.ac.uk/record=b2906346~S1 |
 | Anticipated Outcomes | Implementation of a selection of integer factorisation or discrete logarithm algorithms, evaluation of the state-of-art. |
 | Requirements | Interest in cryptography, strong maths background |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Integer factorisation, algorithms, cryptography |
 | Interview Required | No |
 
@@ -1070,7 +1070,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Gkioxari, G., Girshick, R., and Malik, J. (2018). Detecting and recognizing human-object interactions. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 8359-8367).<br>https://openaccess.thecvf.com/content_cvpr_2018/papers/Gkioxari_Detecting_and_Recognizing_CVPR_2018_paper.pdf<br>Li, Y., Li, Z., Song, Y., He, Y., & Ye, Q. (2020). Detailed 2D-3D Joint Representation for Human-Object Interaction. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 8416-8425).<br>https://openaccess.thecvf.com/content_CVPR_2020/papers/Li_Detailed_2D-3D_Joint_Representation_for_Human-Object_Interaction_CVPR_2020_paper.pdf |
 | Anticipated Outcomes | The expected outcome of this project is a deep learning architecture that can accurately recognise human-object interaction, particularly in complex scenarios. The architecture's performance will be compared against the state-of-the-art methods, and its strengths and limitations will be analysed. The proposed architecture could be applied in various real-world applications, such as security surveillance and game interaction, and it could contribute to the development of more advanced artificial intelligence systems. |
 | Requirements | Programming in pyTorch, image processing, and computer vision |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Human activity analysis, deep learning, computer vision |
 | Interview Required | Yes |
 
@@ -1081,7 +1081,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://paperswithcode.com/task/hand-gesture-recognition |
 | Anticipated Outcomes | The proposed system is expected to achieve high accuracy in real-time hand gesture recognition in cluttered environments. The system can be used in various applications such as gaming and sign language recognition. The project will contribute to the development of robust and efficient hand gesture recognition systems using deep learning. |
 | Requirements | Programming in Pytorch, deep learning, computer vision. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Real-time hand gesture recognition, Deep learning, Computer vision. |
 | Interview Required | Yes |
 
@@ -1092,7 +1092,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | [1] https://openai.com/blog/jukebox/<br>[2] https://openreview.net/pdf?id=rJe4ShAcF7<br>[3] https://arxiv.org/pdf/2202.07765.pdf<br>[4] https://robert-lieck.com/literature/pdfs/WIY8FM2Q/Lieck_et_al._-_2020_-_The_Tonal_Diffusion_Model_paper_with_appendix.pdf<br>[5] https://robert-lieck.com/literature/pdfs/8K8MJHK9/Lieck_and_Rohrmeier_-_2020_-_Modelling_Hierarchical_Key_Structure_With_Pitch_Sc.pdf |
 | Anticipated Outcomes | A project in this theme may use methods from deep learning, reinforcement learning, data science, visualisation etc. to address a specific task. The focus may be more on achieving a certain result (an informative visualisation of the harmonic structure of a piece or a groove or beat that would make you want to dance to) or more on improving the methodology (e.g. how can Transformers be combined with models for musical structure to generate more interesting pieces). If you are interested in doing a project from this theme, please get in touch beforehand to discuss your ideas. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | music; deep learning; reinforcement learning; artificial intelligence; machine learning; visualisation; data science |
 | Interview Required | Yes |
 
@@ -1103,7 +1103,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Not required to do the project but maybe interesting:<br><br>UMAP: https://arxiv.org/pdf/1802.03426.pdf<br>t-SNE: https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf<br>variational autoencoder: https://arxiv.org/pdf/1312.6114.pdf<br>topology and emergence of symbols in communication: https://www.sciencedirect.com/science/article/pii/S0010027721002067<br> |
 | Anticipated Outcomes |  <br><br>[basic]: an algorithm that will learn to embed an input dataset into a low-dimensional space to produce nice visualisations<br>[advanced]: thorough comparison with other embedding algorithms<br>[genius]: a Python library that allows users to use that algorithm<br> |
 | Requirements | deep learning (you have to be proficient in PyTorch to do this project) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | data visualisation; data embedding; autoencoder; deep learning; machine learning; artificial intelligence; communication |
 | Interview Required | No |
 
@@ -1114,7 +1114,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | An interactive music visualisation that is artistically appealing, informative, or practically useful. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | music; virtual reality; visualisation; artificial intelligence; machine learning |
 | Interview Required | No |
 
@@ -1125,7 +1125,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://proceedings.mlr.press/v28/duvenaud13.pdf |
 | Anticipated Outcomes | <br>[basic]: a proof-of-concept implementation demonstrating that the structure of GP kernels can be learned via gradient descent<br>[advanced]: integrating existing libraries for GPs with standard kernel types and making the approach work with those libraries<br>[genius A]: releasing a package/pull-request to integrate the approach in existing libraries to make it available to all users<br>[genius B]: demonstrating the power of the approach on one or more machine learning benchmarks<br> |
 | Requirements | deep learning |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | deep learning; Gaussian processes; non-parametric Bayesian; structure learning; kernel methods; meta-learning; machine learning; artificial intelligence |
 | Interview Required | No |
 
@@ -1136,7 +1136,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | A Python library that can sonify data and is well tested and validated |
 | Requirements | machine learning / artificial intelligence; ideally: deep learning (PyTorch) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | music; deep learning; machine learning; artificial intelligence; visualisation; data science |
 | Interview Required | Yes |
 
@@ -1147,7 +1147,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | <br>[basic]: empirically demonstrate that VAEs and RL-VAEs produce the same results on simple example datasets<br>[intermediate]: compare the embeddings from RL-VAEs to those generated by other embedding algorithms (e.g. t-SNE, UMAP etc.)<br>[advanced]: perform a systematic analysis (theoretical and/or experimental) of RL-VAEs and their properties<br> |
 | Requirements | deep learning (you have to be proficient in PyTorch to do this project); ideally: reinforcement learning |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | deep learning; machine learning; artificial intelligence; visualisation; data science |
 | Interview Required | No |
 
@@ -1158,7 +1158,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | implementation and evaluation of a hierarchical memory management system that improves performance in reinforcement learning or other time-series modelling problems |
 | Requirements | indispensable: deep learning; ideally: reinforcement learning |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | deep learning; reinforcement learning; machine learning; time series |
 | Interview Required | No |
 
@@ -1169,7 +1169,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | <br>http://arxiv.org/abs/1802.03426<br>https://umap-learn.readthedocs.io/en/latest/<br>https://github.com/lmcinnes/umap/issues/580<br> |
 | Anticipated Outcomes | <br>[basic]: A port/extension of the existing UMAP implementation to the PyTorch backend.<br>[intermediate]: Proper documentation and pull request to the official UMAP library to make the PyTorch implementation available to all users.<br>[advanced]: Additional experiments demonstrating the advanced capabilities of the new implementation.<br> |
 | Requirements | deep learning (you need to be proficient in PyTorch to do this project) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | artificial intelligence; machine learning; deep learning; data embedding; data visualisation |
 | Interview Required | No |
 
@@ -1180,7 +1180,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | Artificial intelligence: a modern approach<br>Russell, Stuart ; Norvig, Peter<br>https://discover.durham.ac.uk/permalink/44DUR_INST/1oe7agi/cdi_askewsholts_vlebooks_9781292410074<br><br>Zichermann, Gabe, and Christopher Cunningham. Gamification by design: Implementing game mechanics in web and mobile apps. " O'Reilly Media, Inc.", 2011.<br>https://books.google.com/books?hl=en&lr=&id=zZcpuMRpAB8C&oi=fnd&pg=PR7&dq=gamification+web+design&ots=UvRa62w95f&sig=buVysik7pqI-BdER8ZDXPGqTki8 |
 | Anticipated Outcomes | Extensive AI knowledge and skills; Gamification skills; Web/App Design; |
 | Requirements | No technical requirements. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | AI, pedia, game, web/app design |
 | Interview Required | No |
 
@@ -1191,7 +1191,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | www.scholarpedia.org/article/Excitable_media <br>www.scholarpedia.org/article/Models_of_cardiac_cell <br>chaos.gatech.edu/NGL2.0/2D-Beeler-Reuter/  |
 | Anticipated Outcomes | Students will develop proficiency with the modelling of cardiac excitation, and the numerical solution of such models. They will develop a competence with some of the fundamental aspects of the field and develop insights into the methods and constraints when answering key questions. |
 | Requirements | Experience solving ODEs and PDEs is desirable, and depending on specific topic may be necessary. Some mathematical sophistication may be necessary, depending on project topic; e.g., derivatives, matrices, and differential operators of varying complexity may arise. Neither of these are hard requirements. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Cardiac dynamics, modelling, numerical computing |
 | Interview Required | No |
 
@@ -1202,7 +1202,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | www.scholarpedia.org/article/Excitable_media <br>www.scholarpedia.org/article/Models_of_cardiac_cell <br>chaos.gatech.edu/NGL2.0/2D-Beeler-Reuter/  |
 | Anticipated Outcomes | Students will learn a great deal about this fundamental class of physical systems and the computational modeling thereof. Depending on the topic, we will also learn a great deal about some machine learning model structures, Bayesian Learning patterns, or more general uncertainty quantification methods alongside excitable systems modelling. Students will develop an appreciation for the broad applicability of excitable media in nature, and incorporate that appreciation into an understanding of computation that extends beyond silicon. |
 | Requirements | Any experience with solving ODEs and PDEs is desirable, but not necessary. You will learn the basics of doing so in this project. Any experience with numerical programming and High-Performance Computing is desirable, but not necessary. For any machine-learning oriented projects, you must have some competence with Python specifically. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Excitable systems, statistical modelling, machine learning |
 | Interview Required | No |
 
@@ -1213,7 +1213,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | docs.dart.ucar.edu/en/latest/guide/introduction-ensemble-da.html <br>docs.dart.ucar.edu/en/latest/README.html <br>dart.ucar.edu/tutorials/dart-lab/  |
 | Anticipated Outcomes | Students will learn a great deal about the fundamentals of data assimilation schemes, especially ensemble-based methods, and the impact of uncertainties in physical systems on our confidence about the future state of those systems. Students will gain an appreciation for the computational expertise required in modern forecasting systems, and be well-placed to proceed with further applications of data assimilation to real-world systems.<br>Students will develop an understanding of scientific machine learning. |
 | Requirements | Most existing DA systems are written in Fortran, so some Fortran knowledge is desirable to work with them. However, if you are comfortable with Matlab or Python some alternative packages exist to manage the assimilation procedure for simpler experiments. You should have some experience with numerical computing in your preferred language. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Data assimilation, ensemble modelling, machine learning |
 | Interview Required | No |
 
@@ -1224,7 +1224,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://mfem.org/features/<br>https://www.dealii.org/current/doxygen/deal.II/step_6.html<br>https://trixi-framework.github.io/Trixi.jl/stable/tutorials/adaptive_mesh_refinement/ |
 | Anticipated Outcomes | Students will gain familiarity with one or more adaptive mesh refinement systems and excitable or oscillatory media models, and their application to real-world problems. Students will gain experience and expertise with numerical programming for scientific applications, and produce excellent documentation and development skills. |
 | Requirements | Some experience with numerical computing is required. Some experience with C/C++ is highly desirable, but a determined student may find success without it. Some experience with differential equations and calculus is desirable, but not necessary. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | excitable media, adaptivity, numerical methods |
 | Interview Required | No |
 
@@ -1235,7 +1235,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | Development of a concise machine learning application tuned to categorize the types and numbers of observed birds from historical data, including their flock structure. |
 | Requirements | Some experience with data analysis and machine learning required. <br>Further, this project topic may require a non-disclosure agreement. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | machine learning, flocking, birds |
 | Interview Required | Yes |
 
@@ -1246,7 +1246,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | A working system to solve instances of the Student-Project Allocation problem with preferences<br>over Projects. |
 | Requirements | Integer Programming, Algorithms, Complexity |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1257,7 +1257,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://arxiv.org/abs/1503.08572,https://arxiv.org/abs/1503.08572,https://people.eecs.berkeley.edu/~sseshia/pubdir/SMT-BookChapter.pdf |
 | Anticipated Outcomes | A constraint solver for infinite-domain Constraint Satisfaction Problems. |
 | Requirements | Basic mathematics, basic programming. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | CSP solving, Constraint programming, Satisfiability Modulo Theories |
 | Interview Required | No |
 
@@ -1268,7 +1268,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://pn.host.cs.st-andrews.ac.uk/qcsp_aij_final_version.pdf,https://arxiv.org/abs/cs/0607106 |
 | Anticipated Outcomes | The building of a QCSP solver |
 | Requirements | Basic mathematics, basic logic, basic programming. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | QCSP solving, Quantified constraints, Constraint programming |
 | Interview Required | No |
 
@@ -1279,7 +1279,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www7.in.tum.de/um/bibdb/kugele/kugele_diploma06.pdf,https://arxiv.org/abs/1510.02374,https://www.sciencedirect.com/science/article/pii/S0307904X14006556 |
 | Anticipated Outcomes | A good encoding to propositional satifiability that yields improved bounds for combinatorial constants. |
 | Requirements | Basic mathematics, basic programming |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | SAT-solving, Ramsey Theory, Combinatorics |
 | Interview Required | No |
 
@@ -1290,7 +1290,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs |  |
 | Anticipated Outcomes | The formal verification of some property on a specified system or protocol |
 | Requirements | Basic mathematics, basic programming |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Verification, Temporal logics, Modal logics |
 | Interview Required | No |
 
@@ -1301,7 +1301,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://networkx.github.io/ |
 | Anticipated Outcomes | The meaningful analysis of a social network |
 | Requirements | Basic mathematics, basic programming |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Network Analysis, Graph Theory |
 | Interview Required | No |
 
@@ -1312,7 +1312,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.tandfonline.com/doi/abs/10.4169/amer.math.monthly.119.09.771 |
 | Anticipated Outcomes | To implement and experimentally evaluate a recently developed game-theoretic method for computing a proper coloring of a given graph. |
 | Requirements | none |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | proper coloring problem, graph, chromatic number, strategic game, equilibrium. |
 | Interview Required | No |
 
@@ -1323,7 +1323,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.sciencedirect.com/science/article/pii/S0304397514005398 |
 | Anticipated Outcomes | The implementation and simulation of influence spreading models and the comparison of the experimental findings with the theoretical ones. |
 | Requirements | none |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | influence spreading, network, progressive model, non-progressive model, target set. |
 | Interview Required | No |
 
@@ -1334,7 +1334,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | - https://arxiv.org/abs/1502.04382<br><br>- https://link.springer.com/article/10.1007/s00453-018-0478-6 |
 | Anticipated Outcomes | To implement various algorithms on temporal networks and to compare their experimental performance with the theoretically predicted performance. |
 | Requirements | A basic understanding of graph algorithms |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | algorithm, graph theory, temporal network, dynamic network, edge label, temporal path. |
 | Interview Required | No |
 
@@ -1345,7 +1345,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | http://blockchain.mit.edu/<br>https://www.ethereum.org/<br>https://solidity.readthedocs.io/en/develop/introduction-to-smart-contracts.html |
 | Anticipated Outcomes | To implement an ERC20 or a NEP5 token with smart contracts of a specific functionality and to explore the capabilities of such a token. |
 | Requirements | The student should be comfortable with learning a new programming language (e.g. Solidity) and have sufficient self-motivation to learn about the underlying technology of blockchain and its applications. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | blockchain, Ethereum, ERC20 token, algorithm, programming language. |
 | Interview Required | No |
 
@@ -1356,7 +1356,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | https://www.sciencedirect.com/science/article/pii/S0304397512010754?via%3Dihub |
 | Anticipated Outcomes | The implementation of a platform for mutating networks, where different interaction rules/patterns can be experimentally tested. |
 | Requirements | none |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | evolutionary dynamics, directed/undirected graphs, fixation probability, potential function, Markov chain, fitness, population structure. |
 | Interview Required | No |
 
@@ -1367,7 +1367,7 @@ Enabling-Fine-Grained-Task-Parallelism-on-Massively-Parallel-Hardware-with-SYCL)
 | Reference URLs | \\\\\\\"https://proxyapps.exascaleproject.org/app/\\\\\\\"<br>\\\\\\\"https://www.khronos.org/sycl/\\\\\\\"<br>\\\\\\\"https://celerity.github.io/\\\\\\\" |
 | Anticipated Outcomes | Basic: <br><br> SYCL-based implementation of HPCCG <br> Performance Analysis<br><br><br>Advanced: <br><br> Comparative performance analysis against another parallel CPU/GPU implementation of HPCCG<br> Comparative evaluation of maintainability metrics<br> Distributed memory implementation with Celerity<br> |
 | Requirements | C++, or a keen interest to learn it |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | C++, Parallel Programming, HPCCG, Performance Analysis, Benchmarking, Maintainability, Software Engineering, SYCL |
 | Interview Required | No |
 
@@ -1379,7 +1379,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://code.fmsolvr.fz-juelich.de/ATML-SE/eventify-GPU<br><br>https://dl.acm.org/doi/abs/10.1145/3394277.3401858<br><br>https://www.khronos.org/sycl |
 | Anticipated Outcomes | Basic: <br><br> Porting of queue data structure to SYCL <br> Porting of task producer-consumer mechanism to SYCL<br> Performance analysis with parallel efficiency as performance metric<\><br><br><br>Advanced: <br><br> Implementation of graph data structure for dependency resolution<br> Implementation of a tree-based accumulation as use case on top of the framework<br> |
 | Requirements | C++, or a keen interest to learn it. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | C++, Parallel Programming, High Performance Computing, Software Engineering, GPU Computing, SYCL, CUDA |
 | Interview Required | No |
 
@@ -1390,7 +1390,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://arxiv.org/abs/1707.06391 <br>You can use that URL to access a paper that solves this problem in the given setting minus fault tolerance. You can get a feel for the model and what algorithms might look like. |
 | Anticipated Outcomes | Algorithm(s) that solve the given problem along with proofs about correctness and runtime of the algorithms. Depending on the interest and effort of the student, we may expand the scope of the project in a way that may lead to a publication. |
 | Requirements | <br> Strong foundations in algorithms, including the ability to prove correctness and bounds on algorithms. <br> Decent level of comfort working with graphs. <br> Preferable if you have worked on distributed algorithms before but not necessary. <br> |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Dispersion, distributed computing, theory, algorithms, fault tolerance |
 | Interview Required | No |
 
@@ -1401,7 +1401,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br> https://arxiv.org/abs/1707.06391 <br>You can use that URL to access a paper that solves this problem in a fully synchronous setting. You can get a feel for the model and what algorithms might look like. <br> https://arxiv.org/abs/1512.05306 <br>Have a look at page 3 and 4 to see what the semi-synchronous setting is all about. <br> |
 | Anticipated Outcomes | Algorithm(s) that solve the given problem along with proofs about correctness and runtime of the algorithms. Depending on the interest and effort of the student, we may expand the scope of the project in a way that may lead to a publication. |
 | Requirements | <br>Strong foundations in algorithms, including the ability to prove correctness and bounds on algorithms.<br>Decent level of comfort working with graphs. <br>Preferable if you have worked on distributed algorithms before but not necessary.<br> |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Dispersion, distributed computing, theory, algorithms, semi-synchronous time |
 | Interview Required | No |
 
@@ -1412,7 +1412,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://arxiv.org/abs/1707.06391 <br>You can use that URL to access a paper that solves this problem in the given setting where robots have full vision instead of only partial vision. You can get a feel for the model and what algorithms might look like. |
 | Anticipated Outcomes | Algorithm(s) that solve the given problem along with proofs about correctness and runtime of the algorithms. Depending on the interest and effort of the student, we may expand the scope of the project in a way that may lead to a publication. |
 | Requirements | <br>Strong foundations in algorithms, including the ability to prove correctness and bounds on algorithms.<br>Decent level of comfort working with graphs. <br>Preferable if you have worked on distributed algorithms before but not necessary.<br> |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Dispersion, distributed computing, theory, algorithms, partial vision |
 | Interview Required | No |
 
@@ -1423,7 +1423,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br> https://scholar.archive.org/work/2r5i3telhjbu5pklfgank42vfi/access/wayback/http://www-old.cs.uni-paderborn.de/fileadmin/Informatik/FG-TI/Publikationen/spaa0067-derakhshandeh.pdf <br>That link is to the initial paper that proposed the amoebot model. It is an easy-to-read paper that talks about the model in question as well as the powers of the individual particles. <br> https://arxiv.org/abs/2106.01108 <br>This paper gives a leader election algorithm. This gives you an idea of the complexity involved in performing a computation (electing a leader) when movement is allowed. <br> https://drops.dagstuhl.de/opus/volltexte/2022/16794/pdf/LIPIcs-DNA-28-9.pdf <br>One type of fault tolerance is mentioned here.<br> https://arxiv.org/abs/1707.05041 <br>Another type of fault tolerance is looked at here.<br> |
 | Anticipated Outcomes | Algorithm(s) that solve the given problem along with proofs about correctness and runtime of the algorithms. Depending on the interest and effort of the student, we may expand the scope of the project in a way that may lead to a publication. |
 | Requirements | <br>Strong foundations in algorithms, including the ability to prove correctness and bounds on algorithms. <br>Decent level of comfort working with graphs. <br>Preferable if you have worked on distributed algorithms before but not necessary.<br>Would be useful if you have previously worked on geometric problems.<br> |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Programmable matter, amoebot model, theory, distributed computing, fault tolerance |
 | Interview Required | No |
 
@@ -1434,7 +1434,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.researchgate.net/publication/211178395_Building_an_Efficient_Hash_Table_on_the_GPU |
 | Anticipated Outcomes | Implement a number of various hashing algorithms in CUDA and/or OpenCL and compare performance with various constraints. Compare the results to those in the thesis of Alcantara, particularly considering updates in GPU architectures since 2011. |
 | Requirements | C/C++/CUDA/OpenCL Programming. We have NVidia GPUs available on NCC, though having access to your own GPU would likely be an advantage. |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | CUDA, OpenCL, Hash Tables, Optimisation |
 | Interview Required | No |
 
@@ -1445,7 +1445,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.ams.org/journals/mcom/1975-29-129/S0025-5718-1975-0384669-X/S0025-5718-1975-0384669-X.pdf |
 | Anticipated Outcomes | Build a theoretical model of Aliquot driver and guide mutations, and compare this with experimental findings. Using the theoretical model we can implement algorithms to attempt to determine expected sequence lengths, the maximum size of numbers to be factorised, and which open sequences might be easiest/hardest to terminate. |
 | Requirements | Strong interest in mathematics and graph theory, and likely a passing interest in Integer Factorisation. |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Aliquot Sequence, Catalan's Conjecture, Markov Chains, Directed Graphs, Probability |
 | Interview Required | No |
 
@@ -1456,7 +1456,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.ifaamas.org/Proceedings/aamas2019/pdfs/p16.pdf |
 | Anticipated Outcomes | An implementation of an AI agent for playing a team based card game such as Cribbage or Bridge |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | AI, Machine Learning, Card Games, Bridge, Cribbage |
 | Interview Required | No |
 
@@ -1467,7 +1467,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | http://incompleteideas.net/book/bookdraft2018feb28.pdf <br>https://www.csd.uwo.ca/~xling/cs346a/extra/tdgammon.pdf |
 | Anticipated Outcomes | An implementation of one or more AI agent players for backgammon to evaluate new strategy concepts. |
 | Requirements | None |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | AI, Reinforcement Learning, Backgammon |
 | Interview Required | No |
 
@@ -1478,7 +1478,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | Bonnet, Inverse problems in elasticity (iopscience.iop.org/article/10.1088/0266-5611/21/2/R01)<br>exahype.eu/<br>muq.mit.edu/ |
 | Anticipated Outcomes | Extensions to a MUQ/ExaHyPE Interface, distribution of fault data |
 | Requirements | Interest in numerical methods and statistics, some knowledge of C/C++ |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Inverse problems, HPC |
 | Interview Required | No |
 
@@ -1490,7 +1490,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://github.com/UQ-Containers/testing |
 | Anticipated Outcomes | Additional benchmark tests added to the UQ Testing Suite |
 | Requirements | none, experience with Kubernetes a plus |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | UQ, Docker, Singularity, GCP |
 | Interview Required | No |
 
@@ -1502,7 +1502,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://hal.archives-ouvertes.fr/hal-00612711/document |
 | Anticipated Outcomes | High-order stress results |
 | Requirements | Knowledge of C++ and templates a plus |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | FEM, stress recovery |
 | Interview Required | No |
 
@@ -1513,7 +1513,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.kitware.com/high-order-using-gmsh-reader-plugin-in-paraview/ |
 | Anticipated Outcomes | An output writer capable of using high-order Lagrange polynomials for an existing numerical solver |
 | Requirements | Some knowledge of C++ is a plus |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Visualisation, Numerical Simulation, High-order |
 | Interview Required | No |
 
@@ -1524,7 +1524,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.nih2020.eu |
 | Anticipated Outcomes | - comprehensive review of existing literature on the subject<br>- definition of comparison criteria for the literature methods and creation of comparison tables<br>- selection of the most relevant algorithms<br>- comparison of the selected algorithms<br>- development of novel algorithm for classification<br>- expected conference publication |
 | Requirements | - good knowledge of maths and stats<br>- good knowledge of image and video processing<br>- knowledge of some pattern recognition algorithms<br>- some knowledge of deep learning algorithms |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | image classification, pattern recognition, deep learning, health of natural habitat, botany |
 | Interview Required | No |
 
@@ -1535,7 +1535,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | as an example https://www.nih2020.eu |
 | Anticipated Outcomes | A thorough study on the latest deep architectures, with extensive testing on the publicly available large datasets. If the study leads to novel methods, we can submit a conference article. |
 | Requirements | Good grasp of machine learning concepts, some knowledge of deep learning and some expertise in image and video analysis. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | image and video analysis, deep learning. |
 | Interview Required | Yes |
 
@@ -1546,7 +1546,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | A thorough study on the latest machine learning methods to memorise large quantities of data. If the study leads to novel methods, we can submit a conference article. |
 | Requirements | Some expertise in image and video analysis and machine learning. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | memory, image and video analysis, pattern recognition |
 | Interview Required | Yes |
 
@@ -1557,7 +1557,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | Selection of a large image dataset and the comparison of existing methods in deep learning used to reconstruct partial images, photos or paintings. The student will have to learn on the latest methods such as the standard and siamese masked auto encoder and others, implement them or make use of existing software. There is scope for a conference publication if novelty can come out of this project. |
 | Requirements | knowledge of image processing and some of deep learning |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | Yes |
 
@@ -1568,7 +1568,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://stanford.io/3o8yj90<br><br>[2] https://stanford.io/3eD8HOm<br><br>[3] https://arxiv.org/abs/1803.10892<br><br>[4] https://arxiv.org/pdf/2002.11927.pdf |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for trajectory analysis. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Deep learning, time series, computer vision, human behaviour analysis, crowd modelling |
 | Interview Required | No |
 
@@ -1579,7 +1579,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://bit.ly/3eId0Ia<br><br>[2] https://bit.ly/3hktJTw<br><br>[3] https://bit.ly/3o9y5yi<br><br>[4] http://mocap.cs.cmu.edu/ |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for synthesizing 3D human motion. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer graphics and deep learning, experience in programming such as Python with Pytorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Computer graphics, computer animation, deep learning, human motion, synthesis |
 | Interview Required | No |
 
@@ -1590,7 +1590,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://arxiv.org/pdf/2103.13933.pdf<br><br>[2] https://arxiv.org/pdf/2104.06219.pdf<br><br>[3] https://wosdetc2020.wordpress.com/<br><br>[4] http://hubertshum.com/fnd_strig2020drones.htm |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for drones tracking. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Deep learning, CNN, computer vision, tracking, detection, re-identification |
 | Interview Required | No |
 
@@ -1601,7 +1601,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://arxiv.org/abs/1611.08050<br> <br>[2] https://bit.ly/3tEYV2A<br><br>[3] https://bit.ly/3hi6sSp<br><br>[4] https://bit.ly/3eDxHoy |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for identifying the nature of human activity. There are opportunities for scientific publications with positive results |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Computer vision, deep learning, activity recognition |
 | Interview Required | No |
 
@@ -1612,7 +1612,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://arxiv.org/pdf/2104.06820.pdf<br><br>[2] https://arxiv.org/pdf/1611.08050.pdf<br><br>[3] https://arxiv.org/pdf/1604.02878.pdf<br><br>[4] https://bit.ly/3tGc7UR |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for human recognition and analysis on artworks. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Deep learning, CNN, computer vision, non-photorealistic, GAN |
 | Interview Required | No |
 
@@ -1623,7 +1623,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>[1] https://bit.ly/3bjGWbG<br><br>[2] https://bit.ly/3uJoyAC<br><br>[3] https://bit.ly/3uK83UG<br><br>[4] https://epic-kitchens.github.io/2021 |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for hand-object interaction in egocentric video. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Deep learning, computer vision, hand gesture, object detection, interaction |
 | Interview Required | No |
 
@@ -1634,7 +1634,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | [1] Redmon, J., Divvala, S., Girshick, R. and Farhadi, A., 2016. You only look once: Unified, real-time object detection. In Proceedings of the IEEE conference on computer vision and pattern recognition (pp. 779-788).<br>[2] Ren, S., He, K., Girshick, R. and Sun, J., 2015. Faster r-cnn: Towards real-time object detection with region proposal networks. Advances in neural information processing systems, 28.<br>[3] Wojke, N., Bewley, A. and Paulus, D., 2017, September. Simple online and realtime tracking with a deep association metric. In 2017 IEEE international conference on image processing (ICIP) (pp. 3645-3649). IEEE.<br>[4] Bergmann, P., Meinhardt, T. and Leal-Taixe, L., 2019. Tracking without bells and whistles. In Proceedings of the IEEE/CVF International Conference on Computer Vision (pp. 941-951). |
 | Anticipated Outcomes | The main outcome will be a piece of software that implements a deep learning network for space imagery classification, detection and/or tracking. There are opportunities for scientific publications with positive results. |
 | Requirements | Background in computer vision and deep learning, experience in programming such as Python with PyTorch. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Deep learning, computer vision, classification, detection, tracking |
 | Interview Required | No |
 
@@ -1645,7 +1645,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | (1) Luckin, R., & Cukurova, M. (2019). Designing educational technologies in the age of AI: A learning sciences' driven approach. British Journal of Educational Technology, 50(6), 2824-2838. (2) SomyÃ¼rek, Sibel. (2015). The New Trends in Adaptive Educational Hypermedia Systems. International Review of Research in Open and Distance Learning. 16. 221-241. 10.19173/irrodl.v16i1.1946. |
 | Anticipated Outcomes | A Proof of Concept for the enhanced tutor which can deliver (or support delivery of) a lesson in a given subject topic. The topic content needs to be gathered from an Open corpus of data. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1656,7 +1656,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | The project will trial the development of a dashboard or hub which will visualise analysis using search strings and will more accurately draw together theses in accessible formats. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1667,7 +1667,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | A VR application that allows for a user to explore their own knowledge base in an engaging visual manner. |
 | Requirements | Knowledge of VR programming and asset generation techniques (e.g. Unity and Blender) |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1678,7 +1678,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | Yoon, B., Kim, H. I., Lee, G. A., Billinqhurst, M., & Woo, W. (2019, March). The Effect of Avatar Appearance on Social Presence in an Augmented Reality Remote Collaboration. In 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR) (pp. 547-556). IEEE. |
 | Anticipated Outcomes | The output will be an extension of the research into best practice validated via the creation of an augmented â€˜petâ€™ that the user can interact with constantly. |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1689,7 +1689,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | Scotton, J., Stewart, C., & Cristea, A. I. (2011). ADE: the adaptive display environment for adaptive hypermedia. In Proceedings of the ACM Hypertext 2011 International Conference, Eindhoven, The Netherlands (pp. 2269-2295). |
 | Anticipated Outcomes | Updated and expanded eLearning system (ADE+CAE) |
 | Requirements |  |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1700,7 +1700,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br><br>S.V. Galán, Simple decentralized graph coloring, Computational Optimization and Applications 66 (2017) 163-185 (URL: https://doi.org/10.1007/s10589-016-9862-9)<br>H. Hernández and C. Blum, FrogSim: distributed graph coloring in wireless ad hoc networks, Telecommunication Systems 55 (2014) 211-223 (https://doi.org/10.1007/s11235-013-9776-0)<br>T. Mostafaie, F.M. Khiyabani and N.J. Navimipour, A systematic study on meta-heuristic approaches for solving the graph coloring problem, Computers and Operations Research 120 (2020) 104850 (https://doi.org/10.1016/j.cor.2019.104850)<br><br> |
 | Anticipated Outcomes | <br>For the first project, the primary aim is to confirm (or dispute) the empirical performance claims in [1]. The research in [1] can be extended by implementing other colouring algorithms for decentralized networks or undertaking extended experimentation on more refined data-sets, with an added bonus being finding a new algorithm that improves upon the state-of-the-art.<br>This project is suitable for Level 3 or Level 4 students but possibly best suited to Level 3 students. It can support at most 1 student.<br>For the second project, the primary aim is to confirm (or dispute) empirical performance claims in the research literature as regards meta-heuristic approaches to graph colouring. This will involve implementing a suite of meta-heuristic graph colouring algorithms and experimenting with them on benchmark and self-generated data. The algorithms chosen should include those from a specific paper so that the results of that paper can be evaluated in full. An added bonus would be the implementation of other previously unimplemented meta-heuristic algorithms for the graph colouring problem along with a thorough empirical evaluation, with the ultimate success being the discovery of an implementation that out-performs the state-of-the-art.<br>This project is suitable for Level 3 or Level 4 students but possibly best suited to Level 4 students as there is more scope for implementing a range of algorithms, originality and breadth of experimentation, e.g., as described as an "added bonus" above. It can support at most 2 students so long as the algorithms implemented by these students are different.<br>A necessary precursor to this project is an extensive literature survey so as to highlight a range of graph colouring algorithms that might be implemented, so that the state-of-the-art can be best reflected.<br> |
 | Requirements | There are no special requirements beyond a basic understanding of algorithmic graph theory and meta-heuristic algorithms (such as those studied in the Level 2 AI Search sub-module or the Level 3 Natural Computing Algorithms module). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | meta-heuristic algorithms; graph theory; graph colouring; distributed graph colouring |
 | Interview Required | No |
 
@@ -1711,7 +1711,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>D. Chalupa, An order-based algorithm for minimum dominating set with application in graph mining, Information Sciences 426 (2018) 101-116 (https://doi.org/10.1016/j.ins.2017.10.033)<br>A. Potluri and A. Singh, Hybrid metaheuristic algorithms for minimum weight dominating set, Applied Soft Computing 13 (2013) 76-88 (https://doi.org/10.1016/j.asoc.2012.07.009)<br>L.A. Sanchis, Experimental analysis of heuristic algorithms for the dominating set problem, Algorithmica 33 (2002) 3-18 (https://doi.org/10.1007/s00453-001-0101-z)<br> |
 | Anticipated Outcomes | The primary project aim is to confirm (or dispute) empirical performance claims in the research literature as regards meta-heuristic approaches to solving the dominating set problem (or some variant). This will involve implementing a suite of meta-heuristic dominating set algorithms and experimenting with them on benchmark and self-generated data. The algorithms chosen should include those from a specific paper so that the results of that paper can be evaluated in full. An added bonus would be the implementation of other previously unimplemented meta-heuristic algorithms for the dominating set problem along with a thorough empirical evaluation, with the ultimate success being the discovery of an implementation that out-performs the state-of-the-art. <br><br>This project is suitable for both Level 3 or Level 4 students but is possibly best suited to Level 4 students as there is more scope for implementing a range of algorithms, originality and breadth of experimentation, e.g., as described as an "added bonus" above. The project can support 2 students in total but so long as the algorithms implemented by these students are different.<br><br>A necessary precursor to this project is an extensive literature survey so as to highlight a range of dominating set algorithms that might be implemented, so that the state-of-the-art can be best reflected. |
 | Requirements | There are no special requirements beyond a basic understanding of algorithmic graph theory and meta-heuristic algorithms (such as those studied in the Level 2 AI Search sub-module or the Level 3 Natural Computing Algorithms module). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | meta-heuristic algorithms; graph theory; dominating sets |
 | Interview Required | No |
 
@@ -1722,7 +1722,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>A. Almethen, O. Michail and I. Potapov, Pushing lines helps: Efficient universal centralised transformations for programmable matter, Theoretical Computer Science 830-831 (2020) 43-59 (https://doi.org/10.1016/j.tcs.2020.04.026)<br>A. Almethen, O. Michail and I. Potapov, On efficient connectivity-preserving transformations in a grid, Theoretical Computer Science 898 (2022) 132-148 (https://doi.org/10.1016/j.tcs.2021.11.004)<br>O. Michail, G. Skretas and P.G. Spirakis, On the transformation capability of feasible mechanisms for programmable matter, Journal of Computer and System Sciences 102 (2019) 18-39 (https://doi.org/10.1016/j.jcss.2018.12.001)<br> |
 | Anticipated Outcomes | As stated, it is expected that the basic outcome will be a simulator capable of simulating and visualizing shape-shifting computations. However, the underlying shape-shifting algorithms could be quite demanding to develop. The secondary aims, in terms of new theory, are even more demanding. Consequently, this project is only suitable for students who are ambitious and who have strong theoretical computer science skills. <br><br>The project is available to both Level 3 and Level 4 students but perhaps is best suited to a Level 4 student (and especially one who has done the Level 3 module Natural Computing Algorithms although this is not a necessary prerequisite). The project can support 1 student in total.<br> |
 | Requirements | Strong theoretical and algorithmic skills are required. Note that the basic model above is studied in two lectures of the Level 3 module Natural Computing Algorithms (but not until the end of the first term). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | programmable matter; algorithms; theoretical computer science |
 | Interview Required | Yes |
 
@@ -1733,7 +1733,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>T. Ito and A. Suzuki, Web Survey on Combinatorial Reconfiguration (http://www.ecei.tohoku.ac.jp/alg/coresurvey)<br>D. Kim, Sorting on graphs by adjacent swaps using permutation groups, Computer Science Review 22 (2016) 89-105 (https://doi.org/10.1016/j.cosrev.2016.09.003)<br>N. Nishimura, Introduction to reconfiguration, Algorithms 11(4) (2018) article 52 (https://doi.org/10.3390/a11040052)<br> |
 | Anticipated Outcomes | There is massive scope within this project as there are so many different basic problems to consider and also properties of reconfiguration graphs, token swapping networks and sorting networks to establish. Any chosen project should look to contribute useful information to those interested in this general research area, e.g., although we can have super-polynomial diameter 4-colouring reconfiguration graphs (as described above), can we obtain experimental evidence that shows that if we concern ourselves only with some restricted class of graphs then the diameter is much less? Also, in so far as I am aware, there has been no research undertaken so far on obtaining practical algorithms to solve hard problems in relation to reconfiguration graph problems, e.g., although, as stated above, the reachability problem for reconfiguration graphs of 4-colourings of a graph is PSPACE-complete, no-one has yet explored finding an efficient algorithm that provides solutions a lot of the time. As this project sits close to current research, it is only suitable for students who are ambitious and who have strong theoretical computer science skills.<br><br>The project is available to both Level 3 and Level 4 students but perhaps is best suited to a Level 4 student. The project can support 1 student in total.<br> |
 | Requirements | Strong theoretical and algorithmic skills are required. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | meta-heuristic methods; reconfiguration problems; token swapping; sorting networks |
 | Interview Required | Yes |
 
@@ -1744,7 +1744,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>R.K. Behera, D. Naik, S.K. Rath and R. Dharavath, Genetic algorithm-based community detection in large-scale social networks, Neural Computing and Applications 32 (2020) 9649–9665 (https://doi.org/10.1007/s00521-019-04487-0)<br>A. Kumari, R.K. Behera, B. Sahoo and S.P. Sahoo, Prediction of link evolution using community detection in social network, Computing 104 (2022) 1077-1098 (https://doi.org/10.1007/s00607-021-01035-4)<br>H.K. Shakya, K. Singh, Y.S. More and B. Biswas, Opposition-based genetic algorithm for community detection in social networks, Proceedings of the National Academy of Sciences, India Section A: Physical Sciences 92 (2022) 251-263 (https://doi.org/10.1007/s40010-020-00716-7)<br> |
 | Anticipated Outcomes | The primary project aim is to confirm (or dispute) empirical performance claims in the research literature as regards community detection algorithms for social networks. This will involve implementing a suite of community detection algorithms and experimenting with them on benchmark and self-generated data. The algorithms chosen should include those from a specific paper so that the results of that paper can be evaluated in full. An added bonus would be the implementation of other previously unimplemented community detection algorithms along with a thorough empirical evaluation, with the ultimate success being the discovery of an implementation that out-performs the state-of-the-art.<br>This project is suitable for Level 3 or Level 4 students but possibly best suited to Level 3 students. It can support at most 1 student in total.<br>A necessary precursor to this project is an extensive literature survey so as to highlight a range of community detection algorithms that might be implemented, so that the state-of-the-art can be best reflected. In this context, the paper [1] should be critically evaluated as it would appear that comparison is only undertaken with community detection algorithms from 2002-2011 which is possibly not the state-of-the-art. |
 | Requirements | There are no special requirements beyond a basic understanding of algorithmic graph theory and meta-heuristic algorithms (such as those studied in the Level 2 AI Search sub-module or the Level 3 Natural Computing Algorithms module). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | social networks; community detection; similarity indices; meta-heuristic algorithms |
 | Interview Required | No |
 
@@ -1755,7 +1755,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>H. Ballani, P. Costa, T. Karagiannis and A. Rowstron, Towards predictable datacenter networks, Proc. of ACM SIGCOMM (2011) 242-253 (https://doi.org/10.1145/2018436.2018465)<br>C. Guo, G. Lu, H.J. Wang, S. Yang, C. Kong, P. Sun, W. Wu and Y. Zhang, SecondNet: a data center network virtualization architecture with bandwidth guarantees, Proc. of ACM Conf. on Emerging Networking Experimentsand Technology article no. 15 (12 pages), 2010 (https://doi.org/10.1145/1921168.1921188)<br>I.A. Stewart and A. Erickson, The influence of data center usage on symmetry in data center network design, Journal of Supercomputing 74 (2018) 2276-2313.(https://doi.org/10.1007/s11227-017-2217-1)<br> |
 | Anticipated Outcomes | Outcomes might include: an implementation of the virtualization methodology in [3] for the DCNs HCN and BCN, as described in [3]; a more general tool which will allow the virtualization methodology of [3] to be applied to other DCNs; adaptions of Oktopus and SecondNet to server-centric DCNs; and experimentation with a more general tool so as to evaluate server-centric DCNs with respect to their capacity for virtualization. This will be a challenging project and will involve initially extending the description of the virtualization methodology in [3] prior to implementation; consequently, it is only available to students with strong algorithmic and graph theory skills. However, it is highly possible that a successful project might lead to publication; moreover, there is lots of scope to make a contribution.<br>This project is suitable for Level 4 students only and can support at most 1 student. |
 | Requirements | As mentioned above, DCNs are abstracted as graphs and consequently basic knowledge of and interest in algorithmic graph theory is required, as well as good programming skills. |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | server-centric data centre networks, virtualization, graph embeddings |
 | Interview Required | Yes |
 
@@ -1766,7 +1766,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | <br>G.K. Jati, G. Kuwanto, T. Hashmi and H. Widjaja, Discrete komodo algorithm for traveling salesman problem, Applied Soft Computing 139 (2023) 110219 (https://doi.org/10.1016/j.asoc.2023.110219)<br>S. Suyanto, A.A. Ariyanto and A.F. Ariyanto, Komodo Mlipir Algorithm, Applied Soft Computing 114 (2022) 108043 (https://doi.org/10.1016/j.asoc.2021.108043)<br> |
 | Anticipated Outcomes | The primary project aim is to confirm (or dispute) empirical performance claims in [1]. This will involve implementing a suite of TSP algorithms (as described above) and experimenting with them on benchmark and self-generated data. An added bonus would be the implementation of other meta-heuristic TSP algorithms along with a thorough empirical evaluation, with the ultimate success being the discovery of an implementation that out-performs the algorithm DKA from [1].<br>This project is suitable for Level 3 students. It can support at most 1 student.<br>Given the massive number of available meta-heuristic algorithms in the literature, the breadth of the experiments in [1] is shallow. An expected circumstance might be there exist better TSP algorithms already in the literature in comparison to the algorithm DKA. |
 | Requirements | There are no special requirements beyond a basic understanding of algorithmic graph theory and meta-heuristic algorithms (such as those studied in the Level 2 AI Search sub-module or the Level 3 Natural Computing Algorithms module). |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | meta-heuristic algorithms; graph theory; Travelling Salesperson Problem (TSP) |
 | Interview Required | No |
 
@@ -1777,7 +1777,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | The primary project aim is to confirm (or dispute) empirical performance claims in the research literature as regards some application(s) of meta-heuristic algorithms. This will involve implementing a suite of algorithms and experimenting with them on benchmark and self-generated data. The algorithms chosen should include those from a specific paper so that the results of that paper can be evaluated in full. An added bonus would be the implementation of other previously unimplemented meta-heuristic algorithms along with a thorough empirical evaluation, with the ultimate success being the discovery of an implementation that out-performs the state-of-the-art.<br>This project is suitable for Level 3 or Level 4 students and can support up to 5 students from each level; so, a total of 10 students.<br>A necessary precursor to the project is a proper literature survey so as to highlight a range of community detection algorithms that might be implemented, so that the state-of-the-art can be best reflected. |
 | Requirements | There are no special requirements beyond a basic understanding of meta-heuristic algorithms (such as those studied in the Level 2 AI Search sub-module or the Level 3 Natural Computing Algorithms module). |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | meta-heuristic algorithms |
 | Interview Required | Yes |
 
@@ -1788,7 +1788,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://aclweb.org/anthology/papers/K/K16/K16-1025/<br>https://www.aclweb.org/anthology/N15-1026 |
 | Anticipated Outcomes | Implementation and evaluation of existing methods with possible further development. |
 | Requirements | Interest in Natural Language Processing. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | NLP; NER; NED |
 | Interview Required | No |
 
@@ -1799,7 +1799,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | http://www.ccs.neu.edu/home/dasmith/infect-bighum-2013.pdf<br>http://www.ep.liu.se/ecp/133/010/ecp17133010.pdf |
 | Anticipated Outcomes | Development and evaluation of techniques against a baseline, and a tool to perform unsupervised post-correction on arbitrary collections of OCR output. |
 | Requirements | Interest in Natural Language Processing |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | NLP; OCR |
 | Interview Required | No |
 
@@ -1810,7 +1810,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://teibyexample.org/<br>https://wiki.tei-c.org/index.php/Samples_of_TEI_texts<br>https://academic.oup.com/dsh/article/24/3/281/968658 |
 | Anticipated Outcomes | Software to interactively present and analyze arbitary TEI texts. |
 | Requirements | Familiarity with Javascript; interest in visualisation. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Text processing, digital humanities, visualization |
 | Interview Required | No |
 
@@ -1821,7 +1821,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://arxiv.org/pdf/1910.11470.pdf<br>http://ir.ia.ac.cn/bitstream/173211/19944/1/13%E8%91%A3%E4%BC%A0%E6%B5%B7Character-Based%20LSTM-CRF%20with%20Radical-Level%20Features%20for%20Chinese%20Named%20Entity%20Recognition.pdf |
 | Anticipated Outcomes | Implementation and evaluation of NER system using character compositionality. |
 | Requirements | Machine learning and/or deep learning; interest in natural language processing. |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Chinese; NER; NLP |
 | Interview Required | No |
 
@@ -1832,7 +1832,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://academic.oup.com/dsh/article/34/1/189/5032370<br>https://petsymposium.org/2012/papers/hotpets12-6-yelp.pdf |
 | Anticipated Outcomes | Implementing a system for evaluating a range of authorship clustering algorithms; evaluation of these across a range of corpora and natural languages. |
 | Requirements | Familiarity with machine learning; interest in natural language processing |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | NLP, digital humanities, authorship |
 | Interview Required | No |
 
@@ -1843,7 +1843,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | (See Dr. Trehan's DBLP for references: https://dblp.org/pid/68/3831.html) <br><br>Some examples:<br><br>Leader Election:<br>  - https://doi.org/10.1145/2699440<br>-   https://www.sciencedirect.com/science/article/pii/S0304397514001029<br>- https://www.semanticscholar.org/paper/Time-Optimal-Leader-Election-in-General-Networks-Peleg/849d99e6b712b76ba1ccab3d1285462f688720f9<br><br><br>Amnesiac Flooding:<br> - https://drops.dagstuhl.de/opus/volltexte/2020/11878/<br> - https://arxiv.org/abs/2009.05776<br><br>Self-Healing Algorithms:<br>    - https://arxiv.org/abs/0802.3267<br>   - https://link.springer.com/article/10.1007/s00446-012-0160-1 |
 | Anticipated Outcomes | - Network Simulator  in any programming language (should handle millions of nodes)<br>- Demonstrated understanding of algorithms<br>- Experiments, analysis and insights |
 | Requirements | - Background study of algorithms and their analysis<br>- Programming skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Algorithms, Distributed Algorithms, Algorithm Analysis, Programming, Simulation, Network Experiments |
 | Interview Required | No |
 
@@ -1854,7 +1854,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | 1) Survey of the problem and existing solutions <br> <br>2a) Software  <br>  and/or <br>2b) (Mathematical options) Algorithm and mathematical foundations of the multi-constraint matching problem. |
 | Requirements | -  Knowledge of computer algorithms and complexity analysis <br>- Algorithm formal analysis and/or Programming skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Matching, Project Allocations, Algorithm analysis, Programming |
 | Interview Required | No |
 
@@ -1865,7 +1865,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | http://dl.acm.org/citation.cfm?id=378581 <br>http://dblp.uni-trier.de/pers/hd/t/Trehan:Amitabh<br>http://dl.acm.org/citation.cfm?doid=2833312.2833328 |
 | Anticipated Outcomes | New algorithms and/or Simulation/software showing performance of algorithms over a comprehensive set of scenarios |
 | Requirements | - Knowledge of algorithms/network/distributed algorithms <br>- Algorithms analysis and/or Programming skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Distributed Algorithms, Network Algorithms, Algorithms analysis, Simulation, Self-healing, Routing, Graphs |
 | Interview Required | No |
 
@@ -1876,7 +1876,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://goo.gl/mOcFHi |
 | Anticipated Outcomes | - Software and experimental results on EU grant games <br><br> and/or<br><br>- Extensions to the EU grant game with analysis |
 | Requirements | - Ability and willingness to use and learn game theory. <br>-Programming/Analytical skills |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Game Theory, Networks, Graphs, Analysis, Programming |
 | Interview Required | No |
 
@@ -1887,7 +1887,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs |  |
 | Anticipated Outcomes | A potentially feasible wireless multicast; simulation evaluation of this multicast method. |
 | Requirements | Computer systems, Networks and Systems, C/C++, Python |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords |  |
 | Interview Required | No |
 
@@ -1898,7 +1898,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | 1) https://www.sciencedirect.com/science/article/pii/S0166531607000624<br>2) https://ieeexplore.ieee.org/document/8064362<br>3) https://dl.acm.org/doi/10.1145/3308897.3308924 |
 | Anticipated Outcomes | The student is expected to implement some prior and new load balancing algorithms, and obtain numerical results to characterize their performance. |
 | Requirements | Networks and Systems, Data Science |
-| Project Type | CS Level 3: Yes, CS Level 4: Yes |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Servers, Queues, JSQ, Delay, Erlang |
 | Interview Required | No |
 
@@ -1909,7 +1909,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.sciencedirect.com/science/article/pii/S0166531622000281 |
 | Anticipated Outcomes | The student is expected to numerically study the algorithm proposed in the reference. There is also scope for proposing new algorithms and study their performance as well. |
 | Requirements | Networks and Systems, Data Science, Design of Algorithms and Data Structures |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | JSQ, Delay, Job, Queue, Probability |
 | Interview Required | No |
 
@@ -1920,7 +1920,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://arxiv.org/abs/2207.06533 |
 | Anticipated Outcomes | The student is expected to implement the protocols of the reference and obtain numerical results of this paper |
 | Requirements | MATH3391 or MATH3111, Reinforcement Learning |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Quantum, Entanglement, MDP, Switch, Swapping |
 | Interview Required | No |
 
@@ -1931,7 +1931,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://www.nature.com/articles/s41534-022-00536-0 |
 | Anticipated Outcomes | The student is expected to obtain numerical results of the reference. |
 | Requirements | MATH3391 or MATH3111, Networks and Systems |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Quantum, Entanglement, Switch, Swapping,Optical |
 | Interview Required | No |
 
@@ -1942,7 +1942,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | 1)https://ieeexplore.ieee.org/document/8454976<br>2)https://dl.acm.org/doi/abs/10.1109/tsp.2007.906770 |
 | Anticipated Outcomes | The student is expected to obtain numerical results confirming the results of the reference [1]. |
 | Requirements | Data Science, Networks and Systems |
-| Project Type | CS Level 3: Yes, CS Level 4: No |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ❌ |
 | Keywords | Energy, Sensor, Detection, Adversary, Fusion |
 | Interview Required | No |
 
@@ -1953,6 +1953,6 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Reference URLs | https://ieeexplore.ieee.org/document/8454976<br>https://dl.acm.org/doi/abs/10.1109/tsp.2007.906770<br>https://ieeexplore.ieee.org/document/8395351 |
 | Anticipated Outcomes | The student is expected to obtain numerical results of the reference [3]. Also, the student should propose new methods that outperform the existing methods. |
 | Requirements | Networks and Systems, Data Science, Design of Algorithms and Data Structures |
-| Project Type | CS Level 3: No, CS Level 4: Yes |
+| Project Type | CS Level 3: ❌<br>CS Level 4: ✅ |
 | Keywords | Detection, Sensor, Fusion, Robust, Energy |
 | Interview Required | No |

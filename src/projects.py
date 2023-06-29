@@ -267,6 +267,35 @@ def sanitise_for_markdown(raw_value: str) -> str:
     return formatted_text
 
 
+def format_project_type_for_markdown(project_type: str) -> str:
+    """
+    Given the Project Type data for a project, this function reformats it
+    by putting it on two lines and replacing Yes/No with the equivalent emoji.
+
+    For example:
+
+    CS Level 3: Yes, CS Level 4: No
+
+    becomes
+
+    CS Level 3: ✅
+    CS Level 4: ❌
+    """
+
+    CHECKMARK = "\u2705"
+    CROSS = "\u274C"
+
+    # Replace the Yes/No text with their respective emojis.
+    project_type = project_type.replace("Yes", CHECKMARK)
+    project_type = project_type.replace("No", CROSS)
+
+    # Add a newline to put the CS Level 3 and CS Level 4 values on their
+    # own lines for readability.
+    project_type = project_type.replace(", CS Level 4:", "\nCS Level 4:")
+
+    return project_type
+
+
 def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = []
     contents.append("## Contents\n")
@@ -274,6 +303,10 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
     tables = []
 
     for entry in data:
+        # First off, we can slightly reformat a few items in the entry to
+        # make them look a bit nicer in the resulting markdown.
+        entry["Project Type"] = format_project_type_for_markdown(entry["Project Type"])
+
         # We need to generate an entry for the table of contents at the top
         # of the file.
         # The idea is to have a bullet point with the title of the project
