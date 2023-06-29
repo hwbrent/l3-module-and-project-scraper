@@ -7,11 +7,10 @@
  * [AA-1: Are Looks Deceiving? Exploring the Effects of Image Enhancement Techniques on the Performance of Convolutional Neural Networks](#aa-1-are-looks-deceiving-exploring-the-effects-of-image-enhancement-techniques-on-the-performance-of-convolutional-neural-networks)
  * [AA-2: Automatic Quality Control for the Evaluation of Deep Learning Algorithms Applied to Images of the Eye](#aa-2-automatic-quality-control-for-the-evaluation-of-deep-learning-algorithms-applied-to-images-of-the-eye)
  * [AA-3: Multi-Modal, Scale, and Class detection of ophthalmologic diseases through anomaly detection](#aa-3-multi-modal-scale-and-class-detection-of-ophthalmologic-diseases-through-anomaly-detection)
- * [AA-4: Revealing retinal changes in Alport syndrome with image processing and machine learning ](#aa-4-revealing-retinal-changes-in-alport-syndrome-with-image-processing-and-machine-learning)
- * [AA-5: Why can't I find Wally? Exploring the effect of distractors on the performance of convolutional neural networks in cluttered scenes
-](#aa-5-why-cant-i-find-wally-exploring-the-effect-of-distractors-on-the-performance-of-convolutional-neural-networks-in-cluttered-scenes)
- * [AA-6: Can surgery revitalize the eyes? ](#aa-6-can-surgery-revitalize-the-eyes)
- * [AA-7: Automatic detection of cell density in eyes using deep learning ](#aa-7-automatic-detection-of-cell-density-in-eyes-using-deep-learning)
+ * [AA-4: Revealing retinal changes in Alport syndrome with image processing and machine learning](#aa-4-revealing-retinal-changes-in-alport-syndrome-with-image-processing-and-machine-learning)
+ * [AA-5: Why can't I find Wally? Exploring the effect of distractors on the performance of convolutional neural networks in cluttered scenes](#aa-5-why-cant-i-find-wally-exploring-the-effect-of-distractors-on-the-performance-of-convolutional-neural-networks-in-cluttered-scenes)
+ * [AA-6: Can surgery revitalize the eyes?](#aa-6-can-surgery-revitalize-the-eyes)
+ * [AA-7: Automatic detection of cell density in eyes using deep learning](#aa-7-automatic-detection-of-cell-density-in-eyes-using-deep-learning)
  * [GA-1: Carbon Intelligent Computing for for Control and Optimisation of Data Centres](#ga-1-carbon-intelligent-computing-for-for-control-and-optimisation-of-data-centres)
  * [GA-2: Electric Vehicle as a Service for Disaster-like Scenarios](#ga-2-electric-vehicle-as-a-service-for-disaster-like-scenarios)
  * [GA-3: Blockchain supported Privacy Aware Ecosystems](#ga-3-blockchain-supported-privacy-aware-ecosystems)
@@ -21,10 +20,10 @@
  * [EB-3: Analysing relevance, reliability, and information flow in user-generated comments on online music videos](#eb-3-analysing-relevance-reliability-and-information-flow-in-user-generated-comments-on-online-music-videos)
  * [EB-4: Tracking the production and circulation of MIDI files during the 1990s](#eb-4-tracking-the-production-and-circulation-of-midi-files-during-the-1990s)
  * [SC-1: Using NLP to understand political success based on party manifestos](#sc-1-using-nlp-to-understand-political-success-based-on-party-manifestos)
- * [SC-2: Debating what’s important to civic life: NLP and data analysis of political debates ](#sc-2-debating-what’s-important-to-civic-life-nlp-and-data-analysis-of-political-debates)
+ * [SC-2: Debating what’s important to civic life: NLP and data analysis of political debates](#sc-2-debating-what’s-important-to-civic-life-nlp-and-data-analysis-of-political-debates)
  * [SC-3: Conspiracy theories: understanding and predicting conspiratorial content using natural language processing](#sc-3-conspiracy-theories-understanding-and-predicting-conspiratorial-content-using-natural-language-processing)
  * [RCr-1: Predicting student experiences based on their characteristics](#rcr-1-predicting-student-experiences-based-on-their-characteristics)
- * [RCr-2: Using Mermaid to Enhance Accessibility of Diagrams. ](#rcr-2-using-mermaid-to-enhance-accessibility-of-diagrams)
+ * [RCr-2: Using Mermaid to Enhance Accessibility of Diagrams.](#rcr-2-using-mermaid-to-enhance-accessibility-of-diagrams)
  * [SSD-1: Machine Learning for Game Playing](#ssd-1-machine-learning-for-game-playing)
  * [SSD-2: Learning and Generating Graphs with Deep Neural Networks](#ssd-2-learning-and-generating-graphs-with-deep-neural-networks)
  * [SSD-3: Theorem Proving in Lean](#ssd-3-theorem-proving-in-lean)
@@ -63,7 +62,7 @@
  * [II-5: A blockchain based system for the secure handling of research data](#ii-5-a-blockchain-based-system-for-the-secure-handling-of-research-data)
  * [AJ-1: Smart energy management in homes, industries or commercial sectors](#aj-1-smart-energy-management-in-homes-industries-or-commercial-sectors)
  * [AJ-2: Machine learning applications in Internet of things (IoT)](#aj-2-machine-learning-applications-in-internet-of-things-iot)
- * [AJ-3: Data analytics for improving healthcare systems ](#aj-3-data-analytics-for-improving-healthcare-systems)
+ * [AJ-3: Data analytics for improving healthcare systems](#aj-3-data-analytics-for-improving-healthcare-systems)
  * [AJ-4: Network resource management for service provisioning in wireless sensor networks](#aj-4-network-resource-management-for-service-provisioning-in-wireless-sensor-networks)
  * [AJ-5: Cyber-security applications in Internet of things (IoT)](#aj-5-cyber-security-applications-in-internet-of-things-iot)
  * [SK-1: A comparative study of the effect of various data augmentation techniques on the performance of CNN-based image classification](#sk-1-a-comparative-study-of-the-effect-of-various-data-augmentation-techniques-on-the-performance-of-cnn-based-image-classification)
@@ -110,9 +109,7 @@
  * [GM-4: Blockchain tokens](#gm-4-blockchain-tokens)
  * [GM-5: Mutating Networks](#gm-5-mutating-networks)
  * [LMo-1: SYCL-based Parallelization of HPCCG](#lmo-1-sycl-based-parallelization-of-hpccg)
- * [LMo-2: 
-Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL](#lmo-2-
-enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
+ * [LMo-2: Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL](#lmo-2-enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
  * [BMo-1: Dispersion of mobile robots on a dynamic graph with fault tolerance](#bmo-1-dispersion-of-mobile-robots-on-a-dynamic-graph-with-fault-tolerance)
  * [BMo-2: Dispersion of mobile robots on a dynamic graph in the semi-synchronous setting](#bmo-2-dispersion-of-mobile-robots-on-a-dynamic-graph-in-the-semi-synchronous-setting)
  * [BMo-3: Dispersion of mobile robots on a dynamic graph with partial vision](#bmo-3-dispersion-of-mobile-robots-on-a-dynamic-graph-with-partial-vision)
@@ -122,10 +119,8 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
  * [RP-3: Reinforcement Learning for Team Based Card Games](#rp-3-reinforcement-learning-for-team-based-card-games)
  * [RP-4: Reinforcement Learning - Looking for new Backgammon Strategies](#rp-4-reinforcement-learning---looking-for-new-backgammon-strategies)
  * [AR-1: Seismic Risk Assessment](#ar-1-seismic-risk-assessment)
- * [AR-2: Containerised UQ
-](#ar-2-containerised-uq)
- * [AR-3: Stress Recovery Methods
-](#ar-3-stress-recovery-methods)
+ * [AR-2: Containerised UQ](#ar-2-containerised-uq)
+ * [AR-3: Stress Recovery Methods](#ar-3-stress-recovery-methods)
  * [AR-4: Higher-order Visualisation in Paraview](#ar-4-higher-order-visualisation-in-paraview)
  * [PR-1: Classification of typical plants for assessment of the health of a natural habitat](#pr-1-classification-of-typical-plants-for-assessment-of-the-health-of-a-natural-habitat)
  * [PR-2: Thorough Comparison of Deep Networks](#pr-2-thorough-comparison-of-deep-networks)
@@ -148,7 +143,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
  * [IAS-3: Programming matter to shape-shift](#ias-3-programming-matter-to-shape-shift)
  * [IAS-4: Solving reconfiguration problems using meta-heuristic methods](#ias-4-solving-reconfiguration-problems-using-meta-heuristic-methods)
  * [IAS-5: Community detection in large-scale social networks](#ias-5-community-detection-in-large-scale-social-networks)
- * [IAS-6: Embedding virtual machines in data centre networks ](#ias-6-embedding-virtual-machines-in-data-centre-networks)
+ * [IAS-6: Embedding virtual machines in data centre networks](#ias-6-embedding-virtual-machines-in-data-centre-networks)
  * [IAS-7: Solving the Travelling Salesperson Problem using meta-heuristics](#ias-7-solving-the-travelling-salesperson-problem-using-meta-heuristics)
  * [IAS-8: Applying meta-heuristic methods to solve hard problems](#ias-8-applying-meta-heuristic-methods-to-solve-hard-problems)
  * [DS-1: Named Entity Disambiguation using Knowledge Graphs](#ds-1-named-entity-disambiguation-using-knowledge-graphs)
@@ -156,15 +151,15 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
  * [DS-3: Interactive analysis and visualisation of TEI documents](#ds-3-interactive-analysis-and-visualisation-of-tei-documents)
  * [DS-4: Using character compositionality to improve Chinese NER](#ds-4-using-character-compositionality-to-improve-chinese-ner)
  * [DS-5: Unsupervised authorship clustering](#ds-5-unsupervised-authorship-clustering)
- * [AT-1: Exploring and Simulating Network  Distributed Algorithms ](#at-1-exploring-and-simulating-network--distributed-algorithms)
+ * [AT-1: Exploring and Simulating Network  Distributed Algorithms](#at-1-exploring-and-simulating-network--distributed-algorithms)
  * [AT-2: Improving Project Allocations: Software or Theory for the Matching Problem](#at-2-improving-project-allocations-software-or-theory-for-the-matching-problem)
- * [AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms  ](#at-3-designing-and-testing-self-healing-distributed-andor-compact-routing-algorithms)
+ * [AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms](#at-3-designing-and-testing-self-healing-distributed-andor-compact-routing-algorithms)
  * [AT-4: Characterising Equilibria of the EU Grant Games](#at-4-characterising-equilibria-of-the-eu-grant-games)
  * [WT-1: Wireless Multicast at the MAC Layer](#wt-1-wireless-multicast-at-the-mac-layer)
  * [TV-1: Near-Insensitivity of occupancy-based load distribution policies in multi-server homogeneous systems](#tv-1-near-insensitivity-of-occupancy-based-load-distribution-policies-in-multi-server-homogeneous-systems)
  * [TV-2: An optimal load distribution policy for heterogeneous service systems](#tv-2-an-optimal-load-distribution-policy-for-heterogeneous-service-systems)
  * [TV-3: Finding Optimal Entanglement Distribution Policies for Quantum Networks Using MDPs](#tv-3-finding-optimal-entanglement-distribution-policies-for-quantum-networks-using-mdps)
- * [TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks ](#tv-4-achieving-distance-independent-entanglement-rates-in-quantum-networks)
+ * [TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks](#tv-4-achieving-distance-independent-entanglement-rates-in-quantum-networks)
  * [TV-5: Energy Efficient Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-5-energy-efficient-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
  * [TV-6: Robustness of the Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-6-robustness-of-the-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
 <hr>
@@ -245,7 +240,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | Image Processing, Computer Vision, Medical Imaging, Deep Learning, Anomaly Detection |
 | Interview Required | No |
 
-### AA-4: Revealing retinal changes in Alport syndrome with image processing and machine learning 
+### AA-4: Revealing retinal changes in Alport syndrome with image processing and machine learning
 
 | Description | This project focuses on the Alport syndrome (AS) and its retinal implications, where we aim to unravel the intricate relationship between this rare genetic disorder, the kidneys, and the eyes. AS poses significant threats to vision, making it crucial to understand its impact on the retina. Using state-of-the-art automatic segmentation techniques on in vivo 3D retinal imaging in one of the largest AS cohorts to date, we seek to uncover the full spectrum of retinal alterations in this condition with aid of deep learning algorithms. By uncovering the link between retinal cell rarefaction, foveal morphology, genetic factors, and systemic disease, we hope to shed light on the development of AS in the eye and kidney. This knowledge will have a profound impact on early detection, monitoring, and treatment planning for AS, ultimately improving patient care and outcomes. This project has the potential to contribute to advancements in medical data analysis, machine learning, and image processing. External collaborators will be involved in this work. |
 | - | - |
@@ -258,7 +253,6 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 
 ### AA-5: Why can't I find Wally? Exploring the effect of distractors on the performance of convolutional neural networks in cluttered scenes
 
-
 | Description | Convolutional Neural Networks (CNN) show impressive performance when it comes to object detection, localisation and classification. However, these problems become extremely challenging when the scene is cluttered and contains irrelevant information that distracts the neural network. This is even true for humans, as evidenced by puzzle games such as "Where's Wally?", where the goal is to find the target in a cluttered scene. The objective of this project is to explore the effects of distractors on the performance of CNNs when attempting tasks such as object detection or semantic segmentation. The parameters of the project will be decided by the student, but the overall goal is to identify how if at all clutter hinders performance. Data can be generated on the fly by artificially introducing clutter into otherwise simple scenes. Where's Wally data can also be used as part of the analysis by identifying which part of the cluttered scene the CNN is paying attention to in presence of distractors. |
 | - | - |
 | Reference URLs | https://en.wikipedia.org/wiki/Where's_Wally<br>https://github.com/vc1492a/Hey-Waldo<br>https://arxiv.org/pdf/1610.02391.pdf |
@@ -268,7 +262,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | Convolutional Neural Network, Object Detection, Semantic Segmentation, Cluttered Scenes |
 | Interview Required | No |
 
-### AA-6: Can surgery revitalize the eyes? 
+### AA-6: Can surgery revitalize the eyes?
 
 | Description | The macula is a specialised region of the eye in which there is a very high packing density of cones, particularly in its centre, the fovea. The formation of the fovea is characterised by a migration, largely after birth, of the inner retinal layers away from the centre to form a pit with concurrent migration of cone photoreceptors inwards. The inward migration during childhood increases the cone packing density affording good visual acuity through adulthood. The process has been termed foveation and has not thought to be possible other than in development.<br><br>A variety of disease and injuries can affect the centre of the fovea, including macular holes.  Full-thickness macular holes (FTMHs) are defects in the foveal centre involving all neural retinal layers. Their estimated prevalence is approximately 3 per 1000.  FTMHs reduce visual acuity and have a significant impact on quality of life. Surgical management with pars plana vitrectomy (PPV) is successful in closing macular holes and improving vision.  The mechanism of visual restoration has always been thought to be due to simple cone re-apposition but careful observation of macular hole patients after surgery suggest that a process analogous to foveation seen earlier in life may be an important process in the healing of macular holes. These findings may have significance in the potential restoration of acuity in other disorders involving the macula and may be amenable to therapeutic interventions.<br><br>This project will use deep learning and image processing methods to examine images pre and postoperatively of patients undergoing macular hole surgery to detect its occurrence and will also look at the association of preoperative and postoperative variables including visual acuity and RPE health, thought to be an important determinant of foveation in utero. External collaborators will be involved in this work. |
 | - | - |
@@ -279,7 +273,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | Image Processing, Computer Vision, Medical Imaging, OCT, Deep Learning |
 | Interview Required | No |
 
-### AA-7: Automatic detection of cell density in eyes using deep learning 
+### AA-7: Automatic detection of cell density in eyes using deep learning
 
 | Description | Using advanced imaging techniques, we can capture cellular-resolution images of the living human retina, which is the light-sensitive tissue at the back of the eye. This is not possible with the ‘standard’ instruments you may have seen at the optometrist and there are very few research labs with this capability. We can use the images captured by this instrument in a number of important clinical and non-clinical applications, from studying disease to investigating the workings of the human visual system. An important measurement that we need to make is the density of photoreceptor cells, as this is altered in many retinal diseases, having a devastating impact on a person’s sight. Making these measurements accurately can help us understand these diseases better and possibly detect them earlier. But, labelling the large number of cells visible in these images is challenging. Doing this manually is time-consuming and prone to error, and the accuracy of automated approaches is variable and often needs a manual check of the output. This project will investigate two automated methods using neural networks, but unlike other published studies, it will use images from human participants and images generated via simulation [1] both to produce large training datasets and to properly characterise algorithm performance. This will help us to derive better metrics of cell density and arrangement that we can use to analyse images collected from patients with retinal disease. External collaborators will be involved in this work. |
 | - | - |
@@ -389,7 +383,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | data analytics, NLP, visualisation, politics, bias, visualisation |
 | Interview Required | No |
 
-### SC-2: Debating what’s important to civic life: NLP and data analysis of political debates 
+### SC-2: Debating what’s important to civic life: NLP and data analysis of political debates
 
 | Description | In this project you will apply techniques from NLP, data analytics and potentially data visualization to look at patterns and trends in the data to help interpret the wider socio-political issues. <br><br>In this project you will apply NLP, data analysis and potentially data visualization techniques to political debates datasets to examine what topics are most prevalent, dominant, contested or divisive and how this relates to wider socio-historical trends. Working with datasets that document political debates and decision-making processes that impact on public life, such as The Hansard Speeches dataset and ParlaSpeech Corpus. These datasets records parliamentary debates, where elected MPs set the agenda for public priorities, but how have different topics been defined and ascribed value in political speeches and how has this changed over time? For example, in 1980 only 3% of MPs in the UK were women. How did the increasing participation of women influence what items made it onto the agenda or how they were talked about? Did the participation of women MPs change as numbers increased and what impact did this have on agenda setting / topic discussed? <br><br>Particularly when working with textual data, finding ways to discover, summarise and visualise is important in supporting sensemaking processes – this could be an exploratory data analysis project or a more user-centered project that looks at how text can be summarised and visualised. |
 | - | - |
@@ -422,7 +416,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | Machine Learning, Education |
 | Interview Required | No |
 
-### RCr-2: Using Mermaid to Enhance Accessibility of Diagrams. 
+### RCr-2: Using Mermaid to Enhance Accessibility of Diagrams.
 
 | Description | Mermaid is a tool which allows a user to create and modify a variety of diagrams using JavaScript and Markdown inspired text definitions. While this has many benefits, mermaid can be beneficial for users with additional accessibility needs, such as those using screen readers to understand diagrams.  For this project students would be required to create a project which translated existing diagrams into a mermaid mark down form. Example projects could be turning C# Classes into Mermaid style class diagrams. Or using Machine Learning for image recognition to identify objects in hand drawn diagrams so a user can turn them into markdown. Students will have freedom to choose which diagrams they use and how they translate said diagrams. Students could also complete a usability / accessibility evaluation between mermaid and other systems of a similar make. |
 | - | - |
@@ -851,7 +845,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | machine learning; internet of things |
 | Interview Required | No |
 
-### AJ-3: Data analytics for improving healthcare systems 
+### AJ-3: Data analytics for improving healthcare systems
 
 | Description | Project aim (broad):<br>The project would aim to leverage (or refine) various phases of the data analytics process such as data pre-processing, feature selection and feature modelling by incorporating (say) reinforcement learning, Bayesian networks or other ensemble schemes to improve the overall (prediction and accuracy) of machine learning models for providing healthcare-related services.<br> <br>Techniques:<br>- Reinforcement learning, Bayesian networks, Neural Network or other ensemble schemes.<br>- Techniques used in various phases such as PCA/SVM/RF/Regression.<br><br>Desirable:<br>- Experience with programming languages or tools such as Python, R, MATLAB, Java.<br>- Any prior experience of working in the specified (or chosen) scheme is a plus. |
 | - | - |
@@ -1368,8 +1362,7 @@ enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
 | Keywords | C++, Parallel Programming, HPCCG, Performance Analysis, Benchmarking, Maintainability, Software Engineering, SYCL |
 | Interview Required | No |
 
-### LMo-2: 
-Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
+### LMo-2: Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 
 | Description | Many algorithms barely provide sufficient data-parallelism to efficiently use the high number of compute cores of today's processors. To tackle this challenge, several task-parallel programming technologies have been developed to allow for the flexible description of algorithms along their task graphs. For algorithms with dense task graphs, however, task-parallelism is still hard to exploit efficiently since it is programmatically complex to describe and imposes high task dependency resolution overheads during execution. This becomes especially challenging on GPUs since their architecture is not designed for synchronization-heavy applications. The research objective of this project is to port a task-parallel programming framework for GPUs from CUDA to SYCL to allow for its usage on CPUs and GPUs without having to rewrite application code. CUDA is the prevalent model for GPU computing in HPC, while SYCL is a novel parallel programming standard for unified software development on CPUs, GPUs, and FPGAs. |
 | - | - |
@@ -1481,7 +1474,6 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 
 ### AR-2: Containerised UQ
 
-
 | Description | With increased computing power now available, many areas are beginning to explore the effect of uncertain paramters<br>on the outcome of simulations. This could be data with unknown measurement errors, missing data or even<br>unknown model parameters. In recent years there has been an explosion of new methods and algorithms for UQ.<br>As such there is increasing need for a common set of benchmark examples that new algorithms can be tested on.<br>Since the language/libraries each new algorithm is developed in differ widely, exploring containerised testing<br>for UQ algorithms would be interesting.<br><br>There are two potential project directions:<br>- Set up a Docker container with a new industrially relevant test example<br>- Test Singularity on one of Durhams HPC systems as an alternative to docker on GCP |
 | - | - |
 | Reference URLs | https://github.com/UQ-Containers/testing |
@@ -1492,7 +1484,6 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Interview Required | No |
 
 ### AR-3: Stress Recovery Methods
-
 
 | Description | Composite materials are now very widely used particularly in aerospace applications (they make up >50% of some recent airplane designs) due to their excellent strength to weight ratio.<br><br>When solving the elasticity equations with a composite material one is often interested in the stresses that occur as the result of a given displacement or force. This is because these can be used to predict when the composite material will \\\"fail\\\", or break.<br><br>However, they are notoriously difficult to model due to their fine-scale structure (on the order of 0.1 mm) and complex anisotropy. The goal of this project is to increase the fidelity of the stresses computed with the  dune-composites module to predict failure more accurately. |
 | - | - |
@@ -1745,7 +1736,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Keywords | social networks; community detection; similarity indices; meta-heuristic algorithms |
 | Interview Required | No |
 
-### IAS-6: Embedding virtual machines in data centre networks 
+### IAS-6: Embedding virtual machines in data centre networks
 
 | Description | Data centre providers rent out portions of their data centres to users. This involves embedding the users' virtual machines within the data centre network (DCN) so as to secure quality-of-service guarantees. Virtual machines often come in the form of virtual networks with a basic "star" graph forming a common such network (where a central "root" switch is connected directly to a number of "leaf" servers). The data centre provider wants to embed as many virtual networks as possible so as to optimize revenue but so that quality-of-service guarantees can be met. The basic virtualization problem can be abstracted as a graph embedding problem where the graphs have weights (reflecting numerical parameters of the underlying networks). Two illustrative existing virtualization methodologies are Oktopus [1] and SecondNet [2].<br>Server-centric DCNs have been proposed as a paradigm to support the next generation of DCNs as there are problems regarding, for example, scalability for the switch-centric DCNs that form the current paradigm of production DCNs. Unfortunately, Oktopus and SecondNet cater only for switch-centric DCNs. However, a virtualization methodology for server-centric DCNs has been sketched in [3]. This project would be to flesh out the sketch in [3] and develop a tool to enable virtualization in server-centric DCNs. |
 | - | - |
@@ -1833,7 +1824,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Keywords | NLP, digital humanities, authorship |
 | Interview Required | No |
 
-### AT-1: Exploring and Simulating Network  Distributed Algorithms 
+### AT-1: Exploring and Simulating Network  Distributed Algorithms
 
 | Description | Network Distributed Algorithms are algorithms run by individual nodes in a network purely by sending messages to each other (message passing). The network itself is naturally modelled by a graph where vertices are network nodes and edges are connections between the nodes. The aims of this project are:<br><br> 1)  Study some distributed algorithms of your choice (See below).<br> 2) Build a network simulator (by modelling the Network as a graph and simulating the message passing),<br>3)  Run experiments, measure, gather statistics, and gain (hopefully, surprising) insights.<br><br>Some Algorithms to concentrate on maybe from the following (the simulator should hopefully be able to run any distributed algorithm but it may take time to understand the algorithms if new to the field):<br><br>- Leader Election<br>- Amnesiac Flooding<br>- Self-Healing Algorithms (Needs capability to add/delete edges - models Peer-to-Peer Networks)<br>- Classic graph problems such as graph colouring, MIS  etc |
 | - | - |
@@ -1855,7 +1846,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Keywords | Matching, Project Allocations, Algorithm analysis, Programming |
 | Interview Required | No |
 
-### AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms  
+### AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms
 
 | Description | Self-healing network algorithms are distributed algorithms that deal with resilience i.e. they suggest responses (e.g. adding new connections) on component/node failures (malicious or accidental). <br> <br>Networks are usually modeled as graph and graph theory and such mathematical techniques are used to analyse the algorithms and provide guarantees. A number of self-healing algorithms are available from the publications at http://dblp.uni-trier.de/pers/hd/t/Trehan:Amitabh  <br> <br>A related topic is Compact routing, Compact routing  algorithms are algorithms that attempt to have routing on a network using low (less then O(n)) memory on nodes by using other (such as topological) information. This is a very important area of research. A good reference is http://dl.acm.org/citation.cfm?id=378581 <br>The authors combine both fields in http://dl.acm.org/citation.cfm?doid=2833312.2833328 <br><br>A student working on this project will understand some of these works and propose new solutions and/or develop software to simulate and test some of the existing algorithms seeking to answer unresolved questions. |
 | - | - |
@@ -1921,7 +1912,7 @@ Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL
 | Keywords | Quantum, Entanglement, MDP, Switch, Swapping |
 | Interview Required | No |
 
-### TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks 
+### TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks
 
 | Description | In many applications of quantum internet a key requirement is to distribute shared entanglements among users connected to a quantum network. We can create entanglements for users in two steps the first step is to create elementary or primary entanglements between neighbors and then in the second step we merge these elementary entanglements using swapping operations to obtain desired entanglements. Recently in [1] it was shown that it is possible to obtain entanglement distribution rates that do not depend on the distance between the users. This is only true for some network topologies and entanglement distribution protocols. In general, if the distance between users increases then entanglement distribution rate decreases. The main objective of this project is to understand the results of [1] and obtain numerical results presented in [1].<br><br>This project is suitable for an L4 student who has some background on quantum computing (who has already taken either MATH3391 or MATH3111).<br><br><br>[1] Patil, A., Pant, M., Englund, D. et al. ``Entanglement generation in a quantum network at distance-independent rate.” npj Quantum Inf 8, 51 (2022). https://doi.org/10.1038/s41534-022-00536-0 |
 | - | - |

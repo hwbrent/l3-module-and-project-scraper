@@ -339,6 +339,13 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         # make them look a bit nicer in the resulting markdown.
         entry["Project Type"] = format_project_type_for_markdown(entry["Project Type"])
 
+        # For some reason there was a rogue title that had a newline in it
+        # which stopped the link in the Contents section from working. This
+        # fixes that.
+        entry["Project Theme/Title"] = (
+            entry["Project Theme/Title"].strip().replace("\n", "")
+        )
+
         # We need to generate an entry for the table of contents at the top
         # of the file.
         # The idea is to have a bullet point with the title of the project
