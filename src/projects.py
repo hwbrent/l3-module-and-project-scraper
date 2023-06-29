@@ -376,13 +376,22 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         for index, (key, value) in enumerate(items):
             value = sanitise_for_markdown(value)
 
+            if index == 0:
+                # By default, the text in the first row of the table is bold.
+                # In this case we don't want that, so the easiest way to
+                # override it is to set the font-weight CSS property on a
+                # <span> which contains the text.
+                # See: https://stackoverflow.com/a/28654491/17406886.
+                md_row = f"| <span style='font-weight:normal'>{key}</span> | <span style='font-weight:normal'>{value}</span> |"
+                table.append(md_row)
+
+                # After the first row, we need to add the weird row where the
+                # cells only contain dashes.
+                table.append("| :- | :- |")
+                continue
+
             md_row = f"| {key} | {value} |"
             table.append(md_row)
-
-            # After the first row, we need to add the weird row where the
-            # cells only contain dashes.
-            if index == 0:
-                table.append("| :- | :- |")
 
         table = "\n".join(table)
         tables.append(table)
