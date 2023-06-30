@@ -1,19 +1,12 @@
 import time
-import json
-from pprint import PrettyPrinter
 
 from utils import (
     get_driver,
-    wait_until_reached,
-    await_element,
-    write_to_json,
-    parse_dotenv,
-    write_to_excel,
     login_to_page,
+    write_to_json,
+    write_to_excel,
     write_to_markdown,
 )
-
-pp = PrettyPrinter(indent=4)
 
 PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/student/"
 
