@@ -1,11 +1,11 @@
 ## Contents
 
-#### Eleni Akrida
+#### Eleni Akrida (jxfn92)
  * [EA-1: Connectivity of interval temporal networks](#ea-1-connectivity-of-interval-temporal-networks)
  * [EA-2: Exact and approximation algorithms for exploration of temporal stars and other dynamic graphs](#ea-2-exact-and-approximation-algorithms-for-exploration-of-temporal-stars-and-other-dynamic-graphs)
  * [EA-3: Binary search on graphs](#ea-3-binary-search-on-graphs)
  * [EA-4: Path and reachability problems in temporal graphs](#ea-4-path-and-reachability-problems-in-temporal-graphs)
-#### Amir Atapour-Abarghouei
+#### Amir Atapour-Abarghouei (qksc24)
  * [AA-1: Are Looks Deceiving? Exploring the Effects of Image Enhancement Techniques on the Performance of Convolutional Neural Networks](#aa-1-are-looks-deceiving-exploring-the-effects-of-image-enhancement-techniques-on-the-performance-of-convolutional-neural-networks)
  * [AA-2: Automatic Quality Control for the Evaluation of Deep Learning Algorithms Applied to Images of the Eye](#aa-2-automatic-quality-control-for-the-evaluation-of-deep-learning-algorithms-applied-to-images-of-the-eye)
  * [AA-3: Multi-Modal, Scale, and Class detection of ophthalmologic diseases through anomaly detection](#aa-3-multi-modal-scale-and-class-detection-of-ophthalmologic-diseases-through-anomaly-detection)
@@ -13,34 +13,34 @@
  * [AA-5: Why can't I find Wally? Exploring the effect of distractors on the performance of convolutional neural networks in cluttered scenes](#aa-5-why-cant-i-find-wally-exploring-the-effect-of-distractors-on-the-performance-of-convolutional-neural-networks-in-cluttered-scenes)
  * [AA-6: Can surgery revitalize the eyes?](#aa-6-can-surgery-revitalize-the-eyes)
  * [AA-7: Automatic detection of cell density in eyes using deep learning](#aa-7-automatic-detection-of-cell-density-in-eyes-using-deep-learning)
-#### Gagangeet Aujla
+#### Gagangeet Aujla (vtsb88)
  * [GA-1: Carbon Intelligent Computing for for Control and Optimisation of Data Centres](#ga-1-carbon-intelligent-computing-for-for-control-and-optimisation-of-data-centres)
  * [GA-2: Electric Vehicle as a Service for Disaster-like Scenarios](#ga-2-electric-vehicle-as-a-service-for-disaster-like-scenarios)
  * [GA-3: Blockchain supported Privacy Aware Ecosystems](#ga-3-blockchain-supported-privacy-aware-ecosystems)
  * [GA-4: Blockchain framework for supply chain management](#ga-4-blockchain-framework-for-supply-chain-management)
-#### Eamonn Bell
+#### Eamonn Bell (rjbc76)
  * [EB-1: Generative modelling of non-text handwritten document annotations](#eb-1-generative-modelling-of-non-text-handwritten-document-annotations)
  * [EB-2: Open project in code as primary source material in the <blink>history of computing</blink>](#eb-2-open-project-in-code-as-primary-source-material-in-the-blinkhistory-of-computingblink)
  * [EB-3: Analysing relevance, reliability, and information flow in user-generated comments on online music videos](#eb-3-analysing-relevance-reliability-and-information-flow-in-user-generated-comments-on-online-music-videos)
  * [EB-4: Tracking the production and circulation of MIDI files during the 1990s](#eb-4-tracking-the-production-and-circulation-of-midi-files-during-the-1990s)
-#### Shauna Concannon
+#### Shauna Concannon (zpjh28)
  * [SC-1: Using NLP to understand political success based on party manifestos](#sc-1-using-nlp-to-understand-political-success-based-on-party-manifestos)
  * [SC-2: Debating what’s important to civic life: NLP and data analysis of political debates](#sc-2-debating-what’s-important-to-civic-life-nlp-and-data-analysis-of-political-debates)
  * [SC-3: Conspiracy theories: understanding and predicting conspiratorial content using natural language processing](#sc-3-conspiracy-theories-understanding-and-predicting-conspiratorial-content-using-natural-language-processing)
-#### Ryan Crosby
+#### Ryan Crosby (hwlw46)
  * [RCr-1: Predicting student experiences based on their characteristics](#rcr-1-predicting-student-experiences-based-on-their-characteristics)
  * [RCr-2: Using Mermaid to Enhance Accessibility of Diagrams.](#rcr-2-using-mermaid-to-enhance-accessibility-of-diagrams)
-#### Stefan Dantchev
+#### Stefan Dantchev (dcs0ssd)
  * [SSD-1: Machine Learning for Game Playing](#ssd-1-machine-learning-for-game-playing)
  * [SSD-2: Learning and Generating Graphs with Deep Neural Networks](#ssd-2-learning-and-generating-graphs-with-deep-neural-networks)
  * [SSD-3: Theorem Proving in Lean](#ssd-3-theorem-proving-in-lean)
-#### Peter Davies
+#### Peter Davies (xsvj82)
  * [PD-1: Implementation and Visualisation of Distributed Graph Algorithms](#pd-1-implementation-and-visualisation-of-distributed-graph-algorithms)
  * [PD-2: Implementation of Algorithms for Massively Parallel Computation](#pd-2-implementation-of-algorithms-for-massively-parallel-computation)
  * [PD-3: Implementation of Discrete Logarithm Algorithms](#pd-3-implementation-of-discrete-logarithm-algorithms)
  * [PD-4: Implementation of Factoring Algorithms](#pd-4-implementation-of-factoring-algorithms)
  * [PD-5: Implementation of Algorithms with Predictions](#pd-5-implementation-of-algorithms-with-predictions)
-#### Thomas Erlebach
+#### Thomas Erlebach (pgnr56)
  * [TE-1: Learning-Augmented Algorithms for Minimum Spanning Trees under Uncertainty](#te-1-learning-augmented-algorithms-for-minimum-spanning-trees-under-uncertainty)
  * [TE-2: Query-based algorithms for Computing with Stochastic Uncertainty](#te-2-query-based-algorithms-for-computing-with-stochastic-uncertainty)
  * [TE-3: Actively Reconfigurable Networks](#te-3-actively-reconfigurable-networks)
@@ -49,60 +49,60 @@
  * [TE-6: Exploration of dynamic networks](#te-6-exploration-of-dynamic-networks)
  * [TE-7: Algorithms for Matching with Uncertain Preferences and Queries](#te-7-algorithms-for-matching-with-uncertain-preferences-and-queries)
  * [TE-8: Scheduling with Testing](#te-8-scheduling-with-testing)
-#### Yona Falinie
+#### Yona Falinie (qljx17)
  * [YF-1: Anomaly Detection and Segmentation in Image and Pixel Level on X-ray Security Imagery](#yf-1-anomaly-detection-and-segmentation-in-image-and-pixel-level-on-x-ray-security-imagery)
  * [YF-2: Thats looks Weird! Finding anomaly from Eye in the Sky.](#yf-2-thats-looks-weird-finding-anomaly-from-eye-in-the-sky)
-#### Mark Gotham
+#### Mark Gotham (bzrt13)
  * [MGo-1: Surprise! “Uniform Information Density” may not be so uniform after all…](#mgo-1-surprise-“uniform-information-density”-may-not-be-so-uniform-after-all…)
  * [MGo-2: Quantifying musical complexity](#mgo-2-quantifying-musical-complexity)
  * [MGo-3: Musical corpus building and data analysis](#mgo-3-musical-corpus-building-and-data-analysis)
  * [MGo-4: Optical _Music_ Recognition](#mgo-4-optical-music-recognition)
  * [MGo-5: Never mind the playlist, here’s the setlist](#mgo-5-never-mind-the-playlist-here’s-the-setlist)
  * [MGo-6: New algorithms for the development of Open Source Software MuseScore and/or Audacity](#mgo-6-new-algorithms-for-the-development-of-open-source-software-musescore-andor-audacity)
-#### Suncica Hadzidedic
+#### Suncica Hadzidedic (jvlb53)
  * [SH-1: Deep learning in recommender systems](#sh-1-deep-learning-in-recommender-systems)
  * [SH-2: Affect- and personality-aware recommender systems](#sh-2-affect--and-personality-aware-recommender-systems)
  * [SH-3: Affective Human-Computer Interaction: Intelligent system adaptation for emotion regulation](#sh-3-affective-human-computer-interaction-intelligent-system-adaptation-for-emotion-regulation)
  * [SH-4: Responsible AI: Explainability, fairness, trust in Recommender Systems](#sh-4-responsible-ai-explainability-fairness-trust-in-recommender-systems)
  * [SH-5: Personal Stylist: Recommender Systems in Fashion](#sh-5-personal-stylist-recommender-systems-in-fashion)
  * [SH-6: Machine learning detection and prediction in mental health](#sh-6-machine-learning-detection-and-prediction-in-mental-health)
-#### Brian Isaac-Medina
+#### Brian Isaac-Medina (pfvn47)
  * [BIM-1: Real-time automatic surveillance photosphere](#bim-1-real-time-automatic-surveillance-photosphere)
-#### Ioannis Ivrissimtzis
+#### Ioannis Ivrissimtzis (dcs0ii)
  * [II-1: Thomson problem](#ii-1-thomson-problem)
  * [II-2: Cryptocurrencies - bitcoin](#ii-2-cryptocurrencies---bitcoin)
  * [II-3: Liveness tests for face recognition](#ii-3-liveness-tests-for-face-recognition)
  * [II-4: Watermarking 3D printed objects](#ii-4-watermarking-3d-printed-objects)
  * [II-5: A blockchain based system for the secure handling of research data](#ii-5-a-blockchain-based-system-for-the-secure-handling-of-research-data)
-#### Anish Jindal
+#### Anish Jindal (nqbh42)
  * [AJ-1: Smart energy management in homes, industries or commercial sectors](#aj-1-smart-energy-management-in-homes-industries-or-commercial-sectors)
  * [AJ-2: Machine learning applications in Internet of things (IoT)](#aj-2-machine-learning-applications-in-internet-of-things-iot)
  * [AJ-3: Data analytics for improving healthcare systems](#aj-3-data-analytics-for-improving-healthcare-systems)
  * [AJ-4: Network resource management for service provisioning in wireless sensor networks](#aj-4-network-resource-management-for-service-provisioning-in-wireless-sensor-networks)
  * [AJ-5: Cyber-security applications in Internet of things (IoT)](#aj-5-cyber-security-applications-in-internet-of-things-iot)
-#### Stamos Katsigiannis
+#### Stamos Katsigiannis (pvnd52)
  * [SK-1: A comparative study of the effect of various data augmentation techniques on the performance of CNN-based image classification](#sk-1-a-comparative-study-of-the-effect-of-various-data-augmentation-techniques-on-the-performance-of-cnn-based-image-classification)
  * [SK-2: Smart white cane for vision impaired and blind people](#sk-2-smart-white-cane-for-vision-impaired-and-blind-people)
  * [SK-3: Using chest X-ray images and deep learning for automated detection of pathologies](#sk-3-using-chest-x-ray-images-and-deep-learning-for-automated-detection-of-pathologies)
  * [SK-4: Electroencephalography (EEG)-based biometrics](#sk-4-electroencephalography-eeg-based-biometrics)
  * [SK-5: Single camera-based UAV-to-UAV detection and tracking](#sk-5-single-camera-based-uav-to-uav-detection-and-tracking)
-#### George Koulieris
+#### George Koulieris (wrzk97)
  * [GK-1: Automatic Projector Calibration](#gk-1-automatic-projector-calibration)
  * [GK-2: Wearable Haptics](#gk-2-wearable-haptics)
  * [GK-3: Enhancing Dark Video Features via Inverse Tone Mapping](#gk-3-enhancing-dark-video-features-via-inverse-tone-mapping)
  * [GK-4: A 3D Rendering Pipeline on FPGA](#gk-4-a-3d-rendering-pipeline-on-fpga)
  * [GK-5: Psychophysics research using PsychoPy](#gk-5-psychophysics-research-using-psychopy)
-#### Andrei Krokhin
+#### Andrei Krokhin (dcs0ak)
  * [AK-1: Backgammon with variable luck](#ak-1-backgammon-with-variable-luck)
  * [AK-2: Research tool for AI search in graphs](#ak-2-research-tool-for-ai-search-in-graphs)
  * [AK-3: Steganography](#ak-3-steganography)
  * [AK-4: Matching under preferences](#ak-4-matching-under-preferences)
  * [AK-5: Solving edge-matching problems with SAT solvers](#ak-5-solving-edge-matching-problems-with-sat-solvers)
  * [AK-6: Integer factorisation algorithms](#ak-6-integer-factorisation-algorithms)
-#### Frederick Li
+#### Frederick Li (dcs0lw)
  * [FL-1: Developing a Deep Learning Architecture for Accurate Human-Object Interaction Recognition](#fl-1-developing-a-deep-learning-architecture-for-accurate-human-object-interaction-recognition)
  * [FL-2: Real-Time Hand Gesture Recognition in Cluttered Environments using Deep Learning](#fl-2-real-time-hand-gesture-recognition-in-cluttered-environments-using-deep-learning)
-#### Robert Lieck
+#### Robert Lieck (ktxg52)
  * [RL-1: Music Generation and/or Analysis](#rl-1-music-generation-andor-analysis)
  * [RL-2: Learning Embeddings by Simulating Communication](#rl-2-learning-embeddings-by-simulating-communication)
  * [RL-3: Interactive Music Visualisation](#rl-3-interactive-music-visualisation)
@@ -111,51 +111,51 @@
  * [RL-6: Variational Autoencoders are Reinforcement Learning Agents](#rl-6-variational-autoencoders-are-reinforcement-learning-agents)
  * [RL-7: Solving Long-Term Dependencies with Hierarchical Memory](#rl-7-solving-long-term-dependencies-with-hierarchical-memory)
  * [RL-8: A PyTorch implementation of the UMAP embedding method](#rl-8-a-pytorch-implementation-of-the-umap-embedding-method)
-#### Yang Long
+#### Yang Long (wgjg13)
  * [YL-1: AI-pedia](#yl-1-ai-pedia)
-#### Christopher Marcotte
+#### Christopher Marcotte (tkdn52)
  * [CM-1: Fast machines, racing heartbeats: Numerical Cardiac Modelling](#cm-1-fast-machines-racing-heartbeats-numerical-cardiac-modelling)
  * [CM-2: ML and Statistical modelling of excitable media](#cm-2-ml-and-statistical-modelling-of-excitable-media)
  * [CM-3: ur-ML: Applications for Data Assimilation](#cm-3-ur-ml-applications-for-data-assimilation)
  * [CM-4: Adaptive Simulation Strategies for Excitable and Oscillatory Media](#cm-4-adaptive-simulation-strategies-for-excitable-and-oscillatory-media)
  * [CM-5: Birdwatching: Counting and tracking birds for fun and profit with Machine Learning](#cm-5-birdwatching-counting-and-tracking-birds-for-fun-and-profit-with-machine-learning)
-#### Barnaby Martin
+#### Barnaby Martin (mpll19)
  * [BM-1: The Student-Project Allocation problem](#bm-1-the-student-project-allocation-problem)
  * [BM-2: Arithmetic constraint satisfaction](#bm-2-arithmetic-constraint-satisfaction)
  * [BM-3: Solving Quantified Constraints](#bm-3-solving-quantified-constraints)
  * [BM-4: Solving problems with Satisfiability](#bm-4-solving-problems-with-satisfiability)
  * [BM-5: Verification](#bm-5-verification)
  * [BM-6: Social Network Analysis](#bm-6-social-network-analysis)
-#### George Mertzios
+#### George Mertzios (fqnp69)
  * [GM-1: Coloring a graph via a game](#gm-1-coloring-a-graph-via-a-game)
  * [GM-2: Influence spreading in networks](#gm-2-influence-spreading-in-networks)
  * [GM-3: Temporal Networks](#gm-3-temporal-networks)
  * [GM-4: Blockchain tokens](#gm-4-blockchain-tokens)
  * [GM-5: Mutating Networks](#gm-5-mutating-networks)
-#### Laura Morgenstern
+#### Laura Morgenstern (lzmr28)
  * [LMo-1: SYCL-based Parallelization of HPCCG](#lmo-1-sycl-based-parallelization-of-hpccg)
  * [LMo-2: Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL](#lmo-2-enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
-#### Billy Moses
+#### Billy Moses (hptg61)
  * [BMo-1: Dispersion of mobile robots on a dynamic graph with fault tolerance](#bmo-1-dispersion-of-mobile-robots-on-a-dynamic-graph-with-fault-tolerance)
  * [BMo-2: Dispersion of mobile robots on a dynamic graph in the semi-synchronous setting](#bmo-2-dispersion-of-mobile-robots-on-a-dynamic-graph-in-the-semi-synchronous-setting)
  * [BMo-3: Dispersion of mobile robots on a dynamic graph with partial vision](#bmo-3-dispersion-of-mobile-robots-on-a-dynamic-graph-with-partial-vision)
  * [BMo-4: Leader election in programmable matter with fault tolerance](#bmo-4-leader-election-in-programmable-matter-with-fault-tolerance)
-#### Rob Powell
+#### Rob Powell (d60n49)
  * [RP-1: Implementing efficient hash tables on GPUs](#rp-1-implementing-efficient-hash-tables-on-gpus)
  * [RP-2: Exploring Aliquot Sequences with Markov Chains](#rp-2-exploring-aliquot-sequences-with-markov-chains)
  * [RP-3: Reinforcement Learning for Team Based Card Games](#rp-3-reinforcement-learning-for-team-based-card-games)
  * [RP-4: Reinforcement Learning - Looking for new Backgammon Strategies](#rp-4-reinforcement-learning---looking-for-new-backgammon-strategies)
-#### Anne Reinarz
+#### Anne Reinarz (nxdj93)
  * [AR-1: Seismic Risk Assessment](#ar-1-seismic-risk-assessment)
  * [AR-2: Containerised UQ](#ar-2-containerised-uq)
  * [AR-3: Stress Recovery Methods](#ar-3-stress-recovery-methods)
  * [AR-4: Higher-order Visualisation in Paraview](#ar-4-higher-order-visualisation-in-paraview)
-#### Paolo Remagnino
+#### Paolo Remagnino (mvcl77)
  * [PR-1: Classification of typical plants for assessment of the health of a natural habitat](#pr-1-classification-of-typical-plants-for-assessment-of-the-health-of-a-natural-habitat)
  * [PR-2: Thorough Comparison of Deep Networks](#pr-2-thorough-comparison-of-deep-networks)
  * [PR-3: Machine Learning for storage and summarisation of large data](#pr-3-machine-learning-for-storage-and-summarisation-of-large-data)
  * [PR-4: How much information can be removed from an image while preserving what it wishes to convey?](#pr-4-how-much-information-can-be-removed-from-an-image-while-preserving-what-it-wishes-to-convey)
-#### Hubert Shum
+#### Hubert Shum (cbmw62)
  * [HS-1: People Movement Trajectory Analysis and Prediction with Deep Learning](#hs-1-people-movement-trajectory-analysis-and-prediction-with-deep-learning)
  * [HS-2: Synthesizing 3D Human Motion for Games and Animation with Deep Learning](#hs-2-synthesizing-3d-human-motion-for-games-and-animation-with-deep-learning)
  * [HS-3: Vision-based Drones/UAVs Tracking with Deep Learning](#hs-3-vision-based-dronesuavs-tracking-with-deep-learning)
@@ -163,13 +163,13 @@
  * [HS-5: Recognising People in Artworks with Computer Vision and Deep Learning](#hs-5-recognising-people-in-artworks-with-computer-vision-and-deep-learning)
  * [HS-6: Hand-object Interaction Detection in Egocentric Video with Deep Learning](#hs-6-hand-object-interaction-detection-in-egocentric-video-with-deep-learning)
  * [HS-7: Deep Learning Based Machine Vision for Space Imagery](#hs-7-deep-learning-based-machine-vision-for-space-imagery)
-#### Craig Stewart
+#### Craig Stewart (lpgk47)
  * [CS-1: An Enhanced Tutor](#cs-1-an-enhanced-tutor)
  * [CS-2: Developing a collaborative intelligence with the EThOS collection of the British Library - HCI focus](#cs-2-developing-a-collaborative-intelligence-with-the-ethos-collection-of-the-british-library---hci-focus)
  * [CS-3: VR Knowledge village](#cs-3-vr-knowledge-village)
  * [CS-4: Tamagotchi: from egg to avatar](#cs-4-tamagotchi-from-egg-to-avatar)
  * [CS-5: Cultural Artefacts in eLearning](#cs-5-cultural-artefacts-in-elearning)
-#### Iain Stewart
+#### Iain Stewart (dcs0ias)
  * [IAS-1: Meta-heuristics for colouring graphs and colouring decentralized networks](#ias-1-meta-heuristics-for-colouring-graphs-and-colouring-decentralized-networks)
  * [IAS-2: Meta-heuristics for computing dominating sets in graphs](#ias-2-meta-heuristics-for-computing-dominating-sets-in-graphs)
  * [IAS-3: Programming matter to shape-shift](#ias-3-programming-matter-to-shape-shift)
@@ -178,27 +178,27 @@
  * [IAS-6: Embedding virtual machines in data centre networks](#ias-6-embedding-virtual-machines-in-data-centre-networks)
  * [IAS-7: Solving the Travelling Salesperson Problem using meta-heuristics](#ias-7-solving-the-travelling-salesperson-problem-using-meta-heuristics)
  * [IAS-8: Applying meta-heuristic methods to solve hard problems](#ias-8-applying-meta-heuristic-methods-to-solve-hard-problems)
-#### Donald Sturgeon
+#### Donald Sturgeon (qwnq78)
  * [DS-1: Named Entity Disambiguation using Knowledge Graphs](#ds-1-named-entity-disambiguation-using-knowledge-graphs)
  * [DS-2: OCR Post-correction through Text Reuse Identification](#ds-2-ocr-post-correction-through-text-reuse-identification)
  * [DS-3: Interactive analysis and visualisation of TEI documents](#ds-3-interactive-analysis-and-visualisation-of-tei-documents)
  * [DS-4: Using character compositionality to improve Chinese NER](#ds-4-using-character-compositionality-to-improve-chinese-ner)
  * [DS-5: Unsupervised authorship clustering](#ds-5-unsupervised-authorship-clustering)
-#### Amitabh Trehan
+#### Amitabh Trehan (rjjg67)
  * [AT-1: Exploring and Simulating Network  Distributed Algorithms](#at-1-exploring-and-simulating-network--distributed-algorithms)
  * [AT-2: Improving Project Allocations: Software or Theory for the Matching Problem](#at-2-improving-project-allocations-software-or-theory-for-the-matching-problem)
  * [AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms](#at-3-designing-and-testing-self-healing-distributed-andor-compact-routing-algorithms)
  * [AT-4: Characterising Equilibria of the EU Grant Games](#at-4-characterising-equilibria-of-the-eu-grant-games)
-#### Wanqing Tu
+#### Wanqing Tu (ckdb34)
  * [WT-1: Wireless Multicast at the MAC Layer](#wt-1-wireless-multicast-at-the-mac-layer)
-#### Thirupathaiah Vasantam
+#### Thirupathaiah Vasantam (hpgq97)
  * [TV-1: Near-Insensitivity of occupancy-based load distribution policies in multi-server homogeneous systems](#tv-1-near-insensitivity-of-occupancy-based-load-distribution-policies-in-multi-server-homogeneous-systems)
  * [TV-2: An optimal load distribution policy for heterogeneous service systems](#tv-2-an-optimal-load-distribution-policy-for-heterogeneous-service-systems)
  * [TV-3: Finding Optimal Entanglement Distribution Policies for Quantum Networks Using MDPs](#tv-3-finding-optimal-entanglement-distribution-policies-for-quantum-networks-using-mdps)
  * [TV-4: Achieving Distance Independent Entanglement Rates in Quantum Networks](#tv-4-achieving-distance-independent-entanglement-rates-in-quantum-networks)
  * [TV-5: Energy Efficient Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-5-energy-efficient-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
  * [TV-6: Robustness of the Counting Rule for Detecting Adversaries in Wireless Sensor Networks](#tv-6-robustness-of-the-counting-rule-for-detecting-adversaries-in-wireless-sensor-networks)
-#### Jingyun Wang
+#### Jingyun Wang (pwnf64)
  * [JW-1: An educational game application](#jw-1-an-educational-game-application)
  * [JW-2: educational data analysis](#jw-2-educational-data-analysis)
  * [JW-3: An AI_based automatic writing assistant system for supporting language learning](#jw-3-an-aibased-automatic-writing-assistant-system-for-supporting-language-learning)
@@ -209,7 +209,7 @@
 
 <hr>
 
-### Eleni Akrida
+### Eleni Akrida (jxfn92)
 
 
 #### EA-1: Connectivity of interval temporal networks
@@ -260,7 +260,7 @@
 
 <hr>
 
-### Amir Atapour-Abarghouei
+### Amir Atapour-Abarghouei (qksc24)
 
 
 #### AA-1: Are Looks Deceiving? Exploring the Effects of Image Enhancement Techniques on the Performance of Convolutional Neural Networks
@@ -344,7 +344,7 @@
 
 <hr>
 
-### Gagangeet Aujla
+### Gagangeet Aujla (vtsb88)
 
 
 #### GA-1: Carbon Intelligent Computing for for Control and Optimisation of Data Centres
@@ -395,7 +395,7 @@
 
 <hr>
 
-### Eamonn Bell
+### Eamonn Bell (rjbc76)
 
 
 #### EB-1: Generative modelling of non-text handwritten document annotations
@@ -446,7 +446,7 @@
 
 <hr>
 
-### Shauna Concannon
+### Shauna Concannon (zpjh28)
 
 
 #### SC-1: Using NLP to understand political success based on party manifestos
@@ -486,7 +486,7 @@
 
 <hr>
 
-### Ryan Crosby
+### Ryan Crosby (hwlw46)
 
 
 #### RCr-1: Predicting student experiences based on their characteristics
@@ -515,7 +515,7 @@
 
 <hr>
 
-### Stefan Dantchev
+### Stefan Dantchev (dcs0ssd)
 
 
 #### SSD-1: Machine Learning for Game Playing
@@ -555,7 +555,7 @@
 
 <hr>
 
-### Peter Davies
+### Peter Davies (xsvj82)
 
 
 #### PD-1: Implementation and Visualisation of Distributed Graph Algorithms
@@ -617,7 +617,7 @@
 
 <hr>
 
-### Thomas Erlebach
+### Thomas Erlebach (pgnr56)
 
 
 #### TE-1: Learning-Augmented Algorithms for Minimum Spanning Trees under Uncertainty
@@ -712,7 +712,7 @@
 
 <hr>
 
-### Yona Falinie
+### Yona Falinie (qljx17)
 
 
 #### YF-1: Anomaly Detection and Segmentation in Image and Pixel Level on X-ray Security Imagery
@@ -741,7 +741,7 @@
 
 <hr>
 
-### Mark Gotham
+### Mark Gotham (bzrt13)
 
 
 #### MGo-1: Surprise! “Uniform Information Density” may not be so uniform after all…
@@ -814,7 +814,7 @@
 
 <hr>
 
-### Suncica Hadzidedic
+### Suncica Hadzidedic (jvlb53)
 
 
 #### SH-1: Deep learning in recommender systems
@@ -887,7 +887,7 @@
 
 <hr>
 
-### Brian Isaac-Medina
+### Brian Isaac-Medina (pfvn47)
 
 
 #### BIM-1: Real-time automatic surveillance photosphere
@@ -905,7 +905,7 @@
 
 <hr>
 
-### Ioannis Ivrissimtzis
+### Ioannis Ivrissimtzis (dcs0ii)
 
 
 #### II-1: Thomson problem
@@ -967,7 +967,7 @@
 
 <hr>
 
-### Anish Jindal
+### Anish Jindal (nqbh42)
 
 
 #### AJ-1: Smart energy management in homes, industries or commercial sectors
@@ -1029,7 +1029,7 @@
 
 <hr>
 
-### Stamos Katsigiannis
+### Stamos Katsigiannis (pvnd52)
 
 
 #### SK-1: A comparative study of the effect of various data augmentation techniques on the performance of CNN-based image classification
@@ -1091,7 +1091,7 @@
 
 <hr>
 
-### George Koulieris
+### George Koulieris (wrzk97)
 
 
 #### GK-1: Automatic Projector Calibration
@@ -1153,7 +1153,7 @@
 
 <hr>
 
-### Andrei Krokhin
+### Andrei Krokhin (dcs0ak)
 
 
 #### AK-1: Backgammon with variable luck
@@ -1226,7 +1226,7 @@
 
 <hr>
 
-### Frederick Li
+### Frederick Li (dcs0lw)
 
 
 #### FL-1: Developing a Deep Learning Architecture for Accurate Human-Object Interaction Recognition
@@ -1255,7 +1255,7 @@
 
 <hr>
 
-### Robert Lieck
+### Robert Lieck (ktxg52)
 
 
 #### RL-1: Music Generation and/or Analysis
@@ -1350,7 +1350,7 @@
 
 <hr>
 
-### Yang Long
+### Yang Long (wgjg13)
 
 
 #### YL-1: AI-pedia
@@ -1368,7 +1368,7 @@
 
 <hr>
 
-### Christopher Marcotte
+### Christopher Marcotte (tkdn52)
 
 
 #### CM-1: Fast machines, racing heartbeats: Numerical Cardiac Modelling
@@ -1430,7 +1430,7 @@
 
 <hr>
 
-### Barnaby Martin
+### Barnaby Martin (mpll19)
 
 
 #### BM-1: The Student-Project Allocation problem
@@ -1503,7 +1503,7 @@
 
 <hr>
 
-### George Mertzios
+### George Mertzios (fqnp69)
 
 
 #### GM-1: Coloring a graph via a game
@@ -1565,7 +1565,7 @@
 
 <hr>
 
-### Laura Morgenstern
+### Laura Morgenstern (lzmr28)
 
 
 #### LMo-1: SYCL-based Parallelization of HPCCG
@@ -1594,7 +1594,7 @@
 
 <hr>
 
-### Billy Moses
+### Billy Moses (hptg61)
 
 
 #### BMo-1: Dispersion of mobile robots on a dynamic graph with fault tolerance
@@ -1645,7 +1645,7 @@
 
 <hr>
 
-### Rob Powell
+### Rob Powell (d60n49)
 
 
 #### RP-1: Implementing efficient hash tables on GPUs
@@ -1696,7 +1696,7 @@
 
 <hr>
 
-### Anne Reinarz
+### Anne Reinarz (nxdj93)
 
 
 #### AR-1: Seismic Risk Assessment
@@ -1747,7 +1747,7 @@
 
 <hr>
 
-### Paolo Remagnino
+### Paolo Remagnino (mvcl77)
 
 
 #### PR-1: Classification of typical plants for assessment of the health of a natural habitat
@@ -1798,7 +1798,7 @@
 
 <hr>
 
-### Hubert Shum
+### Hubert Shum (cbmw62)
 
 
 #### HS-1: People Movement Trajectory Analysis and Prediction with Deep Learning
@@ -1882,7 +1882,7 @@
 
 <hr>
 
-### Craig Stewart
+### Craig Stewart (lpgk47)
 
 
 #### CS-1: An Enhanced Tutor
@@ -1944,7 +1944,7 @@
 
 <hr>
 
-### Iain Stewart
+### Iain Stewart (dcs0ias)
 
 
 #### IAS-1: Meta-heuristics for colouring graphs and colouring decentralized networks
@@ -2039,7 +2039,7 @@
 
 <hr>
 
-### Donald Sturgeon
+### Donald Sturgeon (qwnq78)
 
 
 #### DS-1: Named Entity Disambiguation using Knowledge Graphs
@@ -2101,7 +2101,7 @@
 
 <hr>
 
-### Amitabh Trehan
+### Amitabh Trehan (rjjg67)
 
 
 #### AT-1: Exploring and Simulating Network  Distributed Algorithms
@@ -2152,7 +2152,7 @@
 
 <hr>
 
-### Wanqing Tu
+### Wanqing Tu (ckdb34)
 
 
 #### WT-1: Wireless Multicast at the MAC Layer
@@ -2170,7 +2170,7 @@
 
 <hr>
 
-### Thirupathaiah Vasantam
+### Thirupathaiah Vasantam (hpgq97)
 
 
 #### TV-1: Near-Insensitivity of occupancy-based load distribution policies in multi-server homogeneous systems
@@ -2243,7 +2243,7 @@
 
 <hr>
 
-### Jingyun Wang
+### Jingyun Wang (pwnf64)
 
 
 #### JW-1: An educational game application
