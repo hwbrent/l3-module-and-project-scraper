@@ -260,7 +260,7 @@ def write_to_markdown(
         if "-1: " in fmt["Project Theme/Title"]:
             # Add their Durham Uni code thingy at the end of their name
             # to make it easier for people to email them
-            full_name = f"{raw['forename']} {raw['surname']} ({raw['staff']})"
+            full_name = f"{raw['forename']} {raw['surname']} _({raw['staff']})_"
 
             # Inserting at index -1 adds an entry to a list at the position
             # before the last position. This IS the behaviour we want, but
