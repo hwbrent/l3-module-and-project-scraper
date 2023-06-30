@@ -215,22 +215,25 @@ def get_markdown_header_id(text: str) -> str:
     return text
 
 
-def write_to_markdown(data: list[dict], file_name: str) -> None:
+def write_to_markdown(
+    data: dict["raw" : list[dict], "formatted" : list[dict]], file_name: str
+) -> None:
     contents = []
     contents.append("## Contents\n")
 
     tables = []
 
-    for entry in data:
+    combined = zip(data["raw"], data["formatted"])
+    for raw, fmt in combined:
         # First off, we can slightly reformat a few items in the entry to
         # make them look a bit nicer in the resulting markdown.
-        entry["Project Type"] = format_project_type_for_markdown(entry["Project Type"])
+        fmt["Project Type"] = format_project_type_for_markdown(fmt["Project Type"])
 
         # For some reason there was a rogue title that had a newline in it
         # which stopped the link in the Contents section from working. This
         # fixes that.
-        entry["Project Theme/Title"] = (
-            entry["Project Theme/Title"].strip().replace("\n", "")
+        fmt["Project Theme/Title"] = (
+            fmt["Project Theme/Title"].strip().replace("\n", "")
         )
 
         # We need to generate an entry for the table of contents at the top
@@ -238,7 +241,7 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         # The idea is to have a bullet point with the title of the project
         # and a link to the table further down in the document.
 
-        title = entry["Project Theme/Title"]
+        title = fmt["Project Theme/Title"]
         link = get_markdown_header_id(title)
 
         # This is the raw markdown that we will put in the file.
@@ -249,16 +252,30 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
         # project.
         table = []
 
+        # If the project is the first in the list of those offered by this
+        # member of staff, we should add headers to the Contents section and
+        # above the table with the full name of the member of staff. Otherwise
+        # all they see is initials which won't be helpful for most people
+        # (at least it isn't for me).
+        if "-1: " in fmt["Project Theme/Title"]:
+            full_name = raw["forename"] + " " + raw["surname"]
+
+            # Inserting at index -1 adds an entry to a list at the position
+            # before the last position. This IS the behaviour we want, but
+            # you'd think inserting at -1 would be the same as appending 🤔
+            contents.insert(-1, f"#### {full_name}")
+            table.append(f"\n\n<hr>\n\n### {full_name}\n\n")
+
         # First, we add a header above the table so that we can link to this
         # specific table.
-        table.append(f"### {title}\n")
+        table.append(f"#### {title}\n")
 
         # Now, we generate the actual table.
 
         # There's no point in adding the title to the table seeing as it's
         # in the header above the table. So we skip the first key/value pair
         # in the entry.
-        items = list(entry.items())[1:]
+        items = list(fmt.items())[1:]
 
         for index, (key, value) in enumerate(items):
             value = sanitise_for_markdown(value)
@@ -286,7 +303,7 @@ def write_to_markdown(data: list[dict], file_name: str) -> None:
     contents = "\n".join(contents)
     tables = "\n\n".join(tables)
 
-    file = contents + "\n<hr>\n\n" + tables
+    file = contents + "\n\n" + tables
 
     destination = os.path.join(_project_root, file_name + ".md")
     with open(destination, "w") as f:

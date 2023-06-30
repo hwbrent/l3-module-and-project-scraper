@@ -210,7 +210,10 @@ def main():
     formatted = format_raw_data(raw)
 
     write_to_json(raw, "projects")
-    write_to_markdown(formatted, "projects")
+    # We need to pass in the raw and formatted data to write_to_markdown
+    # so that it has access to the full staff member names in 'raw' and
+    # thus can create headers with the staff member names.
+    write_to_markdown({"raw": raw, "formatted": formatted}, "projects")
     write_to_excel(formatted, "projects")
 
 
