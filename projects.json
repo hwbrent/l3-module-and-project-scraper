@@ -1974,7 +1974,7 @@
         "l3": 1,
         "l4": 1,
         "maxStudents": "0",
-        "outcomes": "Basic: \n<ul>\n<li> Porting of queue data structure to SYCL </li>\n<li> Porting of task producer-consumer mechanism to SYCL</li>\n<li> Performance analysis with parallel efficiency as performance metric<\\>\n</ul>\n\nAdvanced: \n<ul>\n<li> Implementation of graph data structure for dependency resolution</li>\n<li> Implementation of a tree-based accumulation as use case on top of the framework</li>\n</ul>",
+        "outcomes": "Basic: \n<ul>\n<li> Porting of queue data structure to SYCL </li>\n<li> Porting of task producer-consumer mechanism to SYCL</li>\n<li> Performance analysis with parallel efficiency as performance metric</li>\n</ul>\n\nAdvanced: \n<ul>\n<li> Implementation of graph data structure for dependency resolution</li>\n<li> Implementation of a tree-based accumulation as use case on top of the framework</li>\n</ul>",
         "skills": "C++, or a keen interest to learn it.",
         "themeID": 691,
         "url": "<a href=\"https://code.fmsolvr.fz-juelich.de/ATML-SE/eventify-GPU\"> Source code to start from: task-parallel programming framework for GPUs in CUDA</a>\n<br>\n<a href=\"https://dl.acm.org/doi/abs/10.1145/3394277.3401858\"> Background information on underlying tasking framework and theory behind it</a>\n<br>\n<a href=\"https://www.khronos.org/sycl\">Information about SYCL</a>"
