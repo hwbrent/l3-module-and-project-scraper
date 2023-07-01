@@ -65,25 +65,51 @@ def get_module_params(driver) -> list[dict[str, str]]:
     return param_fields
 
 
-def get_timetable_page(driver, choices):
-    printstyle = None
-    object = None
-    objectstr = None
-    days = None
-    weekstr = None
-    periods = None
-    template = None
+def get_timetable_page(driver, choices: dict[str, list[str]]) -> None:
+    """
+    This function goes to the timetable page corresponding to the choices
+    (i.e. the selected `<option>`s' values) in `choices`.
+    """
+    login_to_page_with_url_auth(driver, MODULE_TIMETABLE_URL)
 
-    # This template url can be seen in the getTimetable function in the JS
-    # file, i.e. https://timetable.dur.ac.uk/js/form.js
-    url = f"https://timetable.dur.ac.uk/reporting/{printstyle};{object};name;{objectstr}?days={days}&weeks={weekstr}&periods={periods}&template={template}&height=100&week=100"
-    driver.get(url)
+    for _, option_values in choices.items():
+        for option_value in option_values:
+            # You can't programmatically set the attribute of a WebElement
+            # with Selenium, so you have to use JavaScript to do it instead
+            driver.execute_script(
+                f'document.querySelector(`[value="{option_value}"]`).selected = true;'
+            )
+
+    # Click the "submit" button
+    view_timetable_button = driver.find_element(
+        By.CSS_SELECTOR, 'input[value="View Timetable"]'
+    )
+    view_timetable_button.click()
 
 
 def main():
     driver = get_driver()
-    module_params = get_module_params(driver)
-    pp.pprint(module_params)
+    # module_params = get_module_params(driver)
+    # pp.pprint(module_params)
+
+    # fmt: off
+    get_timetable_page(driver, {
+        'days': [ '1-7' ],
+        'periods': [ '1-56' ],
+        'weeks': [ '38', '25', '51', '12', '47', '21', '34', '8', '30', '43', '17', '4', '39', '26', '52', '13', '48', '22', '35', '9', '31', '44', '18', '5', '40', '27', '14', '1', '49', '23', '36', '10', '32', '45', '19', '6', '41', '28', '15', '2', '50', '24', '37', '11', '33', '46', '20', '7', '42', '29', '16', '3' ],
+        'style': [ 'textspreadsheet' ],
+        'identifier': [
+            'COMP3012',
+            'COMP3567',
+            'COMP3587',
+            'COMP3617',
+            'COMP3647',
+            'COMP3687',
+            'COMP3717',
+            'CFLS1G21'
+        ]
+    })
+    # fmt: on
 
 
 if __name__ == "__main__":
