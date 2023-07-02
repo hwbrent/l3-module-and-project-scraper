@@ -15,24 +15,19 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 def scrape_raw_data(driver) -> list[dict]:
     login_to_page(driver, PROJECTS_SITE_URL)
 
-    # This is the list that will contain all the "projects", i.e. all the
-    # dictionaries containg information on each project's.
+    # This will contain the `dict`s containg each project's info.
     aggregate_data = []
 
-    # The data returned in this call is akin to the data you see in the
-    # unclicked staff proposer tables. It returns a list of dictionaries
-    # such as the below
-    """
-    {
-        "title": "Connectivity of interval temporal networks",
-        "theme": 162,
-        "staff": "jxfn92",
-        "initials": "EA",
-        "forename": "Eleni",
-        "surname": "Akrida"
-    }
-    """
-    all_projects = driver.execute_script(
+    # • I was poking around with the browser devtools and noticed that
+    #   get the project data, calls were being made to 'Registers.php'.
+    # • I thought "what if I can make the same calls myself", so I tried
+    #   it in the browser console and it worked.
+    # • So I wondered "can I do this with Selenium?", so I gave that a go
+    #   too, and it worked!
+    # • So to me it made sense to make those same calls here rather than
+    #   have to go to the extra effort of scraping the data from the DOM.
+
+    projects = driver.execute_script(
         """
         return await $.ajax({
             type: "GET",
@@ -45,12 +40,53 @@ def scrape_raw_data(driver) -> list[dict]:
         """
     )
 
-    for project in all_projects:
-        # This is a parameter that is passed to the $.ajax call.
-        id = project["theme"]
+    for project in projects:
+        # `project` is a `dict` which looks like something like this:
+        # {
+        #     "title": "Connectivity of interval temporal networks",
+        #     "theme": 162,
+        #     "staff": "jxfn92",
+        #     "initials": "EA",
+        #     "forename": "Eleni",
+        #     "surname": "Akrida"
+        # }
 
-        # For some reason, even though we're specifying we want the data for
-        # one project, it returns a dictionary within a list. Hence the "[0]".
+        # • This server call returns the more in-depth data that you see
+        #   in the table at the top of the page after you click the project
+        #   title.
+        # • The request is for a single project's data, but for some reason
+        #   the data (a `dict`) is returned within a `list`. Hence the `[0]`.
+        # • An example of the data returned is this:
+        # [{
+        #     "description": """An interval temporal network is a network whose
+        #                       edges are active for one or more time intervals
+        #                       and inactive the rest of the time. Work has
+        #                       been done previously on instantaneous connectivity
+        #                       of interval temporal networks, where the network
+        #                       is considered to be connected during a period
+        #                       of time [x,y], if it is connected for all time
+        #                       instances within the continuous time interval
+        #                       [x,y]. This project will look at the
+        #                       implementation of existing and possible
+        #                       development of new approaches to preserve
+        #                       connectivity of an interval temporal network
+        #                       over time (by maintaining a 'bank' of extra
+        #                       edges, available during certain time intervals,
+        #                       which can reconnect the network in case it
+        #                       becomes disconnected).""",
+        #     "interview": 0,
+        #     "keywords": "temporal graph, graph connectivity, algorithm",
+        #     "l3": 1,
+        #     "l4": 1,
+        #     "maxStudents": "0",
+        #     "outcomes": """Implementation and evaluation of existing algorithms
+        #                    with possible development of new approaches.""",
+        #     "skills": """An interest and background knowledge
+        #                  in graph theory and graph algorithms """,
+        #     "themeID": 162,
+        #     "title": "Connectivity of interval temporal networks",
+        #     "url": "https://www.worldscientific.com/doi/pdf/10.1142/S0129626419500099",
+        # }]
         in_depth_info = driver.execute_script(
             f"""
             return await $.ajax({{
@@ -59,18 +95,18 @@ def scrape_raw_data(driver) -> list[dict]:
                 url: "Registers.php",
                 data: {{
                     "query": "oneProject",
-                    "theme": {id}
+                    "theme": {project["theme"]}
                 }}
             }})
             """
         )[0]
 
-        # This essentially merges the two dictionaries into one.
+        # • Here, we merge the surface-level from the first initial
+        #   'allProjects' request with the more in-depth data from the
+        #   'oneProject' call into one `dict`.
         new_dict = project | in_depth_info
 
         aggregate_data.append(new_dict)
-
-    driver.quit()
 
     return aggregate_data
 
@@ -191,8 +227,9 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 def main():
     driver = get_driver()
-
     raw = scrape_raw_data(driver)
+    driver.quit()
+
     formatted = format_raw_data(raw)
 
     write_to_json(raw, "projects")
