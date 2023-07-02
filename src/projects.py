@@ -12,8 +12,7 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 # ------------------------------
 
 
-def scrape_raw_data() -> list[dict]:
-    driver = get_driver()
+def scrape_raw_data(driver) -> list[dict]:
     login_to_page(driver, PROJECTS_SITE_URL)
 
     # This is the list that will contain all the "projects", i.e. all the
@@ -191,7 +190,9 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 
 def main():
-    raw = scrape_raw_data()
+    driver = get_driver()
+
+    raw = scrape_raw_data(driver)
     formatted = format_raw_data(raw)
 
     write_to_json(raw, "projects")
