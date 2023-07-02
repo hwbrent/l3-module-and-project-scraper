@@ -1980,6 +1980,24 @@
         "url": "<a href=\"https://code.fmsolvr.fz-juelich.de/ATML-SE/eventify-GPU\"> Source code to start from: task-parallel programming framework for GPUs in CUDA</a>\n<br>\n<a href=\"https://dl.acm.org/doi/abs/10.1145/3394277.3401858\"> Background information on underlying tasking framework and theory behind it</a>\n<br>\n<a href=\"https://www.khronos.org/sycl\">Information about SYCL</a>"
     },
     {
+        "forename": "Laura",
+        "initials": "LMo",
+        "staff": "lzmr28",
+        "surname": "Morgenstern",
+        "theme": 709,
+        "title": "Reinforcement Learning-based AI Player for Games with Imperfect Information",
+        "description": "Reinforcement learning (RL) is a machine learning technique that enables AI agents to learn beneficial strategies for reacting to dynamic environments. The AI player starts out with random actions in a trial-and-error manner and receives feedback for its actions via quantitative rewards and/or punishments. For AI players in games, this involves playing the game against another (AI) player or (past versions of) the AI player itself, and using the overall outcome of the game as feedback. In the context of multi-player games with perfect information such as Go or chess, RL has produced the strongest AI players that can even beat human champions. For multi-player games with imperfect information such as rummikub or qwirkle, RL algorithms are less well studied since hidden information and uncertainty result in more complex state-action graphs. The purpose of this project is to develop an RL-based AI player for a multi-player abstract strategy game with imperfect information, and to evaluate its competitiveness against an existing rule-based expert system.",
+        "interview": 0,
+        "keywords": "Q-learning, Proximal Policy Optimization, Monte Carlo Tree Search",
+        "l3": 1,
+        "l4": 1,
+        "maxStudents": "0",
+        "outcomes": "Python implementation of an RL-based AI player for a multi-player abstract strategy game, and its evaluation against an existing rule-based expert system",
+        "skills": "An understanding of reinforcement learning techniques, and the ability to use Python APIs",
+        "themeID": 709,
+        "url": "<ul>\n<li><a href=\"https://en.wikipedia.org/wiki/Qwirkle\"> Rules of qwirkle</a></li>\n<li><a href=\"https://arxiv.org/abs/1707.06347\"> Proximal Policy Optimization</a></li>\n<li><a href=\"https://github.com/davidADSP/SIMPLE\"> Python API for Proximal Policy Optimization in Games</a></li>\n<li><a href=\"http://incompleteideas.net/book/RLbook2020.pdf\"> Introduction to RL incl. Q-learning and Monte Carlo Methods</a></li>\n</ul>"
+    },
+    {
         "forename": "Billy",
         "initials": "BMo",
         "staff": "hptg61",

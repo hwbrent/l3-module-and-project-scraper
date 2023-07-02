@@ -135,6 +135,7 @@
 #### Laura Morgenstern _(lzmr28)_
  * [LMo-1: SYCL-based Parallelization of HPCCG](#lmo-1-sycl-based-parallelization-of-hpccg)
  * [LMo-2: Enabling Fine-Grained Task-Parallelism on Massively Parallel Hardware with SYCL](#lmo-2-enabling-fine-grained-task-parallelism-on-massively-parallel-hardware-with-sycl)
+ * [LMo-3: Reinforcement Learning-based AI Player for Games with Imperfect Information](#lmo-3-reinforcement-learning-based-ai-player-for-games-with-imperfect-information)
 #### Billy Moses _(hptg61)_
  * [BMo-1: Dispersion of mobile robots on a dynamic graph with fault tolerance](#bmo-1-dispersion-of-mobile-robots-on-a-dynamic-graph-with-fault-tolerance)
  * [BMo-2: Dispersion of mobile robots on a dynamic graph in the semi-synchronous setting](#bmo-2-dispersion-of-mobile-robots-on-a-dynamic-graph-in-the-semi-synchronous-setting)
@@ -1588,6 +1589,17 @@
 | Requirements | C++, or a keen interest to learn it. |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | C++, Parallel Programming, High Performance Computing, Software Engineering, GPU Computing, SYCL, CUDA |
+| Interview Required | No |
+
+#### LMo-3: Reinforcement Learning-based AI Player for Games with Imperfect Information
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Reinforcement learning (RL) is a machine learning technique that enables AI agents to learn beneficial strategies for reacting to dynamic environments. The AI player starts out with random actions in a trial-and-error manner and receives feedback for its actions via quantitative rewards and/or punishments. For AI players in games, this involves playing the game against another (AI) player or (past versions of) the AI player itself, and using the overall outcome of the game as feedback. In the context of multi-player games with perfect information such as Go or chess, RL has produced the strongest AI players that can even beat human champions. For multi-player games with imperfect information such as rummikub or qwirkle, RL algorithms are less well studied since hidden information and uncertainty result in more complex state-action graphs. The purpose of this project is to develop an RL-based AI player for a multi-player abstract strategy game with imperfect information, and to evaluate its competitiveness against an existing rule-based expert system.</span> |
+| :- | :- |
+| Reference URLs | <br>https://en.wikipedia.org/wiki/Qwirkle<br>https://arxiv.org/abs/1707.06347<br>https://github.com/davidADSP/SIMPLE<br>http://incompleteideas.net/book/RLbook2020.pdf<br> |
+| Anticipated Outcomes | Python implementation of an RL-based AI player for a multi-player abstract strategy game, and its evaluation against an existing rule-based expert system |
+| Requirements | An understanding of reinforcement learning techniques, and the ability to use Python APIs |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | Q-learning, Proximal Policy Optimization, Monte Carlo Tree Search |
 | Interview Required | No |
 
 
