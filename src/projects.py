@@ -1,5 +1,3 @@
-import time
-
 from utils import (
     get_driver,
     login_to_page,
@@ -17,12 +15,6 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 def scrape_raw_data():
     driver = get_driver()
     login_to_page(driver, PROJECTS_SITE_URL)
-    time.sleep(1)
-
-    # For some reason, none of the tables seem to load unless you refresh
-    # the page after it first loads.
-    driver.refresh()
-    time.sleep(1)
 
     # This is the list that will contain all the "projects", i.e. all the
     # dictionaries containg information on each project's.
