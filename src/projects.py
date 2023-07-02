@@ -12,7 +12,7 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 # ------------------------------
 
 
-def scrape_raw_data():
+def scrape_raw_data() -> list[dict]:
     driver = get_driver()
     login_to_page(driver, PROJECTS_SITE_URL)
 
