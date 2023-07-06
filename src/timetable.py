@@ -148,6 +148,29 @@ def parse_raw_module_data(data):
     return module_data
 
 
+def get_header_data(table):
+    # This <table> had a bunch of <tr>s. The data we want is in the last
+    # one.
+
+    data = {}
+
+    # • We go through tbody and only get the direct children because if we
+    #   search for <tr>s recursively it will be a nightmare.
+    # • Because for some reason the direct children <tr>s contain <table>s
+    #   which themselves contain <tr>s.
+    rows = table.tbody.find_all("tr", recursive=False)
+
+    # Each of the pieces of text we want are in a <b> element
+    bolds = rows[-1].find_all("b")
+
+    for b in bolds:
+        text = b.text.strip()
+        key, value = text.split(": ", 1)
+        data[key] = value
+
+    return data
+
+
 def scrape_raw_timetable_data(driver):
     """
     Scrapes the timetable data displayed on the page which `get_timetable_page`
