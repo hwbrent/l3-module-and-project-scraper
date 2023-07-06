@@ -98,6 +98,34 @@ def get_timetable_page(driver, choices: dict[str, list[str]]) -> None:
     view_timetable_button.click()
 
 
+def parse_activity_data(table):
+    print(table)
+
+
+def parse_raw_module_data(data):
+    raw_header = data[0]
+    raw_activity_data = data[1:15]
+    raw_footer = data[15]
+
+    # • We want to iterate over pairs in `raw`
+    # • i.e. (0,1), (2,3), (4,5), (6,7) etc
+    for i in range(0, len(raw_activity_data) - 1, 2):
+        # • The first item in the pair is a <p> containing the name of the
+        #   day of the week.
+        # • The <p> contains a <span>, and that <span>'s innerText is the
+        #   day of the week string.
+        dotw_raw = raw_activity_data[i]
+        dotw = dotw_raw.span.text.strip()
+
+        # The second item is a <table> containing the activity data.
+        activities_raw = raw_activity_data[i + 1]
+        parse_activity_data(activities_raw)
+
+        print()
+
+    pass
+
+
 def scrape_raw_timetable_data(driver):
     """
     Scrapes the timetable data displayed on the page which `get_timetable_page`
@@ -124,12 +152,8 @@ def scrape_raw_timetable_data(driver):
     children = body.find_all(recursive=False)
 
     for i in range(0, len(children), 16):
-        raw_header = children[i]
-        raw_activity_data = children[i + 1 : i + 15]
-        raw_footer = children[i + 15]
-
-        print(raw_activity_data)
-        print()
+        raw_module_data = children[i : i + 16]
+        module_data = parse_raw_module_data(raw_module_data)
 
 
 def main():
