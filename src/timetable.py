@@ -131,23 +131,21 @@ def parse_raw_module_data(data):
     raw_activity_data = data[1:15]
     raw_footer = data[15]
 
+    module_data = {}
+
     # • We want to iterate over pairs in `raw`
     # • i.e. (0,1), (2,3), (4,5), (6,7) etc
     for i in range(0, len(raw_activity_data) - 1, 2):
-        # • The first item in the pair is a <p> containing the name of the
-        #   day of the week.
-        # • The <p> contains a <span>, and that <span>'s innerText is the
-        #   day of the week string.
+        # The first item in the pair is a <p> which contains a <span> whose
+        # innerText is the day of the week.
         dotw_raw = raw_activity_data[i]
         dotw = dotw_raw.span.text.strip()
 
         # The second item is a <table> containing the activity data.
         activities_raw = raw_activity_data[i + 1]
-        parse_activity_data(activities_raw)
+        module_data[dotw] = parse_activity_data(activities_raw)
 
-        print()
-
-    pass
+    return module_data
 
 
 def scrape_raw_timetable_data(driver):
