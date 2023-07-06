@@ -123,13 +123,10 @@ def scrape_raw_timetable_data(driver):
     # which we don't want in this scenario.
     children = body.find_all(recursive=False)
 
-    i = 0
-    while i < len(children):
+    for i in range(0, len(children), 16):
         raw_header = children[i]
         raw_activity_data = children[i + 1 : i + 15]
         raw_footer = children[i + 15]
-
-        i += 16
 
         print(raw_activity_data)
         print()
