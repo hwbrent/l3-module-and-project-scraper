@@ -1,5 +1,7 @@
 from pprint import PrettyPrinter
 
+from bs4 import BeautifulSoup
+
 from selenium.webdriver.common.by import By
 
 pp = PrettyPrinter(indent=4)
@@ -12,6 +14,9 @@ from utils import (
 )
 
 MODULE_TIMETABLE_URL = "https://timetable.dur.ac.uk/module.htm"
+
+
+# --------------------
 
 
 def get_module_params(driver) -> list[dict[str, str]]:
@@ -72,10 +77,16 @@ def get_timetable_page(driver, choices: dict[str, list[str]]) -> None:
     """
     login_to_page_with_url_auth(driver, MODULE_TIMETABLE_URL)
 
+    # Basically what we're doing is:
+    # - Getting the 'value' attribute of each <option> chosen (this data is)
+    #   passed in via the 'choices' parameter.
+    # - Using JavaScript to find that <option> in the DOM and set its
+    #   "selected" attribute to be 'true' (because you can't do this with
+    #   Selenium).
+    # - Clicking the "View Timetable" button.
+
     for _, option_values in choices.items():
         for option_value in option_values:
-            # You can't programmatically set the attribute of a WebElement
-            # with Selenium, so you have to use JavaScript to do it instead
             driver.execute_script(
                 f'document.querySelector(`[value="{option_value}"]`).selected = true;'
             )
@@ -85,6 +96,43 @@ def get_timetable_page(driver, choices: dict[str, list[str]]) -> None:
         By.CSS_SELECTOR, 'input[value="View Timetable"]'
     )
     view_timetable_button.click()
+
+
+def scrape_raw_timetable_data(driver):
+    """
+    Scrapes the timetable data displayed on the page which `get_timetable_page`
+    already navigated to.
+    """
+
+    soup = BeautifulSoup(driver.page_source, "html.parser")
+
+    # • We can get the data we need by iterating over the direct children
+    #   of document.body
+    # • The pattern in which each module's data is found is like so:
+    #   • One <table> containing the "Module:", "Dept:", and "Weeks:" data
+    #   • One <p> and one <table> for each day of the week (so 14 total)
+    #   • One <table> containing random stuff we don't care about (e.g. the
+    #     "Print Timetable" link)
+    # • So each module has 16 elements directly under document.body that we
+    #   can scrape the data from.
+
+    body = soup.find("body")
+
+    # These are the direct children of document.body.
+    # If you simply iterate over 'body' it gets all the non-direct descendants
+    # which we don't want in this scenario.
+    children = body.find_all(recursive=False)
+
+    i = 0
+    while i < len(children):
+        raw_header = children[i]
+        raw_activity_data = children[i + 1 : i + 15]
+        raw_footer = children[i + 15]
+
+        i += 16
+
+        print(raw_activity_data)
+        print()
 
 
 def main():
@@ -110,6 +158,10 @@ def main():
         ]
     })
     # fmt: on
+
+    scrape_raw_timetable_data(driver)
+
+    driver.quit()
 
 
 if __name__ == "__main__":
