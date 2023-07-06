@@ -99,7 +99,31 @@ def get_timetable_page(driver, choices: dict[str, list[str]]) -> None:
 
 
 def parse_activity_data(table):
-    print(table)
+    activity_data = []
+
+    rows = table.find_all("tr")
+
+    # Handle cases where there are no activities on a certain day
+    if len(rows) == 0:
+        return activity_data
+
+    thead = rows[0]
+    column_names = tuple(cell.text.strip() for cell in thead.find_all("td"))
+
+    tbody = rows[1:]
+    for row in tbody:
+        entry = {}
+
+        cells = row.find_all("td")
+        for i, cell in enumerate(cells):
+            column_name = column_names[i]
+            value = cell.text.strip()
+
+            entry[column_name] = value
+
+        activity_data.append(entry)
+
+    return activity_data
 
 
 def parse_raw_module_data(data):
