@@ -233,7 +233,7 @@ def main():
     })
     # fmt: on
 
-    scrape_raw_timetable_data(driver)
+    pp.pprint(scrape_raw_timetable_data(driver))
 
     driver.quit()
 
