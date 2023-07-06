@@ -206,7 +206,7 @@ def scrape_raw_timetable_data(driver):
 
         timetable_data.append(header_data | module_data)
 
-    pp.pprint(timetable_data)
+    return timetable_data
 
 
 def main():
