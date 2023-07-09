@@ -78,21 +78,28 @@ def add_auth(url: str, username: str, password: str) -> str:
     return url.replace("://", f"://{username}:{password}@")
 
 
+def get_url_with_auth(url: str) -> str:
+    """
+    1. Gets the username and password from `.env`
+    2. Adds them to the provided url
+    3. Returns the modified url
+    """
+    dotenv = parse_dotenv()
+
+    if not bool(dotenv):
+        raise NameError("No .env file found")
+
+    USERNAME = dotenv["USERNAME"]
+    PASSWORD = dotenv["PASSWORD"]
+
+    return add_auth(url, USERNAME, PASSWORD)
+
+
 def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     """
     Gets the `driver` past the login stage to get to the `url` provided.
     """
-    dotenv = parse_dotenv()
-
-    # If there's a username and password in a .env file at the root of the
-    # project, use those to autofill the login fields and submit them.
-    if bool(dotenv):
-        USERNAME = dotenv["USERNAME"]
-        PASSWORD = dotenv["PASSWORD"]
-
-        url = add_auth(url, USERNAME, PASSWORD)
-        driver.get(url)
-
+    url = get_url_with_auth(url)
     wait_until_reached(driver, url)
 
 
