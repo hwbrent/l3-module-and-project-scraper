@@ -193,21 +193,39 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 
 def main():
+    print("Getting driver...", end=" ")
     driver = get_driver()
+    print("Done!")
 
+    print("Logging in and navigating to the projects site...")
     login_to_page(driver, PROJECTS_SITE_URL)
+    print("Done!")
 
+    print("Scraping raw project data...", end=" ")
     raw = scrape_raw_data(driver)
+    print("Done!")
+
+    print("Quitting chromedriver...", end=" ")
     driver.quit()
+    print("Done!")
 
+    print("Formatting raw data...", end=" ")
     formatted = format_raw_data(raw)
+    print("Done!")
 
+    print("Writing raw data to JSON file...", end=" ")
     write_to_json(raw, "projects")
+    print("Done!")
     # We need to pass in the raw and formatted data to write_to_markdown
     # so that it has access to the full staff member names in 'raw' and
     # thus can create headers with the staff member names.
+    print("Writing formatted data to markdown file...", end=" ")
     write_to_markdown({"raw": raw, "formatted": formatted}, "projects")
+    print("Done!")
+
+    print("Writing formatted data to excel file...", end=" ")
     write_to_excel(formatted, "projects")
+    print("Done!")
 
 
 if __name__ == "__main__":
