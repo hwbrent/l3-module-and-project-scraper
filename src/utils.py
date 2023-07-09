@@ -69,6 +69,15 @@ def login_to_page_with_MFA(driver: Chrome, url: str) -> None:
     wait_until_reached(driver, url)
 
 
+def add_auth(url: str, username: str, password: str) -> str:
+    # Replace the email extension thingy (if it's there).
+    username = username.replace("@durham.ac.uk", "")
+    # Return the original URL with "<username>:<password>@" put in after the
+    # "http(s)://" part. That's how we provide the basic auth needed to access
+    # certain pages.
+    return url.replace("://", f"://{username}:{password}@")
+
+
 def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     """
     Gets the `driver` past the login stage to get to the `url` provided.
