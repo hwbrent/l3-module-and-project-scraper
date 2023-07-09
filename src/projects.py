@@ -13,7 +13,7 @@ PROJECTS_SITE_URL = "https://cssystems.awh.durham.ac.uk/password/projects/studen
 
 
 def scrape_raw_data(driver) -> list[dict]:
-    login_to_page(driver, PROJECTS_SITE_URL)
+    assert driver.current_url == PROJECTS_SITE_URL
 
     # This will contain the `dict`s containg each project's info.
     aggregate_data = []
@@ -194,6 +194,9 @@ def format_raw_data(data: list[dict]) -> list[dict]:
 
 def main():
     driver = get_driver()
+
+    login_to_page(driver, PROJECTS_SITE_URL)
+
     raw = scrape_raw_data(driver)
     driver.quit()
 
