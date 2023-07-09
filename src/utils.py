@@ -87,12 +87,10 @@ def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     # If there's a username and password in a .env file at the root of the
     # project, use those to autofill the login fields and submit them.
     if bool(dotenv):
-        USERNAME = dotenv["USERNAME"].replace("@durham.ac.uk", "")
+        USERNAME = dotenv["USERNAME"]
         PASSWORD = dotenv["PASSWORD"]
 
-        username_and_password = f"{USERNAME}:{PASSWORD}@"
-        url = url.replace("https://", "https://" + username_and_password)
-        print(url)
+        url = add_auth(url, USERNAME, PASSWORD)
         driver.get(url)
 
     wait_until_reached(driver, url)
