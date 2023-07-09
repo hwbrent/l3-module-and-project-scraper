@@ -2,6 +2,7 @@ import os
 import time
 import json
 import string
+import warnings
 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
