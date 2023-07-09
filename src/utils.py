@@ -66,6 +66,11 @@ def login_to_page(driver: Chrome, url: str) -> None:
         time.sleep(1)
         driver.execute_script("document.forms[0].submit()")
 
+        # This is the number that the user must select in their authenticator
+        # in order to sign in.
+        number_div = await_element(driver, "#idRichContext_DisplaySign")
+        print("MFA number to enter -->", number_div.text)
+
     wait_until_reached(driver, url)
 
 
