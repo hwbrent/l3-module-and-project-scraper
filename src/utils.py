@@ -12,7 +12,11 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 
 from bs4 import BeautifulSoup
+from bs4 import MarkupResemblesLocatorWarning
 
+# This line suppresses the warning that BeautifulSoup prints out when you
+# pass a URL or filepath in its constructor.
+warnings.filterwarnings("ignore", category=MarkupResemblesLocatorWarning)
 
 # The chromedriver executable should be located at root of project.
 _this_directory = os.path.dirname(__file__)
