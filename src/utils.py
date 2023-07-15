@@ -24,7 +24,7 @@ def get_driver() -> Chrome:
     # Allows you to configure options (who would have thought)
     # e.g. whether chrome should run headlessly (is that a word?).
     options = Options()
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
 
     driver = Chrome(executable_path=CHROMEDRIVER_PATH, options=options)
 

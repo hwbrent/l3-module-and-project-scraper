@@ -11,9 +11,11 @@ from utils import (
     login_to_page_with_url_auth,
     get_parent,
     get_previous_sibling,
+    get_url_with_auth,
 )
 
 MODULE_TIMETABLE_URL = "https://timetable.dur.ac.uk/module.htm"
+WEEK_PATTERNS_URL = "https://timetable.dur.ac.uk/week_patterns.htm"
 
 
 # --------------------
@@ -209,32 +211,58 @@ def scrape_raw_timetable_data(driver):
     return timetable_data
 
 
+def scrape_raw_week_patterns(driver) -> list[dict]:
+    """
+    Scrapes the week pattern data and returns it in a `list` of `dict`s,
+    where each `dict` represents a week (or a row in the `<table>` found
+    on the week patterns webpage).
+    """
+    url = get_url_with_auth(WEEK_PATTERNS_URL)
+    driver.get(url)
+
+    # This is the structure of the table:
+    # +–––––––––––––––––––––––––––––+––––––––––––––––––––––+
+    # |       Syllabus Weeks        |   Durham Weeks       |
+    # +–––––––––––––+–––––––––––––––+––––––+–––––––––––––––+
+    # | Week Number | Calendar Date | Term | Teaching Week |
+    # +–––––––––––––+–––––––––––––––+––––––+–––––––––––––––+
+    # |    Week 1   |               |      |               |
+    # +-------------+---------------+------+---------------+
+    # etcetera
+
+    # "Syllabus Weeks", "Durham Weeks", "Week Number", "Calendar Date"
+    # "Term", and "Teaching Week" are all in their own <th> elements.
+    all_headers = []
+    for th in driver.find_elements(By.TAG_NAME, "th"):
+        header = th.text.strip()
+        all_headers.append(header)
+
+    # This is just the "Week Number", "Calendar Date", "Term", and "Teaching Week"
+    col_headers = all_headers[2:]
+
+    data = []
+
+    # • The date info is stored in <tr>s in the overall <table>.
+    # • The first two <tr>s are in the table header, so we ignore those.
+    trs = driver.find_elements(By.TAG_NAME, "tr")
+    for tr in trs[2:]:
+        row_data = {}
+
+        # Each <tr> has one <td> for each column
+        tds = tr.find_elements(By.TAG_NAME, "td")
+
+        for header, td in zip(col_headers, tds):
+            cell_value = td.text.strip()
+            row_data[header] = cell_value
+        data.append(row_data)
+
+    return data
+
+
 def main():
     driver = get_driver()
-    # module_params = get_module_params(driver)
-    # pp.pprint(module_params)
-
-    # fmt: off
-    get_timetable_page(driver, {
-        'days': [ '1-7' ],
-        'periods': [ '1-56' ],
-        'weeks': [ '38', '25', '51', '12', '47', '21', '34', '8', '30', '43', '17', '4', '39', '26', '52', '13', '48', '22', '35', '9', '31', '44', '18', '5', '40', '27', '14', '1', '49', '23', '36', '10', '32', '45', '19', '6', '41', '28', '15', '2', '50', '24', '37', '11', '33', '46', '20', '7', '42', '29', '16', '3' ],
-        'style': [ 'textspreadsheet' ],
-        'identifier': [
-            'COMP3012',
-            'COMP3567',
-            'COMP3587',
-            'COMP3617',
-            'COMP3647',
-            'COMP3687',
-            'COMP3717',
-            'CFLS1G21'
-        ]
-    })
-    # fmt: on
-
-    pp.pprint(scrape_raw_timetable_data(driver))
-
+    week_patterns = scrape_raw_week_patterns(driver)
+    pp.pprint(week_patterns)
     driver.quit()
 
 
