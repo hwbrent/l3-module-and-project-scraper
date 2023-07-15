@@ -211,6 +211,15 @@ def scrape_raw_timetable_data(driver):
     return timetable_data
 
 
+def scrape_raw_academic_year(driver) -> str:
+    # It's located in a <div> with class 'l2sitename'. The innerText will
+    # be something like "2023-24 Teaching Timetable"
+    div = driver.find_element(By.CLASS_NAME, "l2sitename")
+    raw_with_text = div.text.strip()
+    raw = raw_with_text.replace(" Teaching Timetable", "")
+    return raw
+
+
 def scrape_raw_week_patterns(driver) -> list[dict]:
     """
     Scrapes the week pattern data and returns it in a `list` of `dict`s,
