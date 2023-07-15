@@ -304,10 +304,16 @@ def format_calendar_date(raw: str, academic_year: str) -> list[str]:
 def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]:
     formatted = []
 
-    for old_entry in raw_data:
-        new_entry = {}
-
+    for i, old_entry in enumerate(raw_data):
         week_number, calendar_date, term, teaching_week = old_entry.values()
+
+        if i > 0:
+            prev_entry = raw_data[i - 1]
+            prev_calendar_date = prev_entry["Calendar Date"]
+            if "Dec" in prev_calendar_date and "Jan" in calendar_date:
+                academic_year += 1
+
+        new_entry = {}
 
         # ['Week Number', 'Calendar Date', 'Term', 'Teaching Week']
         new_entry["Week Number"] = format_week_number(week_number)
