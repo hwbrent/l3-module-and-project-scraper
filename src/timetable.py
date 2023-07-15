@@ -220,6 +220,15 @@ def scrape_raw_academic_year(driver) -> str:
     return raw
 
 
+def format_academic_year(raw):
+    # `academic_year` will be something like "2023-24".
+    # This replaces the dash and two digits with nothing, and leaves us with
+    # the first year (e.g. 2023).
+    first_year = re.sub(r"-\d\d", "", raw)
+    first_year = int(first_year)
+    return first_year
+
+
 def scrape_raw_week_patterns(driver) -> list[dict]:
     """
     Scrapes the week pattern data and returns it in a `list` of `dict`s,
