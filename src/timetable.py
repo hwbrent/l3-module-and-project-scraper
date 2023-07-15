@@ -214,6 +214,8 @@ def scrape_raw_timetable_data(driver):
 def scrape_raw_academic_year(driver) -> str:
     # It's located in a <div> with class 'l2sitename'. The innerText will
     # be something like "2023-24 Teaching Timetable"
+    assert driver.current_url == WEEK_PATTERNS_URL
+
     div = driver.find_element(By.CLASS_NAME, "l2sitename")
     raw_with_text = div.text.strip()
     raw = raw_with_text.replace(" Teaching Timetable", "")
