@@ -334,7 +334,7 @@ def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]
         new_entry["Week Number"] = format_week_number(week_number)
         new_entry["Calendar Date"] = format_calendar_date(calendar_date, academic_year)
         new_entry["Term"] = term or None
-        new_entry["Teaching Week"] = format_teaching_week(teaching_week) or None
+        new_entry["Teaching Week"] = format_teaching_week(teaching_week)
 
         formatted.append(new_entry)
 
