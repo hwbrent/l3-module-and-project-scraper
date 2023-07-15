@@ -259,10 +259,36 @@ def scrape_raw_week_patterns(driver) -> list[dict]:
     return data
 
 
+def format_week_number(raw: str) -> int:
+    raw = raw.replace("Week ", "")
+    return int(raw)
+
+
+def format_week_patterns(raw_data: list[dict]) -> list[dict]:
+    formatted = []
+
+    for old_entry in raw_data:
+        new_entry = {}
+
+        week_number, calendar_date, term, teaching_week = old_entry.values()
+
+        # ['Week Number', 'Calendar Date', 'Term', 'Teaching Week']
+        new_entry["Week Number"] = format_week_number(week_number)
+        # new_entry["Calendar Date"] = format_week_number(week_number)
+        new_entry["Term"] = term or None
+        new_entry["Teaching Week"] = teaching_week or None
+
+        formatted.append(new_entry)
+
+    return formatted
+
+
 def main():
     driver = get_driver()
     week_patterns = scrape_raw_week_patterns(driver)
-    pp.pprint(week_patterns)
+    driver.quit()
+    formatted = format_week_patterns(week_patterns)
+    pp.pprint(formatted)
     driver.quit()
 
 
