@@ -311,7 +311,8 @@ def format_calendar_date(raw: str, year: int) -> str:
     start, _ = raw.split(" - ")
 
     _, day, month_raw = start.split()
-    month = MONTHS.index(month_raw)
+    day = int(day)
+    month = MONTHS.index(month_raw) + 1
 
     return date(year, month, day).isoformat()
 
@@ -345,8 +346,8 @@ def main():
     driver = get_driver()
     week_patterns = scrape_raw_week_patterns(driver)
     raw_academic_year = scrape_raw_academic_year(driver)
-    academic_year = format_academic_year(raw_academic_year)
     driver.quit()
+    academic_year = format_academic_year(raw_academic_year)
     formatted = format_week_patterns(week_patterns, academic_year)
     pp.pprint(formatted)
 
