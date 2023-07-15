@@ -287,7 +287,11 @@ def format_teaching_week(raw: str):
     return raw
 
 
-def format_week_patterns(raw_data: list[dict]) -> list[dict]:
+def format_calendar_date(raw: str, academic_year: str) -> list[str]:
+    pass
+
+
+def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]:
     formatted = []
 
     for old_entry in raw_data:
@@ -297,7 +301,7 @@ def format_week_patterns(raw_data: list[dict]) -> list[dict]:
 
         # ['Week Number', 'Calendar Date', 'Term', 'Teaching Week']
         new_entry["Week Number"] = format_week_number(week_number)
-        # new_entry["Calendar Date"] = format_week_number(week_number)
+        new_entry["Calendar Date"] = format_calendar_date(calendar_date)
         new_entry["Term"] = term or None
         new_entry["Teaching Week"] = format_teaching_week(teaching_week) or None
 
@@ -309,8 +313,9 @@ def format_week_patterns(raw_data: list[dict]) -> list[dict]:
 def main():
     driver = get_driver()
     week_patterns = scrape_raw_week_patterns(driver)
+    academic_year = scrape_raw_academic_year(driver)
     driver.quit()
-    formatted = format_week_patterns(week_patterns)
+    formatted = format_week_patterns(week_patterns, academic_year)
     pp.pprint(formatted)
 
 
