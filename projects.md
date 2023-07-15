@@ -210,6 +210,7 @@
  * [JW-3: An AI_based automatic writing assistant system for supporting language learning](#jw-3-an-aibased-automatic-writing-assistant-system-for-supporting-language-learning)
  * [JW-4: An AI-based speech feedback system for second language learners](#jw-4-an-ai-based-speech-feedback-system-for-second-language-learners)
  * [JW-5: A learning support application for Autism spectrum disorder (ASD) pupils](#jw-5-a-learning-support-application-for-autism-spectrum-disorder-asd-pupils)
+ * [JW-6: Using AI techniques to analyse Japanese animations and movies](#jw-6-using-ai-techniques-to-analyse-japanese-animations-and-movies)
 
 
 
@@ -2349,7 +2350,7 @@
 
 #### JW-4: An AI-based speech feedback system for second language learners
 
-| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The student(s) doing this project will design an audio model and implement an AI-based speech feedback system. This system will give feedback to the learner who inputs an audio record. The feedback will help the learner better identify their speech issues. Sample audio recordings and corresponding feedback will be provided by an expert(Dr Kaoru Umezawa, Assisstant Professor (Teaching) in Japanese, Centre for Foreign Language Studies Study (CFLS), School of Modern Languages & Cultures (MLaC), durham university) for training the model.</span> |
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The student(s) doing this project will design an audio or gesture model and implement an AI-based speech feedback system. This system will give feedback to the learner who inputs an audio or video record. The feedback will help the learner better identify their speech issues.</span> |
 | :- | :- |
 | Reference URLs |  |
 | Anticipated Outcomes | an audio model and an AI-based speech feedback system. |
@@ -2367,4 +2368,15 @@
 | Requirements | Python/Java/C# |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | learning support, data analysis, Autism spectrum disorder (ASD) |
+| Interview Required | No |
+
+#### JW-6: Using AI techniques to analyse Japanese animations and movies
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>This is a joint project with Professor Li Xiaoyan in the School of Interdisciplinary Science and Innovation, Kyushu University, Japan.<br>An animation and movie dataset will be provided for training the model.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Compare the result analysed by AI with the human experts' annotation.<br>Train a model for automatic annotation. |
+| Requirements | Python, Machine learning, or Deep learning |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | AI, Data analysis |
 | Interview Required | No |

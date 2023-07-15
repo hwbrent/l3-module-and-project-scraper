@@ -3066,7 +3066,7 @@
         "surname": "Wang",
         "theme": 351,
         "title": "An AI-based speech feedback system for second language learners",
-        "description": "The student(s) doing this project will design an audio model and implement an AI-based speech feedback system. This system will give feedback to the learner who inputs an audio record. The feedback will help the learner better identify their speech issues. Sample audio recordings and corresponding feedback will be provided by an expert(Dr Kaoru Umezawa, Assisstant Professor (Teaching) in Japanese, Centre for Foreign Language Studies Study (CFLS), School of Modern Languages & Cultures (MLaC), durham university) for training the model.",
+        "description": "The student(s) doing this project will design an audio or gesture model and implement an AI-based speech feedback system. This system will give feedback to the learner who inputs an audio or video record. The feedback will help the learner better identify their speech issues. ",
         "interview": 0,
         "keywords": "audio, second language speaker, automatic feedback",
         "l3": 0,
@@ -3094,5 +3094,23 @@
         "skills": "Python/Java/C#",
         "themeID": 360,
         "url": "https://link.springer.com/article/10.1007/s10639-019-10050-0\nhttps://rua.ua.es/dspace/bitstream/10045/73035/1/2018_Fernandez-Herrero_etal_Bibliometric-Study-Use-Virtual-Reality.pdf\nhttps://ieeexplore.ieee.org/abstract/document/8010470\nhttps://link.springer.com/article/10.1007/s40489-021-00259-6\n"
+    },
+    {
+        "forename": "Jingyun",
+        "initials": "JW",
+        "staff": "pwnf64",
+        "surname": "Wang",
+        "theme": 715,
+        "title": "Using AI techniques to analyse Japanese animations and movies",
+        "description": "This is a joint project with Professor Li Xiaoyan in the School of Interdisciplinary Science and Innovation, Kyushu University, Japan.\nAn animation and movie dataset will be provided for training the model.",
+        "interview": 0,
+        "keywords": "AI, Data analysis",
+        "l3": 1,
+        "l4": 1,
+        "maxStudents": "0",
+        "outcomes": "Compare the result analysed by AI with the human experts' annotation.\nTrain a model for automatic annotation.",
+        "skills": "Python, Machine learning, or Deep learning",
+        "themeID": 715,
+        "url": ""
     }
 ]
