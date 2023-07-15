@@ -215,8 +215,7 @@ def scrape_raw_academic_year(driver) -> str:
     # It's located in a <div> with class 'l2sitename'. The innerText will
     # be something like "2023-24 Teaching Timetable"
     div = driver.find_element(By.CLASS_NAME, "l2sitename")
-    raw_with_text = div.text.strip()
-    raw = raw_with_text.replace(" Teaching Timetable", "")
+    raw = div.text.strip()
     return raw
 
 
@@ -224,6 +223,7 @@ def format_academic_year(raw):
     # `academic_year` will be something like "2023-24".
     # This replaces the dash and two digits with nothing, and leaves us with
     # the first year (e.g. 2023).
+    raw = raw.replace(" Teaching Timetable", "")
     first_year = re.sub(r"-\d\d", "", raw)
     first_year = int(first_year)
     return first_year
