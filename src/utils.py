@@ -98,7 +98,7 @@ def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     Gets the `driver` past the login stage to get to the `url` provided.
     """
     url = get_url_with_auth(url)
-    wait_until_reached(driver, url)
+    driver.get(url)
 
 
 def write_to_json(data: list, file_name) -> None:
