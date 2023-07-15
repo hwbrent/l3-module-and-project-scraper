@@ -264,6 +264,20 @@ def format_week_number(raw: str) -> int:
     return int(raw)
 
 
+def format_teaching_week(raw: str):
+    # If it's an empty string, return `None` to reflect this
+    if raw == "":
+        return None
+
+    # If it's a teaching week, parse the number out of it and return that
+    # as an `int`
+    if "Teaching week" in raw:
+        raw = raw.replace("Teaching week ", "")
+        return int(raw)
+
+    return raw
+
+
 def format_week_patterns(raw_data: list[dict]) -> list[dict]:
     formatted = []
 
@@ -276,7 +290,7 @@ def format_week_patterns(raw_data: list[dict]) -> list[dict]:
         new_entry["Week Number"] = format_week_number(week_number)
         # new_entry["Calendar Date"] = format_week_number(week_number)
         new_entry["Term"] = term or None
-        new_entry["Teaching Week"] = teaching_week or None
+        new_entry["Teaching Week"] = format_teaching_week(teaching_week) or None
 
         formatted.append(new_entry)
 
