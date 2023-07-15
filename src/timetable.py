@@ -343,12 +343,28 @@ def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]
 
 def main():
     driver = get_driver()
-    week_patterns = scrape_raw_week_patterns(driver)
-    raw_academic_year = scrape_raw_academic_year(driver)
+
+    # fmt: off
+    get_timetable_page(driver, {
+        'days': [ '1-7' ],
+        'periods': [ '1-56' ],
+        'weeks': [ '38', '25', '51', '12', '47', '21', '34', '8', '30', '43', '17', '4', '39', '26', '52', '13', '48', '22', '35', '9', '31', '44', '18', '5', '40', '27', '14', '1', '49', '23', '36', '10', '32', '45', '19', '6', '41', '28', '15', '2', '50', '24', '37', '11', '33', '46', '20', '7', '42', '29', '16', '3' ],
+        'style': [ 'textspreadsheet' ],
+        'identifier': [
+            'COMP3012',
+            'COMP3567',
+            'COMP3587',
+            'COMP3617',
+            'COMP3647',
+            'COMP3687',
+            'COMP3717',
+            'CFLS1G21'
+        ]
+    })
+    # fmt: on
+
+    pp.pprint(scrape_raw_timetable_data(driver))
     driver.quit()
-    academic_year = format_academic_year(raw_academic_year)
-    formatted = format_week_patterns(week_patterns, academic_year)
-    pp.pprint(formatted)
 
 
 if __name__ == "__main__":
