@@ -312,7 +312,6 @@ def main():
     driver.quit()
     formatted = format_week_patterns(week_patterns)
     pp.pprint(formatted)
-    driver.quit()
 
 
 if __name__ == "__main__":
