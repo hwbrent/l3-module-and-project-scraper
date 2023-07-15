@@ -1,4 +1,5 @@
 import re
+from datetime import date
 from pprint import PrettyPrinter
 
 from bs4 import BeautifulSoup
@@ -301,8 +302,18 @@ def format_teaching_week(raw: str):
     return raw
 
 
-def format_calendar_date(raw: str, academic_year: str) -> list[str]:
-    pass
+def format_calendar_date(raw: str, year: int) -> str:
+    """
+    Given a `raw` calendar date (e.g. `"Mon 11 Dec - Fri 15 Dec"`),
+    this function returns a `str` in the ISO 8601 format representing the
+    Monday (e.g. 2023-12-11).
+    """
+    start, _ = raw.split(" - ")
+
+    _, day, month_raw = start.split()
+    month = MONTHS.index(month_raw)
+
+    return date(year, month, day).isoformat()
 
 
 def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]:
