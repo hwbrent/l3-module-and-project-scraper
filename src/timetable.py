@@ -18,6 +18,10 @@ from utils import (
 MODULE_TIMETABLE_URL = "https://timetable.dur.ac.uk/module.htm"
 WEEK_PATTERNS_URL = "https://timetable.dur.ac.uk/week_patterns.htm"
 
+# fmt: off
+MONTHS = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+# fmt: on
+
 
 # --------------------
 
