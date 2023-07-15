@@ -323,7 +323,8 @@ def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]
 def main():
     driver = get_driver()
     week_patterns = scrape_raw_week_patterns(driver)
-    academic_year = scrape_raw_academic_year(driver)
+    raw_academic_year = scrape_raw_academic_year(driver)
+    academic_year = format_academic_year(raw_academic_year)
     driver.quit()
     formatted = format_week_patterns(week_patterns, academic_year)
     pp.pprint(formatted)
