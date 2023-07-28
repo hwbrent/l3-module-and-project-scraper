@@ -28,6 +28,7 @@
  * [NBe-2: Tentative Title:  <HR>Surprises for Decision-Making in the case of Autonomous Systems:  Elicitation of Transition and Observation Models for Reinforcement Learning Techniques](#nbe-2-tentative-title--hrsurprises-for-decision-making-in-the-case-of-autonomous-systems--elicitation-of-transition-and-observation-models-for-reinforcement-learning-techniques)
  * [NBe-3: Tentative Title: Conceptualizing Digital Twins for Decision-Making: The Case of Fidelity](#nbe-3-tentative-title-conceptualizing-digital-twins-for-decision-making-the-case-of-fidelity)
  * [NBe-4: Tentative Title: <BR>How good are your trade-offs?: Getting further insights about the trade-offs of Decision-Making Techniques for SAS using Non-Inferiority Trials](#nbe-4-tentative-title-brhow-good-are-your-trade-offs-getting-further-insights-about-the-trade-offs-of-decision-making-techniques-for-sas-using-non-inferiority-trials)
+ * [NBe-5: Development and Evaluation of a tool for shared decision-making for hormone replacement therapy](#nbe-5-development-and-evaluation-of-a-tool-for-shared-decision-making-for-hormone-replacement-therapy)
 #### Shauna Concannon _(zpjh28)_
  * [SC-1: Using NLP to understand political success based on party manifestos](#sc-1-using-nlp-to-understand-political-success-based-on-party-manifestos)
  * [SC-2: Debating what’s important to civic life: NLP and data analysis of political debates](#sc-2-debating-what’s-important-to-civic-life-nlp-and-data-analysis-of-political-debates)
@@ -79,6 +80,10 @@
  * [II-3: Liveness tests for face recognition](#ii-3-liveness-tests-for-face-recognition)
  * [II-4: Watermarking 3D printed objects](#ii-4-watermarking-3d-printed-objects)
  * [II-5: A blockchain based system for the secure handling of research data](#ii-5-a-blockchain-based-system-for-the-secure-handling-of-research-data)
+#### Stuart James _(NewStaff1)_
+ * [SJa-1: Exploiting Knowledge Graph relations to detect objects in Artworks](#sja-1-exploiting-knowledge-graph-relations-to-detect-objects-in-artworks)
+ * [SJa-2: Self-Supervised Correlation detection for motif discovery in Art](#sja-2-self-supervised-correlation-detection-for-motif-discovery-in-art)
+ * [SJa-3: What does Open Street Map Image-based camera localisation rely on?](#sja-3-what-does-open-street-map-image-based-camera-localisation-rely-on)
 #### Anish Jindal _(nqbh42)_
  * [AJ-1: Smart energy management in homes, industries or commercial sectors](#aj-1-smart-energy-management-in-homes-industries-or-commercial-sectors)
  * [AJ-2: Machine learning applications in Internet of things (IoT)](#aj-2-machine-learning-applications-in-internet-of-things-iot)
@@ -473,7 +478,7 @@
 | :- | :- |
 | Reference URLs | References:<br>[1] Bencomo, Nelly, and Amel Belaggoun. "A world full of surprises: Bayesian theory of surprise to quantify degrees of uncertainty." Companion Proceedings of the 36th International Conference on Software Engineering. 2014.<br>Link: https://dl.acm.org/doi/pdf/10.1145/2591062.2591118?casa_token=3rYM9bTWU6QAAAAA:03mL2pDubTZPTE_JO65l7gFskPWwq7My4S5hSb3JDZqaRZ_8splx2rkk4hvUzqW8ZdhLPbc2zwvh<br><br><br>[2] Xu, He A., et al. "Novelty is not surprise: Human exploratory and adaptive behavior in sequential decision-making." PLOS Computational Biology 17.6 (2021): e1009070.<br>https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009070<br><br><br>[3] Baldi, Pierre, and Laurent Itti. "Of bits and wows: A Bayesian theory of surprise with applications to attention." Neural Networks 23.5 (2010): 649-666.<br>https://www.sciencedirect.com/science/article/pii/S0893608009003256?casa_token=azRBWF_bcMIAAAAA:JvMY3HIDVr9F9xqbK8ZkVl04JiiOU1EUfl16xRGJy6hKVBrnN9UjegDfm2vwaLiALuWMAQDt |
 | Anticipated Outcomes | -to apply surprise-based learning to optimise the transition and observation probabilities considering different runtime contexts.  <br>- to apply the technique(s) on at least two substantial case studies <br>- other outcomes foreseen by the student are welcome  |
-| Requirements | Preferably, at least basic knowledge of AI techniques and Java and / or Python |
+| Requirements | Preferably, at least basic knowledge of AI/Probability techniques and Java and / or Python |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Decision-making, Uncertainty, Bayesian Learning, Reinforcement Learning, BAyesian Surprises |
 | Interview Required | No |
@@ -498,6 +503,17 @@
 | Requirements | Preferably knowledge of Java or python |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Keywords: Reinforcement Learning, multi-objective reinforcement learning technique, single-objective reinforcement learning technique, self-adaptive system |
+| Interview Required | No |
+
+#### NBe-5: Development and Evaluation of a tool for shared decision-making for hormone replacement therapy
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Context:<br><br>Hormone replacement therapy (HRT) is a form of treatment intended to relieve symptoms of menopause, and it is considered to be an effective option for many affected women. However, access to HRT and decision-making around prescribing of HRT can often be complicated by concerns around its safety. As a result, it is thought that many women are missing out on exploring possibly helpful treatment options. Shared decision-making assisted by decision aids can improve the quality of decision-making. However, there is currently a lack of good, accessible decision aids on HRT.<br><br>Aims<br><br>The project aims as follows: (a) to develop a tool to facilitate shared decision-making between health professionals and women exploring HRT as a treatment option for pre-menopausal symptoms using Bayesian Inference/Learning, and (b) to evaluate this tool using synthetic data generated with the support of primary care health professionals.</span> |
+| :- | :- |
+| Reference URLs | https://wellspring.health/hrt/<br><br>-Decision-making under uncertainty: be aware of your priorities<br>Huma Samin, Nelly Bencomo & Peter Sawyer <br>Software and Systems Modeling Journal, 2022<br>https://link.springer.com/article/10.1007/s10270-021-00956-0 |
+| Anticipated Outcomes | - Design and the Tool to support shared decision-making between health professionals and women exploring HRT. - A potential research paper co-author by the student and supervisor |
+| Requirements | Preferably knowledge of Java or python |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | Shared Decision-Making, Bayesian Inference/Learning |
 | Interview Required | No |
 
 
@@ -1019,6 +1035,46 @@
 | Requirements | None |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | Blockchain, smart contracts, Solidity, data handling, ethical data usage |
+| Interview Required | No |
+
+
+
+<hr>
+
+### Stuart James _(NewStaff1)_
+
+
+#### SJa-1: Exploiting Knowledge Graph relations to detect objects in Artworks
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Knowledge Graphs explains the relationships between entities, such as, Leonardo Da Vinci <"has works in"> the Louvre. In addition, they can also describe the visual content using the relation <"depicts">, <"style"> or even <"material">. However, this remains disconnected from the parts of the image the relation is referring to.  This project will exploit advances in unsupervised detection of object like structures in image content, known as objectness [2,3], to correlate features with Knowledge Graph relations. In doing so a detector can be trained to localise the Knowledge Graph information within the image. <br><br>The use of structured data such as Knowledge Graphs are abundant within the Digital Humanities as they can be used to explain events. However, the atomic nature does not allow the analysis of change in the visual domain. In allowing the detection of objects and also unusual object categories in images will allow the analysis to increase validity of explanations and also shine light on new research questions.</span> |
+| :- | :- |
+| Reference URLs | [1] Wikidata <br>[2] Alexe, Bogdan, Thomas Deselaers, and Vittorio Ferrari. "Measuring the objectness of image windows." IEEE transactions on pattern analysis and machine intelligence 34.11 (2012): 2189-2202. <br>[3] Kim, Dahun, et al. "Learning open-world object proposals without learning to classify." IEEE Robotics and Automation Letters 7.2 (2022): 5453-5460. |
+| Anticipated Outcomes | Evaluation of the effectiveness using Knowledge Graphs to supervise object detection |
+| Requirements | Recommended: Basic Python (or similar language), Basic experience / interest in PyTorch |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | Computer Vision, Object Detection, Knowledge Graphs, Artwork. |
+| Interview Required | No |
+
+#### SJa-2: Self-Supervised Correlation detection for motif discovery in Art
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>This project would involve implementing and testing existing approaches to slot-attention for Self-Supervised learning of semantically meaningful classes. Then evaluating the potential to correlate patches as a second step using statistical correlation to identify motifs. <br><br>Object detection in images is common place, however, requires large quantities of training data. Therefore, object discovery through self-supervised methods have become prominent in literature to learn semantically meaningful regions that can be after correlated with labels. A common approach for this is Slot-Attention [1] which aligns the features space into randomly initialised slots, which can be seen as similar to Gaussian Mixture Model [2]. However, the approach is highly dependent on the positional encoder in non disentanglement datasets (e.g. Disentanglement Dataset [3]) to train and separate the slots. This project will develop on open source slot-attention methods adapting to use different Positional Encoder methods to evaluate which are best able to overcome the bias of the traditional positional encoder. With the removal (or reduction) in spatial bias the project will evaluate the potential of simple statistical methods for feature correlation to identify motifs. <br><br>The project will be evaluated against existing methods [4] on the Brueghel dataset [5].</span> |
+| :- | :- |
+| Reference URLs | [1] Locatello, Francesco, et al. "Object-centric learning with slot attention." Advances in Neural Information Processing Systems 33 (2020): 11525-11538. <br>[2] https://en.wikipedia.org/wiki/Mixture_model <br>[3] https://github.com/deepmind/3d-shapes <br>[4] Shen, Xi, Alexei A. Efros, and Mathieu Aubry. "Discovering visual patterns in art collections with spatially-consistent feature learning." Proceedings of the IEEE/CVF conference on computer vision and pattern recognition. 2019. <br>[5] http://imagine.enpc.fr/~shenx/ArtMiner/ |
+| Anticipated Outcomes | An implementation of Slot-Attention with ablation on the performance of methods for positional encoding to overcome spatial bias. Additionally, an analysis of the correlation of features for higher-order meaning |
+| Requirements | Recommended: Basic Python (or similar language), Basic experience / interest in PyTorch |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | Computer Vision, Self-Supervised learning, Art, Humanities |
+| Interview Required | No |
+
+#### SJa-3: What does Open Street Map Image-based camera localisation rely on?
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Localising cameras is commonly tackled in 3D for applications such as AR initialisation or 3D Reconstruction. However, required having large scale data to compare the query image against. An alternative to this is to localise only the latitude longitude and orientation of the camera (3DoF). Commonly these approaches use Open Street Map tiles to align an embedding of the image to the tile. However, this raises the question what features of open street map is the embedding relying on (roads, signs, objects, etc.). <br><br>In this project will take the state-of-the-art OrienterNet [1] and render different tiles to understand which combination of features provide the highest performance. This analysis can further be expanded on using explainability style approaches (such as GradCam [3]) to analyse what the encoding is focusing on. In the event that objects play a key role in localisation datasets such as Flatlandia [4] can be used to understand the role of different object classes.</span> |
+| :- | :- |
+| Reference URLs | [1] Sarlin, Paul-Edouard, et al. "OrienterNet: Visual Localization in 2D Public Maps with Neural Matching." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2023. <br>[2] https://github.com/facebookresearch/OrienterNet <br>[3] Selvaraju, Ramprasaath R., et al. "Grad-cam: Visual explanations from deep networks via gradient-based localization." Proceedings of the IEEE international conference on computer vision. 2017. <br>[4] Toso, Matteo, et al. "You are here! Finding position and orientation on a 2D map from a single image: The Flatlandia localization problem and dataset." arXiv preprint arXiv:2304.06373 (2023). |
+| Anticipated Outcomes | Analysis of what Open Street Map tile information localisation methods rely on. |
+| Requirements | Recommended: Basic Python (or similar language), Basic experience/interest in PyTorch |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | Computer Vision, Mapping. |
 | Interview Required | No |
 
 
