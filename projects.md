@@ -19,10 +19,12 @@
  * [GA-3: Blockchain supported Privacy Aware Ecosystems](#ga-3-blockchain-supported-privacy-aware-ecosystems)
  * [GA-4: Blockchain framework for supply chain management](#ga-4-blockchain-framework-for-supply-chain-management)
 #### Eamonn Bell _(rjbc76)_
- * [EB-1: Generative modelling of non-text handwritten document annotations](#eb-1-generative-modelling-of-non-text-handwritten-document-annotations)
- * [EB-2: Open project in code as primary source material in the <blink>history of computing</blink>](#eb-2-open-project-in-code-as-primary-source-material-in-the-blinkhistory-of-computingblink)
- * [EB-3: Analysing relevance, reliability, and information flow in user-generated comments on online music videos](#eb-3-analysing-relevance-reliability-and-information-flow-in-user-generated-comments-on-online-music-videos)
- * [EB-4: Tracking the production and circulation of MIDI files during the 1990s](#eb-4-tracking-the-production-and-circulation-of-midi-files-during-the-1990s)
+ * [EB-1: Toward a new history of the recording industry: processing crowdsourced free-text data about record labels](#eb-1-toward-a-new-history-of-the-recording-industry-processing-crowdsourced-free-text-data-about-record-labels)
+ * [EB-2: Generative modelling of non-text handwritten document annotations](#eb-2-generative-modelling-of-non-text-handwritten-document-annotations)
+ * [EB-3: Open project in code as primary source material in the <blink>history of computing</blink>](#eb-3-open-project-in-code-as-primary-source-material-in-the-blinkhistory-of-computingblink)
+ * [EB-4: Analysing relevance, reliability, and information flow in user-generated comments on online music videos](#eb-4-analysing-relevance-reliability-and-information-flow-in-user-generated-comments-on-online-music-videos)
+ * [EB-5: Tracking the production and circulation of MIDI files during the 1990s](#eb-5-tracking-the-production-and-circulation-of-midi-files-during-the-1990s)
+ * [EB-6: Unsupervised discovery of visual motifs and similarities in large collections of graphic design images](#eb-6-unsupervised-discovery-of-visual-motifs-and-similarities-in-large-collections-of-graphic-design-images)
 #### Nelly Bencomo _(prtr37)_
  * [NBe-1: Tentative Title: Simulations of MicroServices: an exemplar for evaluation and comparison of decision-making techniques for self-adaptation](#nbe-1-tentative-title-simulations-of-microservices-an-exemplar-for-evaluation-and-comparison-of-decision-making-techniques-for-self-adaptation)
  * [NBe-2: Tentative Title:  <HR>Surprises for Decision-Making in the case of Autonomous Systems:  Elicitation of Transition and Observation Models for Reinforcement Learning Techniques](#nbe-2-tentative-title--hrsurprises-for-decision-making-in-the-case-of-autonomous-systems--elicitation-of-transition-and-observation-models-for-reinforcement-learning-techniques)
@@ -201,7 +203,16 @@
  * [AT-3: Designing and Testing Self-healing Distributed and/or Compact routing Algorithms](#at-3-designing-and-testing-self-healing-distributed-andor-compact-routing-algorithms)
  * [AT-4: Characterising Equilibria of the EU Grant Games](#at-4-characterising-equilibria-of-the-eu-grant-games)
 #### Wanqing Tu _(ckdb34)_
- * [WT-1: Wireless Multicast at the MAC Layer](#wt-1-wireless-multicast-at-the-mac-layer)
+ * [WT-1: Data Traffic Analysis for IoT Devices in Smart Buildings](#wt-1-data-traffic-analysis-for-iot-devices-in-smart-buildings)
+ * [WT-2: Implementation of The Seamless UAV Trajectory Algorithm](#wt-2-implementation-of-the-seamless-uav-trajectory-algorithm)
+ * [WT-3: Enhancing Trust Management in Vehicle Networks](#wt-3-enhancing-trust-management-in-vehicle-networks)
+ * [WT-4: Mitigating IPv4 Address Exhaustion](#wt-4-mitigating-ipv4-address-exhaustion)
+ * [WT-5: Investigating Smart City Networking Development in the UK](#wt-5-investigating-smart-city-networking-development-in-the-uk)
+ * [WT-6: Implementing MAODV in Network Simulator](#wt-6-implementing-maodv-in-network-simulator)
+ * [WT-7: Simulating Starlink Satellite Networks](#wt-7-simulating-starlink-satellite-networks)
+ * [WT-8: Jammer Detection in Internet-of-Things Networks](#wt-8-jammer-detection-in-internet-of-things-networks)
+ * [WT-9: Balancing The Security-Efficiency Tradeoff In QUIC](#wt-9-balancing-the-security-efficiency-tradeoff-in-quic)
+ * [WT-10: Wireless Multicast at the MAC Layer](#wt-10-wireless-multicast-at-the-mac-layer)
 #### Thirupathaiah Vasantam _(hpgq97)_
  * [TV-1: Near-Insensitivity of occupancy-based load distribution policies in multi-server homogeneous systems](#tv-1-near-insensitivity-of-occupancy-based-load-distribution-policies-in-multi-server-homogeneous-systems)
  * [TV-2: An optimal load distribution policy for heterogeneous service systems](#tv-2-an-optimal-load-distribution-policy-for-heterogeneous-service-systems)
@@ -410,7 +421,18 @@
 ### Eamonn Bell _(rjbc76)_
 
 
-#### EB-1: Generative modelling of non-text handwritten document annotations
+#### EB-1: Toward a new history of the recording industry: processing crowdsourced free-text data about record labels
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Discographies are reference works that list key data about sound recordings: vinyl LPs, CDs, cassette tapes, and even digital downloads. Discogs.com is a popular crowdsourced discography platform and features (at the time of writing) over 11M unique freely-licensed entries. Although Discogs.com data primarily supports music fans and collectors, the discographic data it contains is of immense value to the history of sound recording. However, much of this data is represented in free-text fields, such as in the case of corporate biographical data relating to record labels. By using contemporary natural language-processing (NLP) techniques, including recent implementations of solutions to standard tasks such as named entity recognition (NER) and relation extraction, this project will analyse this information about approximately 1.8M labels to understand the evolution of the global recorded music industry over time. The goal is to produce structured representations of events in the history of each of these labels, including their founding, their acquisition by or transfer between other labels and holding entities, and their closure. This will contribute to the first systematic study of the industry with the help of crowdsourced discographic data.</span> |
+| :- | :- |
+| Reference URLs | <br>Bogdanov, Dmitry, and Xavier Serra. "Quantifying Music Trends and Facts Using Editorial Metadata from the Discogs Database". In Proceedings of the 18th International Society for Music Information Retrieval Conference, 89-95. Suzhou, China: International Society for Music Information Retrieval (ISMIR), 2017. http://hdl.handle.net/10230/32931.<br>Devine, Kyle. Decomposed: The Political Ecology of Music. Cambridge, Mass.: MIT Press, 2019.<br>Youngblood, Mason, Karim Baraghith, and Patrick E. Savage. "Phylogenetic Reconstruction of the Cultural Evolution of Electronic Music via Dynamic Community Detection (1975--1999)". Evolution and Human Behavior 42, no. 6 (November 2021): 573-82. https://doi.org/10.1016/j.evolhumbehav.2021.06.002.<br> |
+| Anticipated Outcomes | The desired outcome is a scalable text-processing pipeline to extract relevant information from free-text contributions to the Discogs.com database. Project students may alternatively wish to work on a user interface to this data. |
+| Requirements | (COMP2271 Data Science OR COMP2261 Artificial Intelligence). Desirable (for L3 project students, as co-requisite): COMP3517 Computational Modelling in the Humanities and Social Sciences. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | natural language processing, digital humanities, music, history of music |
+| Interview Required | No |
+
+#### EB-2: Generative modelling of non-text handwritten document annotations
 
 | <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Handwritten annotations enrich documents with extra information, not least text. While there is considerable interest in handwritten text recognition (HTR) for commercial, government, and cultural applications there is less focus on non-text annotations: underlines, editorial marks, deletions, doodles, and so on. This applied machine learning project, in the area of document analysis, will explore the use of generative models of raster (image) and/or vector graphic representations of non-text handwritten annotations. Generative models of this data are useful, since they may be used to generate synthetic training data used in other downstream document analysis tasks, including semantic document layout analysis (semantic segmentation of document images). Solutions to this problem have applications in information management and to the digital humanities, particularly in the field of digitized cultural heritage.</span> |
 | :- | :- |
@@ -421,7 +443,7 @@
 | Keywords | computer vision, document analysis, semantic segmentation, handwriting, generative modelling |
 | Interview Required | No |
 
-#### EB-2: Open project in code as primary source material in the <blink>history of computing</blink>
+#### EB-3: Open project in code as primary source material in the <blink>history of computing</blink>
 
 | <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Histories of computing help us identify the mistakes of the past and to prepare us for the future of computation. Though the documents stored in traditional historical archives provide ample information about the social and economic setting for innovation, computer histories can only be strengthened by the analysis of passages of source code as a primary source: a task that requires technical competence as well as historical literacy. Project students will - with the support of the supervisor - be expected to identify the source code relating to one or more historical examples of applied or theoretical computer science, to understand and critically analyse the historical significance of this code, and to report on their findings in an extended piece of academic writing. This can relate to any aspect of the history of computing, including scientific, industrial, cultural, governmental, or creative applications of computers in society. Project students who are interested in exploring some part of the history of computing relating to backgrounds and perspectives currently underrepresented in the field are especially welcome to propose a project in this area. Students are strongly encouraged to contact the project supervisor well in advance of choosing this option to discuss their suitability for this project.</span> |
 | :- | :- |
@@ -432,7 +454,7 @@
 | Keywords | history of computing, critical code studies, digital humanities |
 | Interview Required | Yes |
 
-#### EB-3: Analysing relevance, reliability, and information flow in user-generated comments on online music videos
+#### EB-4: Analysing relevance, reliability, and information flow in user-generated comments on online music videos
 
 | <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The comment sections for online music videos in sites like YouTube are often chaotic, but sometimes rich in user-generated insights about music, video, popular culture, and contemporary aesthetics at large. This project theme investigates how to identify the most meaningful user-generated comments on a dataset of music videos in order to extract insight into the target multimedia to which they are related. Possible research goals within this theme include any or all of the following: (a) designing and testing a measure of the relevance of a specific comment to its target music video; (b) identifying the reliability of information about music videos and musical tracks relative to other data sources; (c) quantifying the lag between such reliable information in user-generated comments and other data sources; (d) characterising the reliability and flow of information within the social graph of commenting users.</span> |
 | :- | :- |
@@ -443,7 +465,7 @@
 | Keywords | online multimedia, comments, NLP, digital humanities |
 | Interview Required | No |
 
-#### EB-4: Tracking the production and circulation of MIDI files during the 1990s
+#### EB-5: Tracking the production and circulation of MIDI files during the 1990s
 
 | <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>MIDI files are a compact representation of music data, designed to be consumed by sequencers and synthesizers (both hardware and software). A new archive of approximately 400,000 MIDI files dating from the 1990s has been distilled from a large set of CD images (.iso files) that have been available online from the Internet Archive (archive.org). This project requires a set of tools for the analysis of MIDI files at scale, as well as their relations to each other, based on shared content, metadata, and co-occurence on the same CD image. Research questions include: (a) the design of an efficient and scalable software pipeline information extraction (IE) and other knowledge mining techniques to extract structured data from the plaintext metadata that these files include; (b) the production of temporal dynamic graphs that model historically interesting relations between files, as well as an evaluation of the suitability of standard and non-standard graph metrics for deriving insight from these graphs; (c) the design and implementation of a user interface, using standard data analysis frameworks, for the effective and user-friendly analysis of large volumes of MIDI files.</span> |
 | :- | :- |
@@ -452,6 +474,17 @@
 | Requirements | (COMP2271 Data Science OR COMP2261 Artificial Intelligence). <br><br>Desirable (either as pre-requisite or co-requisite): COMP3517 Computational Modelling in the Humanities and Social Sciences OR COMP3717 Introduction to Music Processing |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | MIDI, music processing |
+| Interview Required | No |
+
+#### EB-6: Unsupervised discovery of visual motifs and similarities in large collections of graphic design images
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Graphic design is everywhere: in food wrappers, in music album art and physical media design, in signage, in bank cards, and so on. Large collections of images of objects - e.g. CD album art, bank cards, cassette tapes - circulate widely online. Historians of graphic design and popular culture can use these images to better understand the environments that they circulate in, but to date they have relied largely on the manual analysis of these images. Specifically, this project works within the "distant viewing" tradition to explore new ways of defining the similarity between images of material artefacts of a standardised shape and size by taking advantage of and combining (a) novel zero-shot image segmentation models; (b) deep neural network models of image similarity (semantic and structural); (c) interactive, browser-based technologies for the exploration of large image datasets.</span> |
+| :- | :- |
+| Reference URLs | <br>Arnold, Taylor, and Lauren Tilton. “Distant Viewing: Analyzing Large Visual Corpora.” Digital Scholarship in the Humanities 34, no. Supplement 1 (December 2019): i3–16. https://doi.org/10.1093/llc/fqz013<br>Kirillov, Alexander, Eric Mintun, Nikhila Ravi, Hanzi Mao, Chloe Rolland, Laura Gustafson, Tete Xiao, et al. “Segment Anything.” arXiv, April 5, 2023. https://doi.org/10.48550/arXiv.2304.02643.<br>Park, Sungkyu, Hyeonho Song, Sungwon Han, Berhane Weldegebriel, Lev Manovich, Emanuele Arielli, and Meeyoung Cha. “Using Web Data to Reveal 22-Year History of Sneaker Designs.” In Proceedings of the ACM Web Conference 2022, 2967–77. WWW ’22. New York, NY, USA: Association for Computing Machinery, 2022. https://doi.org/10.1145/3485447.3512017.<br> |
+| Anticipated Outcomes | New machine learning and GUI workflow(s) for exploring large collections of images, applying new unsupervised/zero-shot segmentation models as well as information retrieval techniques in a browser-based tool |
+| Requirements | COMP3527 Computer Vision OR COMP3547 Deep Learning |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | computer vision, deep learning, image segmentation, exploratory data analysis, cultural analytics, digital humanities |
 | Interview Required | No |
 
 
@@ -2280,7 +2313,106 @@
 ### Wanqing Tu _(ckdb34)_
 
 
-#### WT-1: Wireless Multicast at the MAC Layer
+#### WT-1: Data Traffic Analysis for IoT Devices in Smart Buildings
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Smart buildings employ various IoT (Internet-of-Things) devices, such as lighting, CCTV, smoke sensors, plugs, to realise building automation. While these smart devices provide low-cost benefits for building management, they are often vulnerable to malicious attacks. To secure smart buildings and their networks, it is important to understand the attributes of traffic generated or received by these devices. This project concerns analysis of data traffic in smart building networks so as to derive and define the characteristics for traffic from or to different IoT devices. On this basis, traffic features that help to detect security vulnerability will be developed.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Data traffic features of major smart building devices; <br>A set of minimum features that can be employed to detect security vulnerability. |
+| Requirements | Data analysis skills; <br>Critical thinking. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-2: Implementation of The Seamless UAV Trajectory Algorithm
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Many UAV (Unmanned Aerial Vehicle)-related applications require group communications between UAVs to reliably and efficiently deliver rich media content as well as to extend line-of-sight coverage between sky and ground. UAV group communications often need to accommodate UAV movement so as to enable activities such as adapting to the movements of ground devices, capture different videos/images, etc. During our research, we have designed the seamless UAV trajectory algorithm to handover UAVs in a group communication network without degrading data communication performance. This project is to implement the algorithm by programming simulators or real-world UAVs.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Workable algorithm in the simulator or UAVs to demonstrate seamless UAV trajectories; <br>Performance analysis results. |
+| Requirements | C/C++; critical thinking; knowledge in computer networks. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-3: Enhancing Trust Management in Vehicle Networks
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The trustworthiness of vehicle messages is a major focus in intelligent transportation research. Existing studies focus on enhancing the accuracy of vehicle trustworthiness evaluation, overlooking that the transmission performance may affect the quality of vehicle messages. This project is to design a transmission strategy to regulate vehiclesâ€™ transmissions so that incident messages for any part of the road can be reliably and accurately sent to a roadside unit. You will also implement the strategy by programming, and evaluate key relevant performance metrics.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Transmission strategy for vehicles;<br>Strategy implementation; <br>Performance results. |
+| Requirements | Computer systems, Networks and systems, programming |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-4: Mitigating IPv4 Address Exhaustion
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>There are 232 IPv4 addresses in total to identify individual devices on the Internet, while the deployment of new types of application always encourages the dramatic growth of devices on the Internet. The shortage of IPv4 addresses has driven several enhancement technologies, including Classless IP addressing, NAT, and IPv6. However, these schemes either only temporarily delay IPv4 address exhaustion or confront implementation issues in practical networks. In this project, you will not only show an understanding of the reasons for the IPv4 address shortage (even with those enhancement technologies) but also develop/explore your own idea in mitigating IPv4 address exhaustion (via either extending/improving existing enhancement technologies or developing something new). You may also be expected to do experiments to justify the feasibility of your idea.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | A good understanding of the subject issue; a potential proposal for mitigating IPv4 address exhaustion; results of feasibility study. |
+| Requirements | Computer networks; critical thinking; system experiments. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-5: Investigating Smart City Networking Development in the UK
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Cities around the world are currently rapidly transitioning to a resource efficient, low carbon emission economy while maintaining a high quality of life. In this project, you will investigate state-of-the-art smart city developments in the UK. In particular, you will focus on collecting and analysing the deployment of and innovations in networking technologies in order to support smart cities around the UK. On this basis, you are expected to draw insight and present arguments regarding further smart city networking developments in the UK.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | A good understanding of the subject area; potential guidance for further development. |
+| Requirements | Computer networks; critical thinking. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-6: Implementing MAODV in Network Simulator
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>The Multicast Ad hoc On-Demand Distance Vector (MAODV) routing protocol is the multicast operation of the Ad hoc On-Demand Distance Vector (AODV) routing protocol between mobile devices. Multicast operations enable data to be delivered to a group of receivers simultaneously. In this project, you will study the MAODV routing protocol to understand how the protocol processes/forwards mobile data in a multicasting fashion. You will then develop/program this protocol in Network Simulator. As a further part of your results, you will need to test and demonstrate the accurate implementation of this protocol in Network Simulator.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Workable MAODV in Network Simulator; tangible results showing the accurate implementation of the protocol in Network Simulator. |
+| Requirements | C++; computer networks; critical thinking. |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-7: Simulating Starlink Satellite Networks
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>SpaceX has launched 2500+ satellites to low earth orbits to form the well-known Starlink satellite constellation to provide global coverage. This project is to investigate Starlink and so to understand the deployment, the structure, and the performance of this new Internet backbone. Simulations will be carried out to develop Starlink, demonstrate data transmissions via this system, and evaluate basic data communication performance.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Starlink satellite network simulator; <br>Data communication performance results. |
+| Requirements | Computer systems, Networks and Systems, C/C++, Python |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-8: Jammer Detection in Internet-of-Things Networks
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>Many Internet-of-Things (IoT) networks interconnect a massive number of unsupervised devices. These devices are often exposed to transmissions of unexpected nearby wireless devices that generate jamming signals over transmission channels. As a consequence, legitimate transmissions are hindered, channels are busier, packet receptions at receivers is disrupted and the batteries of IoT devices drain, degrading the overall performance of the IoT network. This project is to design a solution to detect and localise such jammers. You will also implement your solution in experiment and so to evaluate the performance of your proposal.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Jammer detection solution;<br>Performance results from experiments. |
+| Requirements | Computer systems, Networks and systems, programming |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords |  |
+| Interview Required | No |
+
+#### WT-9: Balancing The Security-Efficiency Tradeoff In QUIC
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>QUIC is a transport layer network protocol initially designed at Google. Ever since the first deployment in 2012, QUIC has been used by more than half of all connections from the Chrome web browser to Googleâ€™s servers. In addition, Microsoft Edge and Firefox also support this protocol. This project is to investigate how we may enhance the tradeoff between the security and the transmission efficiency for QUIC applications. You will establish an experimental platform to derive such findings. You will also evaluate your findings through simulation.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | Experimental platform;<br>Findings for balancing the tradeoff;<br>Framework to combine these findings. |
+| Requirements | Computer systems, Network and systems, programming |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | 2 |
+| Interview Required | No |
+
+#### WT-10: Wireless Multicast at the MAC Layer
 
 | <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>In computer networking, multicast is a resource-efficient transmission method to distribute data to a group of coexisting receivers. However, with current networking standards and protocols, it is not trivial to implement multicasts in wireless networks. This project is to investigate a potential solution that can effectively implement wireless multicasting transmissions at the MAC layer. You will look into networking algorithms, machine learning algorithms, etc. to work out this potential solution. You will also evaluate the potential solution via experiments (say simulations).</span> |
 | :- | :- |
