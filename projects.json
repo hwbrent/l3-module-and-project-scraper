@@ -1818,6 +1818,24 @@
         "url": "<ul>\n<li><a href='http://arxiv.org/abs/1802.03426'>UMAP paper</a></li>\n<li><a href='https://umap-learn.readthedocs.io/en/latest/'>UMAP documentation</a></li>\n<li><a href='https://github.com/lmcinnes/umap/issues/580'>GitHub issue/thread on this topic</a></li>\n\n</ul>\n"
     },
     {
+        "forename": "Robert",
+        "initials": "RL",
+        "staff": "ktxg52",
+        "surname": "Lieck",
+        "theme": 724,
+        "title": "Collaborative Text Editing with ChatGPT",
+        "description": "<p>ChatGPT has extraordinary capabilities for creating high-quality text from prompts. However, the prompt-response mode of interaction has a major shortcoming: it is not possible to collaboratively edit an existing document to improve its quality. Instead, one can only request the model to rewrite/regenerate the text, which often changes many things at once (potentially messing up carefully formulated parts of the text) and does not allow for a fine-grained control. Prompt engineering can be used to mitigate this problem by asking for very specific changes, but this is tedious and does not always produce the desired results.</p>\n<p>This theme is about building a collaborative text editing app that acts as an intermediate layer and mediator between a human editor and ChatGPT. The human can ask for suggestions for specific parts of the text and provide additional information, such as the style (formal, colloquial, funny, ... ) that should be used. The app then translates this into a prompt for ChatGPT using carefully designed prompt templates. The response is then processed and compared to the existing text to present the user with specific and easy-to-use suggestions. For instance, if a colloquially written text should be changed to a formal style, the app may run multiple queries to ChatGPT, align the responses with the existing text and present the user with simple drop-down choices for replacing single words or short segments, without messing up the entire document.</p>\n<p>If this project is well implemented, it has the potential for a scientific publication and/or commercialisation as a start-up/spin-off.</p>\n",
+        "interview": 0,
+        "keywords": "artificial intelligence, ChatGPT, human-computer interaction, natural language processing, large language models, web design",
+        "l3": 1,
+        "l4": 1,
+        "maxStudents": "0",
+        "outcomes": "An app for collaborative text editing using ChatGPT.",
+        "skills": "<ul>\n<li>proficiency in Python and basic knowledge of web design (for building a simple app)</li>\n<li>basic text processing skills (to process the responses and compare to the existing text)</li>\n\n</ul>\n",
+        "themeID": 724,
+        "url": ""
+    },
+    {
         "forename": "Yang",
         "initials": "YL",
         "staff": "wgjg13",

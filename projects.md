@@ -123,6 +123,7 @@
  * [RL-6: Variational Autoencoders are Reinforcement Learning Agents](#rl-6-variational-autoencoders-are-reinforcement-learning-agents)
  * [RL-7: Solving Long-Term Dependencies with Hierarchical Memory](#rl-7-solving-long-term-dependencies-with-hierarchical-memory)
  * [RL-8: A PyTorch implementation of the UMAP embedding method](#rl-8-a-pytorch-implementation-of-the-umap-embedding-method)
+ * [RL-9: Collaborative Text Editing with ChatGPT](#rl-9-collaborative-text-editing-with-chatgpt)
 #### Yang Long _(wgjg13)_
  * [YL-1: AI-pedia](#yl-1-ai-pedia)
 #### Christopher Marcotte _(tkdn52)_
@@ -1491,6 +1492,17 @@
 | Requirements | deep learning (you need to be proficient in PyTorch to do this project) |
 | Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
 | Keywords | artificial intelligence; machine learning; deep learning; data embedding; data visualisation |
+| Interview Required | No |
+
+#### RL-9: Collaborative Text Editing with ChatGPT
+
+| <span style='font-weight:normal'>Description</span> | <span style='font-weight:normal'>ChatGPT has extraordinary capabilities for creating high-quality text from prompts. However, the prompt-response mode of interaction has a major shortcoming: it is not possible to collaboratively edit an existing document to improve its quality. Instead, one can only request the model to rewrite/regenerate the text, which often changes many things at once (potentially messing up carefully formulated parts of the text) and does not allow for a fine-grained control. Prompt engineering can be used to mitigate this problem by asking for very specific changes, but this is tedious and does not always produce the desired results.<br>This theme is about building a collaborative text editing app that acts as an intermediate layer and mediator between a human editor and ChatGPT. The human can ask for suggestions for specific parts of the text and provide additional information, such as the style (formal, colloquial, funny, ... ) that should be used. The app then translates this into a prompt for ChatGPT using carefully designed prompt templates. The response is then processed and compared to the existing text to present the user with specific and easy-to-use suggestions. For instance, if a colloquially written text should be changed to a formal style, the app may run multiple queries to ChatGPT, align the responses with the existing text and present the user with simple drop-down choices for replacing single words or short segments, without messing up the entire document.<br>If this project is well implemented, it has the potential for a scientific publication and/or commercialisation as a start-up/spin-off.</span> |
+| :- | :- |
+| Reference URLs |  |
+| Anticipated Outcomes | An app for collaborative text editing using ChatGPT. |
+| Requirements | <br>proficiency in Python and basic knowledge of web design (for building a simple app)<br>basic text processing skills (to process the responses and compare to the existing text)<br> |
+| Project Type | CS Level 3: ✅<br>CS Level 4: ✅ |
+| Keywords | artificial intelligence, ChatGPT, human-computer interaction, natural language processing, large language models, web design |
 | Interview Required | No |
 
 
