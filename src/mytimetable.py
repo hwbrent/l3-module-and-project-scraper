@@ -179,8 +179,6 @@ def main():
         # activities. The <div> has class 'activity-list'
         activity_lists = driver.find_elements(By.CLASS_NAME, "activity-list")
 
-        week_activities = {}
-
         for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
             # Add an array, which will contain a 'dict' for each activity.
             day_activities = []
@@ -221,8 +219,6 @@ def main():
                     "With": staff
                 })
                 # fmt: on
-
-            week_activities[day] = day_activities
 
             exact_date = date.fromisoformat(iso_date) + timedelta(index)
 
