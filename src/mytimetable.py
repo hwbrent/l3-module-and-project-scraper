@@ -202,7 +202,7 @@ def main():
                 time = time_raw.split(" - ")
 
                 sections = activity.find_elements(By.CLASS_NAME, "activity-section")
-                name_div, location_div, professor_div = sections
+                name_div, location_div, staff_div = sections
 
                 name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
 
@@ -210,9 +210,7 @@ def main():
                 room = location_a.text.strip()
                 gmaps_link = location_a.get_attribute("href").strip()
 
-                professor = professor_div.find_element(
-                    By.XPATH, "./div[2]"
-                ).text.strip()
+                staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
 
                 # fmt: off
                 day_activities.append({
@@ -220,7 +218,7 @@ def main():
                     "Time": time,
                     "Name": name,
                     "Location": [room, gmaps_link],
-                    "With": professor
+                    "With": staff
                 })
                 # fmt: on
 
