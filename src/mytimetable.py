@@ -156,15 +156,25 @@ def get_week_patterns(driver):
 def main():
     driver = utils.get_driver()
 
-    # utils.login_to_page(driver, URL)
-    # input()
+    utils.login_to_page(driver, URL)
 
-    raw_patterns = scrape_raw_week_patterns(driver)
+    week_patterns = get_week_patterns(driver)
 
-    academic_year = get_academic_year(driver)
-    cleaned = format_week_patterns(raw_patterns, academic_year)
+    for week in week_patterns:
+        iso_date = week["Calendar Date"]
 
-    pp.pprint(cleaned)
+        # Show the timetable activites for the given week in the week patterns.
+        # A parameter can be added to the URL - the parameter name is 'date', and the
+        # value is a date in the ISO format (i.e. YYYY-MM-DD)
+
+        week_page = f"{URL}?date={iso_date}"
+        driver.get(week_page)
+
+        # Monday, Tuesday, etc.
+        days_h2s = driver.find_elements(By.TAG_NAME, "h2")
+        days = (day.text.strip() for day in days_h2s)
+
+        activity_lists = driver.find_elements(By.CLASS_NAME, "activity-list")
 
     driver.quit()
 
