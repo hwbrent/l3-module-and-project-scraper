@@ -1,4 +1,5 @@
 import utils
+import re
 from datetime import date
 from selenium.webdriver.common.by import By
 
@@ -120,16 +121,41 @@ def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]
     return formatted
 
 
+def scrape_raw_academic_year(driver) -> str:
+    # It's located in a <div> with class 'l2sitename'. The innerText will
+    # be something like "2023-24 Teaching Timetable"
+    div = driver.find_element(By.CLASS_NAME, "l2sitename")
+    raw = div.text.strip()
+    return raw
+
+
+def format_academic_year(raw):
+    # `academic_year` will be something like "2023-24".
+    # This replaces the dash and two digits with nothing, and leaves us with
+    # the first year (e.g. 2023).
+    raw = raw.replace(" Teaching Timetable", "")
+    first_year = re.sub(r"-\d\d", "", raw)
+    first_year = int(first_year)
+    return first_year
+
+
+def get_academic_year(driver):
+    utils.login_to_page_with_url_auth(driver, WEEK_PATTERNS_URL)
+    raw = scrape_raw_academic_year(driver)
+    formatted = format_academic_year(raw)
+    return formatted
+
+
 def main():
     driver = utils.get_driver()
 
     # utils.login_to_page(driver, URL)
     # input()
 
-    raw_patterns = scrape_raw_week_patterns(driver)
-    cleaned = format_week_patterns(
-        raw_patterns,
-    )
+    academic_year = get_academic_year(driver)
+
+    # raw_patterns = scrape_raw_week_patterns(driver)
+    # cleaned = format_week_patterns(raw_patterns, academic_year)
 
     driver.quit()
 
