@@ -1,6 +1,6 @@
 import utils
 import re
-from datetime import date
+from datetime import date, timedelta
 from selenium.webdriver.common.by import By
 
 from pprint import PrettyPrinter
@@ -161,6 +161,7 @@ def main():
     week_patterns = get_week_patterns(driver)
 
     all_activities = {}
+    individual_days = []
 
     for week in week_patterns:
         iso_date = week["Calendar Date"]
@@ -181,7 +182,7 @@ def main():
 
         week_activities = {}
 
-        for day, activity_list in zip(days, activity_lists):
+        for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
             # Add an array, which will contain a 'dict' for each activity.
             day_activities = []
 
@@ -224,9 +225,19 @@ def main():
 
             week_activities[day] = day_activities
 
+            exact_date = date.fromisoformat(iso_date) + timedelta(index)
+
+            # fmt: off
+            individual_days.append({
+                'Date': exact_date.isoformat(),
+                'Day of the Week': day,
+                'Activities': day_activities
+            })
+            # fmt: on
+
         all_activities[iso_date] = week_activities
 
-    pp.pprint(all_activities)
+    pp.pprint(individual_days)
 
     driver.quit()
 
