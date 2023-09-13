@@ -158,8 +158,8 @@ def get_timetable_activities(driver):
 
     week_patterns = get_week_patterns(driver)
 
-    for week in week_patterns:
-        iso_date = week["Calendar Date"]
+    for week_pattern in week_patterns:
+        iso_date = week_pattern["Calendar Date"]
 
         # Show the timetable activites for the given week in the week patterns.
         # A parameter can be added to the URL - the parameter name is 'date', and the
