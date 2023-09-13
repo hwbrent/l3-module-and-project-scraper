@@ -183,7 +183,7 @@ def main():
 
         for day, activity_list in zip(days, activity_lists):
             # Add an array, which will contain a 'dict' for each activity.
-            week_activities[day] = []
+            day_activities = []
 
             # If there are no activities on this day, there will be an element
             # with class 'activity-none'
@@ -215,7 +215,7 @@ def main():
                 ).text.strip()
 
                 # fmt: off
-                week_activities[day].append({
+                day_activities.append({
                     "Type": kind,
                     "Time": time,
                     "Name": name,
@@ -223,6 +223,8 @@ def main():
                     "With": professor
                 })
                 # fmt: on
+
+            week_activities[day] = day_activities
 
         all_activities[iso_date] = week_activities
 
