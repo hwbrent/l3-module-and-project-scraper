@@ -160,7 +160,6 @@ def main():
 
     week_patterns = get_week_patterns(driver)
 
-    all_activities = {}
     individual_days = []
 
     for week in week_patterns:
@@ -234,8 +233,6 @@ def main():
                 'Activities': day_activities
             })
             # fmt: on
-
-        all_activities[iso_date] = week_activities
 
     pp.pprint(individual_days)
 
