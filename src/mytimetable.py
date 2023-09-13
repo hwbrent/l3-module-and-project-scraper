@@ -166,7 +166,6 @@ def main():
         # Show the timetable activites for the given week in the week patterns.
         # A parameter can be added to the URL - the parameter name is 'date', and the
         # value is a date in the ISO format (i.e. YYYY-MM-DD)
-
         week_page = f"{URL}?date={iso_date}"
         driver.get(week_page)
 
@@ -174,11 +173,14 @@ def main():
         days_h2s = driver.find_elements(By.TAG_NAME, "h2")
         days = (day.text.strip() for day in days_h2s)
 
+        # Each day of the week has a <div> which in theory will contain its
+        # activities. The <div> has class 'activity-list'
         activity_lists = driver.find_elements(By.CLASS_NAME, "activity-list")
 
         week_activities = {}
 
         for day, activity_list in zip(days, activity_lists):
+            # Add an array, which will contain a 'dict' for each activity.
             week_activities[day] = []
 
             # If there are no activities on this day, there will be an element
