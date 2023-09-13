@@ -1,5 +1,9 @@
+import utils
+
+
 def main():
-    pass
+    driver = utils.get_driver()
+    driver.quit()
 
 
 if __name__ == "__main__":
