@@ -152,10 +152,12 @@ def main():
     # utils.login_to_page(driver, URL)
     # input()
 
-    academic_year = get_academic_year(driver)
+    raw_patterns = scrape_raw_week_patterns(driver)
 
-    # raw_patterns = scrape_raw_week_patterns(driver)
-    # cleaned = format_week_patterns(raw_patterns, academic_year)
+    academic_year = get_academic_year(driver)
+    cleaned = format_week_patterns(raw_patterns, academic_year)
+
+    pp.pprint(cleaned)
 
     driver.quit()
 
