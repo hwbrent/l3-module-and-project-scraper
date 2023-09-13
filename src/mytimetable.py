@@ -201,13 +201,34 @@ def main():
                 time_raw = activity.find_element(By.CLASS_NAME, "activity-time").text
                 time = time_raw.split(" - ")
 
-                # The name of the activity is not directly accessible. The
-                # div that contains the text doesn't have its own class or
-                # anything like that. So we have to go through the parent
-                # (a div with class 'activity-title'), then find the second
-                # child
-                name_parent_div = activity.find_element(By.CLASS_NAME, "activity-title")
-                name = name_parent_div.find_element(By.XPATH, "./div[2]").text
+                sections = activity.find_elements(By.CLASS_NAME, "activity-section")
+                name_div, location_div, professor_div = sections
+
+                name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
+
+                location_a = location_div.find_element(By.TAG_NAME, "a")
+                room = location_a.text.strip()
+                gmaps_link = location_a.get_attribute("href").strip()
+                # room = location_div.find_element(By.TAG_NAME, "span").text.strip()
+                # gmaps_link = (
+                #     location_div.find_element(By.TAG_NAME, "a")
+                #     .get_attribute("href")
+                #     .strip()
+                # )
+
+                professor = professor_div.find_element(
+                    By.XPATH, "./div[2]"
+                ).text.strip()
+
+                print(kind, time, name, room, gmaps_link, professor, sep="\t")
+
+                # # The name of the activity is not directly accessible. The
+                # # div that contains the text doesn't have its own class or
+                # # anything like that. So we have to go through the parent
+                # # (a div with class 'activity-title'), then find the second
+                # # child
+                # name_parent_div = activity.find_element(By.CLASS_NAME, "activity-title")
+                # name = name_parent_div.find_element(By.XPATH, "./div[2]").text
 
     driver.quit()
 
