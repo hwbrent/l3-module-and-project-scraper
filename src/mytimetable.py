@@ -153,9 +153,7 @@ def get_week_patterns(driver):
     return clean
 
 
-def main():
-    driver = utils.get_driver()
-
+def get_timetable_activities(driver):
     utils.login_to_page(driver, URL)
 
     week_patterns = get_week_patterns(driver)
@@ -226,8 +224,13 @@ def main():
                 })
                 # fmt: on
 
-    pp.pprint(individual_days)
+    return individual_days
 
+
+def main():
+    driver = utils.get_driver()
+    activities = get_timetable_activities(driver)
+    pp.pprint(activities)
     driver.quit()
 
 
