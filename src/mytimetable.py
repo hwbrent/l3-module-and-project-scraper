@@ -160,6 +160,8 @@ def main():
 
     week_patterns = get_week_patterns(driver)
 
+    all_activities = {}
+
     for week in week_patterns:
         iso_date = week["Calendar Date"]
 
@@ -190,8 +192,6 @@ def main():
                 continue
             except:
                 None
-            # if no_elements:
-            #     continue
 
             activities = activity_list.find_elements(By.CLASS_NAME, "activity")
             for activity in activities:
@@ -209,26 +209,24 @@ def main():
                 location_a = location_div.find_element(By.TAG_NAME, "a")
                 room = location_a.text.strip()
                 gmaps_link = location_a.get_attribute("href").strip()
-                # room = location_div.find_element(By.TAG_NAME, "span").text.strip()
-                # gmaps_link = (
-                #     location_div.find_element(By.TAG_NAME, "a")
-                #     .get_attribute("href")
-                #     .strip()
-                # )
 
                 professor = professor_div.find_element(
                     By.XPATH, "./div[2]"
                 ).text.strip()
 
-                print(kind, time, name, room, gmaps_link, professor, sep="\t")
+                # fmt: off
+                week_activities[day].append({
+                    "Type": kind,
+                    "Time": time,
+                    "Name": name,
+                    "Location": [room, gmaps_link],
+                    "With": professor
+                })
+                # fmt: on
 
-                # # The name of the activity is not directly accessible. The
-                # # div that contains the text doesn't have its own class or
-                # # anything like that. So we have to go through the parent
-                # # (a div with class 'activity-title'), then find the second
-                # # child
-                # name_parent_div = activity.find_element(By.CLASS_NAME, "activity-title")
-                # name = name_parent_div.find_element(By.XPATH, "./div[2]").text
+        all_activities[iso_date] = week_activities
+
+    pp.pprint(all_activities)
 
     driver.quit()
 
