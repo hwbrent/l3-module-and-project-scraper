@@ -1,9 +1,18 @@
 import utils
+from datetime import date
 from selenium.webdriver.common.by import By
+
+from pprint import PrettyPrinter
+
+pp = PrettyPrinter(indent=4)
 
 URL = "https://mytimetable.durham.ac.uk/weekly/activities"
 
 WEEK_PATTERNS_URL = "https://timetable.dur.ac.uk/week_patterns.htm"
+
+# fmt: off
+MONTHS = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+# fmt: on
 
 
 def scrape_raw_week_patterns(driver) -> list[dict]:
@@ -53,11 +62,74 @@ def scrape_raw_week_patterns(driver) -> list[dict]:
     return data
 
 
+def format_week_number(raw: str) -> int:
+    raw = raw.replace("Week ", "")
+    return int(raw)
+
+
+def format_teaching_week(raw: str):
+    # If it's an empty string, return `None` to reflect this
+    if raw == "":
+        return None
+
+    # If it's a teaching week, parse the number out of it and return that
+    # as an `int`
+    if "Teaching week" in raw:
+        raw = raw.replace("Teaching week ", "")
+        return int(raw)
+
+    return raw
+
+
+def format_calendar_date(raw: str, year: int) -> str:
+    """
+    Given a `raw` calendar date (e.g. `"Mon 11 Dec - Fri 15 Dec"`),
+    this function returns a `str` in the ISO 8601 format representing the
+    Monday (e.g. 2023-12-11).
+    """
+    start, _ = raw.split(" - ")
+
+    _, day, month_raw = start.split()
+    day = int(day)
+    month = MONTHS.index(month_raw) + 1
+
+    return date(year, month, day).isoformat()
+
+
+def format_week_patterns(raw_data: list[dict], academic_year: str) -> list[dict]:
+    formatted = []
+
+    for i, old_entry in enumerate(raw_data):
+        week_number, calendar_date, term, teaching_week = old_entry.values()
+
+        if i > 0:
+            prev_entry = raw_data[i - 1]
+            prev_calendar_date = prev_entry["Calendar Date"]
+            if "Dec" in prev_calendar_date and "Jan" in calendar_date:
+                academic_year += 1
+
+        # fmt: off
+        formatted.append({
+            "Week Number": format_week_number(week_number),
+            "Calendar Date": format_calendar_date(calendar_date, academic_year),
+            "Term": term or None,
+            "Teaching Week": format_teaching_week(teaching_week)
+        })
+        # fmt: on
+
+    return formatted
+
+
 def main():
     driver = utils.get_driver()
-    utils.login_to_page(driver, URL)
 
-    input()
+    # utils.login_to_page(driver, URL)
+    # input()
+
+    raw_patterns = scrape_raw_week_patterns(driver)
+    cleaned = format_week_patterns(
+        raw_patterns,
+    )
 
     driver.quit()
 
