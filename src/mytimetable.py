@@ -176,6 +176,17 @@ def main():
 
         activity_lists = driver.find_elements(By.CLASS_NAME, "activity-list")
 
+        week_activities = {}
+
+        for day, activity_list in zip(days, activity_lists):
+            week_activities[day] = []
+
+            # If there are no activities on this day, there will be an element
+            # with class 'activity-none'
+            no_elements = activity_list.find_element(By.CLASS_NAME, "activity-none")
+            if no_elements:
+                continue
+
     driver.quit()
 
 
