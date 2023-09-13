@@ -181,7 +181,8 @@ def get_timetable_activities(driver):
             obj = {
                 'Date': exact_date.isoformat(),
                 'Day of the Week': day,
-                'Activities': []
+                'Activities': [],
+                'Timetable URL': driver.current_url
             }
             # fmt: on
 
