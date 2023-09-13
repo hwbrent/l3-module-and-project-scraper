@@ -11,8 +11,7 @@ def scrape_raw_week_patterns(driver) -> list[dict]:
     where each `dict` represents a week (or a row in the `<table>` found
     on the week patterns webpage).
     """
-    url = utils.get_url_with_auth(WEEK_PATTERNS_URL)
-    driver.get(url)
+    utils.login_to_page_with_url_auth(driver, WEEK_PATTERNS_URL)
 
     # This is the structure of the table:
     # +–––––––––––––––––––––––––––––+––––––––––––––––––––––+
