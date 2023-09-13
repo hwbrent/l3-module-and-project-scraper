@@ -1,4 +1,5 @@
 import utils
+from selenium.webdriver.common.by import By
 
 URL = "https://mytimetable.durham.ac.uk/weekly/activities"
 
