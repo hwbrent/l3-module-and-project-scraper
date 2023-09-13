@@ -158,8 +158,6 @@ def get_timetable_activities(driver):
 
     week_patterns = get_week_patterns(driver)
 
-    individual_days = []
-
     for week in week_patterns:
         iso_date = week["Calendar Date"]
 
@@ -180,57 +178,61 @@ def get_timetable_activities(driver):
         for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
             exact_date = date.fromisoformat(iso_date) + timedelta(index)
             # fmt: off
-            individual_days.append({
+            obj = {
                 'Date': exact_date.isoformat(),
                 'Day of the Week': day,
                 'Activities': []
-            })
+            }
             # fmt: on
 
             # If there are no activities on this day, there will be an element
             # with class 'activity-none'
             try:
                 activity_list.find_element(By.CLASS_NAME, "activity-none")
-                continue
             except:
-                None
+                activities = activity_list.find_elements(By.CLASS_NAME, "activity")
+                for activity in activities:
+                    # E.g. Seminar, Lecture, etc
+                    kind = activity.find_element(
+                        By.CLASS_NAME, "activity-type-title"
+                    ).text
 
-            activities = activity_list.find_elements(By.CLASS_NAME, "activity")
-            for activity in activities:
-                # E.g. Seminar, Lecture, etc
-                kind = activity.find_element(By.CLASS_NAME, "activity-type-title").text
+                    time_raw = activity.find_element(
+                        By.CLASS_NAME, "activity-time"
+                    ).text
+                    time = time_raw.split(" - ")
 
-                time_raw = activity.find_element(By.CLASS_NAME, "activity-time").text
-                time = time_raw.split(" - ")
+                    sections = activity.find_elements(By.CLASS_NAME, "activity-section")
+                    name_div, location_div, staff_div = sections
 
-                sections = activity.find_elements(By.CLASS_NAME, "activity-section")
-                name_div, location_div, staff_div = sections
+                    name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
 
-                name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
+                    location_a = location_div.find_element(By.TAG_NAME, "a")
+                    room = location_a.text.strip()
+                    gmaps_link = location_a.get_attribute("href").strip()
 
-                location_a = location_div.find_element(By.TAG_NAME, "a")
-                room = location_a.text.strip()
-                gmaps_link = location_a.get_attribute("href").strip()
+                    staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
 
-                staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
+                    # fmt: off
+                    obj['Activities'].append({
+                        "Type": kind,
+                        "Time": time,
+                        "Name": name,
+                        "Location": [room, gmaps_link],
+                        "With": staff
+                    })
+                    # fmt: on
 
-                # fmt: off
-                individual_days[-1]['Activities'].append({
-                    "Type": kind,
-                    "Time": time,
-                    "Name": name,
-                    "Location": [room, gmaps_link],
-                    "With": staff
-                })
-                # fmt: on
-
-    return individual_days
+            yield obj
 
 
 def main():
     driver = utils.get_driver()
-    activities = get_timetable_activities(driver)
-    pp.pprint(activities)
+
+    for activity in get_timetable_activities(driver):
+        pp.pprint(activity)
+        print()
+
     driver.quit()
 
 
