@@ -1,5 +1,7 @@
 import utils
 
+URL = "https://mytimetable.durham.ac.uk/weekly/activities"
+
 
 def main():
     driver = utils.get_driver()
