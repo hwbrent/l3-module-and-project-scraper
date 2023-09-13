@@ -146,6 +146,13 @@ def get_academic_year(driver):
     return formatted
 
 
+def get_week_patterns(driver):
+    raw = scrape_raw_week_patterns(driver)
+    academic_year = get_academic_year(driver)
+    clean = format_week_patterns(raw, academic_year)
+    return clean
+
+
 def main():
     driver = utils.get_driver()
 
