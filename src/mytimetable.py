@@ -180,8 +180,14 @@ def main():
         activity_lists = driver.find_elements(By.CLASS_NAME, "activity-list")
 
         for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
-            # Add an array, which will contain a 'dict' for each activity.
-            day_activities = []
+            exact_date = date.fromisoformat(iso_date) + timedelta(index)
+            # fmt: off
+            individual_days.append({
+                'Date': exact_date.isoformat(),
+                'Day of the Week': day,
+                'Activities': []
+            })
+            # fmt: on
 
             # If there are no activities on this day, there will be an element
             # with class 'activity-none'
@@ -211,7 +217,7 @@ def main():
                 staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
 
                 # fmt: off
-                day_activities.append({
+                individual_days[-1]['Activities'].append({
                     "Type": kind,
                     "Time": time,
                     "Name": name,
@@ -219,16 +225,6 @@ def main():
                     "With": staff
                 })
                 # fmt: on
-
-            exact_date = date.fromisoformat(iso_date) + timedelta(index)
-
-            # fmt: off
-            individual_days.append({
-                'Date': exact_date.isoformat(),
-                'Day of the Week': day,
-                'Activities': day_activities
-            })
-            # fmt: on
 
     pp.pprint(individual_days)
 
