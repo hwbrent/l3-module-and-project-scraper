@@ -185,9 +185,29 @@ def main():
 
             # If there are no activities on this day, there will be an element
             # with class 'activity-none'
-            no_elements = activity_list.find_element(By.CLASS_NAME, "activity-none")
-            if no_elements:
+            try:
+                activity_list.find_element(By.CLASS_NAME, "activity-none")
                 continue
+            except:
+                None
+            # if no_elements:
+            #     continue
+
+            activities = activity_list.find_elements(By.CLASS_NAME, "activity")
+            for activity in activities:
+                # E.g. Seminar, Lecture, etc
+                kind = activity.find_element(By.CLASS_NAME, "activity-type-title").text
+
+                time_raw = activity.find_element(By.CLASS_NAME, "activity-time").text
+                time = time_raw.split(" - ")
+
+                # The name of the activity is not directly accessible. The
+                # div that contains the text doesn't have its own class or
+                # anything like that. So we have to go through the parent
+                # (a div with class 'activity-title'), then find the second
+                # child
+                name_parent_div = activity.find_element(By.CLASS_NAME, "activity-title")
+                name = name_parent_div.find_element(By.XPATH, "./div[2]").text
 
     driver.quit()
 
