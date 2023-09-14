@@ -166,15 +166,12 @@ def day_has_activities(list) -> bool:
         return True
 
 
-def get_timetable_activities(driver, by="day"):
+def get_timetable_activities(driver):
     utils.login_to_page(driver, URL)
 
     week_patterns = get_week_patterns(driver)
 
     for week_pattern in week_patterns:
-        if by == "week":
-            week = {**week_pattern, "Days": []}
-
         iso_date = week_pattern["Calendar Date"]
 
         # Show the timetable activites for the given week in the week patterns.
@@ -236,13 +233,7 @@ def get_timetable_activities(driver, by="day"):
                     })
                     # fmt: on
 
-            if by == "day":
-                yield obj
-            elif by == "week":
-                week["Days"].append(obj)
-
-        if by == "week":
-            yield week
+            yield obj
 
 
 def main():
