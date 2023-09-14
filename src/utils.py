@@ -356,12 +356,14 @@ def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     driver.get(url)
 
 
-def calc_time_difference(time1, time2) -> int:
+def calc_time_difference(time1, time2) -> float:
     """
-    Given two times in the format `'HH:MM'`, this function returns the number of seconds between them.
+    Given two times in the format `'HH:MM'`, this function returns the number of hours between them.
     """
     today = datetime.date.today()
     dtime1 = datetime.datetime.fromisoformat(f"{today}T{time1}")
     dtime2 = datetime.datetime.fromisoformat(f"{today}T{time2}")
     delta = dtime2 - dtime1
-    return delta.seconds
+    seconds = delta.seconds
+    hours = seconds / 3600
+    return hours
