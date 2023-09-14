@@ -220,6 +220,7 @@ def get_timetable_activities(driver, week_patterns):
                     "Date": exact_date.isoformat(),
                     "Day of the Week": day,
                     "Timetable URL": driver.current_url,
+                    "Week": week_pattern,
                 }
 
 
