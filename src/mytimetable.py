@@ -188,14 +188,6 @@ def get_timetable_activities(driver, week_patterns):
 
         for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
             exact_date = date.fromisoformat(iso_date) + timedelta(index)
-            # fmt: off
-            obj = {
-                'Date': exact_date.isoformat(),
-                'Day of the Week': day,
-                'Activities': [],
-                'Timetable URL': driver.current_url
-            }
-            # fmt: on
 
             if day_has_activities(activity_list):
                 activities = activity_list.find_elements(By.CLASS_NAME, "activity")
@@ -221,17 +213,16 @@ def get_timetable_activities(driver, week_patterns):
 
                     staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
 
-                    # fmt: off
-                    obj['Activities'].append({
+                    yield {
                         "Type": kind,
                         "Time": time,
                         "Name": name,
                         "Location": [room, gmaps_link],
-                        "With": staff
-                    })
-                    # fmt: on
-
-            yield obj
+                        "With": staff,
+                        "Date": exact_date.isoformat(),
+                        "Day of the Week": day,
+                        "Timetable URL": driver.current_url,
+                    }
 
 
 def main():
