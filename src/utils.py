@@ -3,6 +3,7 @@ import time
 import json
 import string
 import warnings
+import datetime
 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
@@ -353,3 +354,14 @@ def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
     """
     url = get_url_with_auth(url)
     driver.get(url)
+
+
+def calc_time_difference(time1, time2) -> int:
+    """
+    Given two times in the format `'HH:MM'`, this function returns the number of seconds between them.
+    """
+    today = datetime.date.today()
+    dtime1 = datetime.datetime.fromisoformat(f"{today}T{time1}")
+    dtime2 = datetime.datetime.fromisoformat(f"{today}T{time2}")
+    delta = dtime2 - dtime1
+    return delta.seconds
