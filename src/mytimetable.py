@@ -202,11 +202,7 @@ def get_timetable_activities(driver, by="day"):
             }
             # fmt: on
 
-            # If there are no activities on this day, there will be an element
-            # with class 'activity-none'
-            try:
-                activity_list.find_element(By.CLASS_NAME, "activity-none")
-            except:
+            if day_has_activities(activity_list):
                 activities = activity_list.find_elements(By.CLASS_NAME, "activity")
                 for activity in activities:
                     # E.g. Seminar, Lecture, etc
