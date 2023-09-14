@@ -239,7 +239,7 @@ def main():
 
     week_patterns = get_week_patterns(driver)
 
-    for week in get_timetable_activities(driver, week_patterns, by="week"):
+    for week in get_timetable_activities(driver, week_patterns):
         pp.pprint(week)
         print()
 
