@@ -166,10 +166,8 @@ def day_has_activities(list) -> bool:
         return True
 
 
-def get_timetable_activities(driver):
+def get_timetable_activities(driver, week_patterns):
     utils.login_to_page(driver, URL)
-
-    week_patterns = get_week_patterns(driver)
 
     for week_pattern in week_patterns:
         iso_date = week_pattern["Calendar Date"]
@@ -239,7 +237,9 @@ def get_timetable_activities(driver):
 def main():
     driver = utils.get_driver()
 
-    for week in get_timetable_activities(driver, by="week"):
+    week_patterns = get_week_patterns(driver)
+
+    for week in get_timetable_activities(driver, week_patterns, by="week"):
         pp.pprint(week)
         print()
 
