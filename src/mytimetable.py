@@ -153,6 +153,19 @@ def get_week_patterns(driver):
     return clean
 
 
+def day_has_activities(list) -> bool:
+    """
+    Indicates whether the list of activities provided actually contains any.
+    """
+    # If there are no activities, there will be an element
+    # with class 'activity-none'
+    try:
+        list.find_element(By.CLASS_NAME, "activity-none")
+        return False
+    except:
+        return True
+
+
 def get_timetable_activities(driver, by="day"):
     utils.login_to_page(driver, URL)
 
