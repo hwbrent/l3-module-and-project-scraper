@@ -189,40 +189,38 @@ def get_timetable_activities(driver, week_patterns):
         for index, (day, activity_list) in enumerate(zip(days, activity_lists)):
             exact_date = date.fromisoformat(iso_date) + timedelta(index)
 
-            if day_has_activities(activity_list):
-                activities = activity_list.find_elements(By.CLASS_NAME, "activity")
-                for activity in activities:
-                    # E.g. Seminar, Lecture, etc
-                    kind = activity.find_element(
-                        By.CLASS_NAME, "activity-type-title"
-                    ).text
+            if not day_has_activities(activity_list):
+                continue
 
-                    time_raw = activity.find_element(
-                        By.CLASS_NAME, "activity-time"
-                    ).text
-                    time = time_raw.split(" - ")
+            activities = activity_list.find_elements(By.CLASS_NAME, "activity")
+            for activity in activities:
+                # E.g. Seminar, Lecture, etc
+                kind = activity.find_element(By.CLASS_NAME, "activity-type-title").text
 
-                    sections = activity.find_elements(By.CLASS_NAME, "activity-section")
-                    name_div, location_div, staff_div = sections
+                time_raw = activity.find_element(By.CLASS_NAME, "activity-time").text
+                time = time_raw.split(" - ")
 
-                    name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
+                sections = activity.find_elements(By.CLASS_NAME, "activity-section")
+                name_div, location_div, staff_div = sections
 
-                    location_a = location_div.find_element(By.TAG_NAME, "a")
-                    room = location_a.text.strip()
-                    gmaps_link = location_a.get_attribute("href").strip()
+                name = name_div.find_element(By.XPATH, "./div[2]").text.strip()
 
-                    staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
+                location_a = location_div.find_element(By.TAG_NAME, "a")
+                room = location_a.text.strip()
+                gmaps_link = location_a.get_attribute("href").strip()
 
-                    yield {
-                        "Type": kind,
-                        "Time": time,
-                        "Name": name,
-                        "Location": [room, gmaps_link],
-                        "With": staff,
-                        "Date": exact_date.isoformat(),
-                        "Day of the Week": day,
-                        "Timetable URL": driver.current_url,
-                    }
+                staff = staff_div.find_element(By.XPATH, "./div[2]").text.strip()
+
+                yield {
+                    "Type": kind,
+                    "Time": time,
+                    "Name": name,
+                    "Location": [room, gmaps_link],
+                    "With": staff,
+                    "Date": exact_date.isoformat(),
+                    "Day of the Week": day,
+                    "Timetable URL": driver.current_url,
+                }
 
 
 def main():
