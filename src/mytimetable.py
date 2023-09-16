@@ -251,8 +251,7 @@ def get_ical(activities):
         #     'Teaching Week': 1,
         #     'Term': 'Michaelmas',
         #     'Week Number': 12},
-        #     'With': 'MRS ZHANNA KOZMENKO-IHSSEN'
-        # }
+        # 'With': 'MRS ZHANNA KOZMENKO-IHSSEN'
 
         # Format value for SUMMARY
         kind = activity["Type"]
@@ -278,7 +277,22 @@ def get_ical(activities):
         dtstart = datetime.fromisoformat(f"{date}T{start}")
         dtend = datetime.fromisoformat(f"{date}T{end}")
 
+        # Format value for DESCRIPTION
+        # fmt:off
+        description = "\n".join([
+            f"Name: {name}",
+            f"Start: {start}",
+            f"End: {end}",
+            f"Room: {location} ({gmaps_link})",
+            f"Staff: {activity['With']}",
+            f"Term: {activity['Week']['Term']}",
+            f"Teaching Week: {activity['Week']['Teaching Week']}",
+            f"Link to MyTimetable week: {activity['Timetable URL']}"
+        ])
+        # fmt:off
+
         event.add("summary", summary)
+        event.add("description", description)
         event.add("location", location)
         event.add("geo", geo)
         event.add("dtstart", dtstart)
