@@ -1,5 +1,6 @@
 import utils
 import re
+import icalendar
 from datetime import date, timedelta
 from selenium.webdriver.common.by import By
 
@@ -222,6 +223,10 @@ def get_timetable_activities(driver, week_patterns):
                     "Timetable URL": driver.current_url,
                     "Week": week_pattern,
                 }
+
+
+def get_ical(activities):
+    pass
 
 
 def main():
