@@ -231,14 +231,10 @@ def get_ical(activities):
 
 def main():
     driver = utils.get_driver()
-
     week_patterns = get_week_patterns(driver)
-
-    for week in get_timetable_activities(driver, week_patterns):
-        pp.pprint(week)
-        print()
-
+    activities = [a for a in get_timetable_activities(driver, week_patterns)]
     driver.quit()
+    utils.write_to_json(activities, "mytimetable")
 
 
 if __name__ == "__main__":
