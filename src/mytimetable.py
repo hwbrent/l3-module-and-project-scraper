@@ -231,6 +231,20 @@ def get_ical(activities: list) -> icalendar.Calendar:
     cal = icalendar.Calendar()
 
     for activity in activities:
+        # This 'a_' prefix indicates that it's data from the 'activity' dict
+        a_date = activity["Date"]
+        a_day_of_the_week = activity["Day of the Week"]
+        a_room, a_gmaps_link = activity["Location"]
+        a_name = activity["Name"]
+        a_start, a_end = activity["Time"]
+        a_timetable_url = activity["Timetable URL"]
+        a_type = activity["Type"]
+        a_week_calendar_date = activity["Week"]["Calendar Date"]
+        a_teaching_week = activity["Week"]["Teaching Week"]
+        a_term = activity["Week"]["Term"]
+        a_week_number = activity["Week"]["Week Number"]
+        a_staff = activity["With"]
+
         event = icalendar.Event()
 
         # 'Date': '2023-10-02',
