@@ -227,7 +227,7 @@ def get_timetable_activities(driver, week_patterns):
                 }
 
 
-def get_ical(activities):
+def get_ical(activities: list) -> icalendar.Calendar:
     cal = icalendar.Calendar()
 
     for activity in activities:
