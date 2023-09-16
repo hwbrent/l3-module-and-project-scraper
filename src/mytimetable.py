@@ -300,8 +300,6 @@ def get_ical(activities):
 
         cal.add_component(event)
 
-    print(cal.to_ical().decode("utf-8"))
-
     return cal
 
 
