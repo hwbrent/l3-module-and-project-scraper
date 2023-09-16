@@ -1,7 +1,9 @@
 import utils
 import re
+import json
 import icalendar
-from datetime import date, timedelta
+from urllib.parse import urlparse, parse_qs
+from datetime import datetime, date, timedelta
 from selenium.webdriver.common.by import By
 
 from pprint import PrettyPrinter
@@ -257,6 +259,16 @@ def get_ical(activities):
         name = activity["Name"]
         summary = f"{kind}: {name}"
 
+        location, gmaps_link = activity["Location"]
+        # Format value for GEO.
+        # This has to be a semicolon-separated pair of floating point numbers.
+        # We can use the latitude and longitude from the Google Maps link for
+        # this.
+        parsed_url = urlparse(gmaps_link)
+        query_params = parse_qs(parsed_url.query)
+        latitude, longitude = query_params.get("query", None)
+        geo = f"{latitude};{longitude}"
+
         # Format value for DTSTART and DTEND
         date = activity["Date"]  # e.g. '2023-10-02'
         start, end = activity["Time"]  # e.g. '11:00' and '12:00'
@@ -264,6 +276,8 @@ def get_ical(activities):
         dtend = datetime.fromisoformat(f"{date}T{end}")
 
         event.add("summary", summary)
+        event.add("location", location)
+        event.add("geo", geo)
         event.add("dtstart", dtstart)
         event.add("dtend", dtend)
 
@@ -275,11 +289,14 @@ def get_ical(activities):
 
 
 def main():
-    driver = utils.get_driver()
-    week_patterns = get_week_patterns(driver)
-    activities = [a for a in get_timetable_activities(driver, week_patterns)]
-    driver.quit()
-    utils.write_to_json(activities, "mytimetable")
+    # driver = utils.get_driver()
+    # week_patterns = get_week_patterns(driver)
+    # activities = [a for a in get_timetable_activities(driver, week_patterns)]
+    # driver.quit()
+    # utils.write_to_json(activities, "mytimetable")
+
+    with open("mytimetable(individual).json", "r") as f:
+        get_ical(json.load(f))
 
 
 if __name__ == "__main__":
