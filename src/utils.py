@@ -4,6 +4,7 @@ import json
 import string
 import warnings
 import datetime
+import icalendar
 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
@@ -367,3 +368,12 @@ def calc_time_difference(time1, time2) -> float:
     seconds = delta.seconds
     hours = seconds / 3600
     return hours
+
+
+def write_to_ics(cal: icalendar.Calendar, file_name: str) -> None:
+    """
+    Outputs `cal` to a `.ics` file.
+    """
+    destination = os.path.join(_project_root, file_name + ".ics")
+    with open(destination, "wb") as f:
+        f.write(cal.to_ical())
