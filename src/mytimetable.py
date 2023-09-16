@@ -266,8 +266,11 @@ def get_ical(activities):
         # this.
         parsed_url = urlparse(gmaps_link)
         query_params = parse_qs(parsed_url.query)
-        latitude, longitude = query_params.get("query", None)
-        geo = f"{latitude};{longitude}"
+        raw_geo = query_params.get("query", None)[0]
+        latitude_str, longitude_str = raw_geo.split(",")
+        latitude = float(latitude_str)
+        longitude = float(longitude_str)
+        geo = icalendar.vGeo((latitude, longitude))
 
         # Format value for DTSTART and DTEND
         date = activity["Date"]  # e.g. '2023-10-02'
