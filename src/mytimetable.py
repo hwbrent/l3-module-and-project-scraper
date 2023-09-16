@@ -226,7 +226,46 @@ def get_timetable_activities(driver, week_patterns):
 
 
 def get_ical(activities):
-    pass
+    cal = icalendar.Calendar()
+
+    for activity in activities:
+        event = icalendar.Event()
+
+        # 'Date': '2023-10-02',
+        # 'Day of the Week': 'Monday',
+        # 'Location': [
+        #     'D/ERA30',
+        #     'https://www.google.com/maps/search/?api=1&query=54.77463142032579%2C-1.5720368995935576'
+        # ],
+        # 'Name': 'CFLS1G21 - German Stage 2',
+        # 'Time': [
+        #     '11:00',
+        #     '12:00'
+        # ],
+        # 'Timetable URL': 'https://mytimetable.durham.ac.uk/weekly/activities?date=2023-10-02',
+        # 'Type': 'Seminar',
+        # 'Week': {
+        #     'Calendar Date': '2023-10-02',
+        #     'Teaching Week': 1,
+        #     'Term': 'Michaelmas',
+        #     'Week Number': 12},
+        #     'With': 'MRS ZHANNA KOZMENKO-IHSSEN'
+        # }
+
+        # Format value for DTSTART and DTEND
+        date = activity["Date"]  # e.g. '2023-10-02'
+        start, end = activity["Time"]  # e.g. '11:00' and '12:00'
+        dtstart = datetime.fromisoformat(f"{date}T{start}")
+        dtend = datetime.fromisoformat(f"{date}T{end}")
+
+        event.add("dtstart", dtstart)
+        event.add("dtend", dtend)
+
+        cal.add_component(event)
+
+    print(cal.to_ical().decode("utf-8"))
+
+    return cal
 
 
 def main():
