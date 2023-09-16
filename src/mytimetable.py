@@ -252,12 +252,18 @@ def get_ical(activities):
         #     'With': 'MRS ZHANNA KOZMENKO-IHSSEN'
         # }
 
+        # Format value for SUMMARY
+        kind = activity["Type"]
+        name = activity["Name"]
+        summary = f"{kind}: {name}"
+
         # Format value for DTSTART and DTEND
         date = activity["Date"]  # e.g. '2023-10-02'
         start, end = activity["Time"]  # e.g. '11:00' and '12:00'
         dtstart = datetime.fromisoformat(f"{date}T{start}")
         dtend = datetime.fromisoformat(f"{date}T{end}")
 
+        event.add("summary", summary)
         event.add("dtstart", dtstart)
         event.add("dtend", dtend)
 
