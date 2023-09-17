@@ -230,7 +230,11 @@ def get_timetable_activities(driver, week_patterns):
 def get_ical(activities: list) -> icalendar.Calendar:
     cal = icalendar.Calendar()
 
+    ids = {}
+
     for activity in activities:
+        event = icalendar.Event()
+
         # This 'a_' prefix indicates that it's data from the 'activity' dict
         a_date = activity["Date"]
         a_day_of_the_week = activity["Day of the Week"]
@@ -245,27 +249,27 @@ def get_ical(activities: list) -> icalendar.Calendar:
         a_week_number = activity["Week"]["Week Number"]
         a_staff = activity["With"]
 
-        event = icalendar.Event()
+        # Obviously some events will be repeated.
+        # Need to figure out which data points to compare to see whether
+        # an event is a repeat of another.
+        # Arguably it's definitely a repeat if two events share the same
+        # day of the week, name, type, start & end times, term
 
-        # 'Date': '2023-10-02',
-        # 'Day of the Week': 'Monday',
-        # 'Location': [
-        #     'D/ERA30',
-        #     'https://www.google.com/maps/search/?api=1&query=54.77463142032579%2C-1.5720368995935576'
-        # ],
-        # 'Name': 'CFLS1G21 - German Stage 2',
-        # 'Time': [
-        #     '11:00',
-        #     '12:00'
-        # ],
-        # 'Timetable URL': 'https://mytimetable.durham.ac.uk/weekly/activities?date=2023-10-02',
-        # 'Type': 'Seminar',
-        # 'Week': {
-        #     'Calendar Date': '2023-10-02',
-        #     'Teaching Week': 1,
-        #     'Term': 'Michaelmas',
-        #     'Week Number': 12},
-        # 'With': 'MRS ZHANNA KOZMENKO-IHSSEN'
+        id = (
+            a_day_of_the_week,
+            a_name,
+            a_start,
+            a_end,
+            a_type,
+            a_term,
+        )
+
+        if id in ids:
+            ids[id][1].append(activity)
+        else:
+            ids[id] = (event, [activity])
+
+        continue
 
         # Format value for SUMMARY
         kind = activity["Type"]
@@ -314,16 +318,26 @@ def get_ical(activities: list) -> icalendar.Calendar:
 
         cal.add_component(event)
 
+    for event, activities in ids.values():
+        print(event)
+        pp.pprint(activities)
+        print()
+        print()
+
     return cal
 
 
 def main():
-    driver = utils.get_driver()
-    week_patterns = get_week_patterns(driver)
-    activities = [a for a in get_timetable_activities(driver, week_patterns)]
-    driver.quit()
-    utils.write_to_json(activities, "mytimetable")
-    utils.write_to_ics(get_ical(activities), "mytimetable")
+    # driver = utils.get_driver()
+    # week_patterns = get_week_patterns(driver)
+    # activities = [a for a in get_timetable_activities(driver, week_patterns)]
+    # driver.quit()
+    # utils.write_to_json(activities, "mytimetable")
+    # utils.write_to_ics(get_ical(activities), "mytimetable")
+
+    with open("mytimetable.json", "r") as f:
+        ical = get_ical(json.load(f))
+        utils.write_to_ics(ical, "mytimetable")
 
 
 if __name__ == "__main__":
