@@ -230,7 +230,16 @@ def get_timetable_activities(driver, week_patterns):
 def get_ical(activities: list) -> icalendar.Calendar:
     cal = icalendar.Calendar()
 
-    ids = {}
+    # Each key is a tuple containing each activity's:
+    # - Day of the week
+    # - Name
+    # - Start
+    # - End
+    # - Type
+    # - Term
+    # The value is a tuple whose first value is an icalendar.Event, and
+    # whose second value is a list of datetimes on which
+    reocurring = {}
 
     for activity in activities:
         event = icalendar.Event()
@@ -264,10 +273,10 @@ def get_ical(activities: list) -> icalendar.Calendar:
             a_term,
         )
 
-        if id in ids:
-            ids[id][1].append(activity)
+        if id in reocurring:
+            reocurring[id][1].append(activity)
         else:
-            ids[id] = (event, [activity])
+            reocurring[id] = (event, [activity])
 
         continue
 
