@@ -230,17 +230,6 @@ def get_timetable_activities(driver, week_patterns):
 def get_ical(activities: list) -> icalendar.Calendar:
     cal = icalendar.Calendar()
 
-    # Each key is a tuple containing each activity's:
-    # - Day of the week
-    # - Name
-    # - Start
-    # - End
-    # - Type
-    # - Term
-    # The value is a tuple whose first value is an icalendar.Event, and
-    # whose second value is a list of datetimes on which
-    reocurring = {}
-
     for activity in activities:
         event = icalendar.Event()
 
@@ -257,28 +246,6 @@ def get_ical(activities: list) -> icalendar.Calendar:
         a_term = activity["Week"]["Term"]
         a_week_number = activity["Week"]["Week Number"]
         a_staff = activity["With"]
-
-        # Obviously some events will be repeated.
-        # Need to figure out which data points to compare to see whether
-        # an event is a repeat of another.
-        # Arguably it's definitely a repeat if two events share the same
-        # day of the week, name, type, start & end times, term
-
-        id = (
-            a_day_of_the_week,
-            a_name,
-            a_start,
-            a_end,
-            a_type,
-            a_term,
-        )
-
-        if id in reocurring:
-            reocurring[id][1].append(activity)
-        else:
-            reocurring[id] = (event, [activity])
-
-        continue
 
         # Format value for SUMMARY
         kind = activity["Type"]
