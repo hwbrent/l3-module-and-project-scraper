@@ -298,16 +298,12 @@ def get_ical(activities: list) -> icalendar.Calendar:
 
 
 def main():
-    # driver = utils.get_driver()
-    # week_patterns = get_week_patterns(driver)
-    # activities = [a for a in get_timetable_activities(driver, week_patterns)]
-    # driver.quit()
-    # utils.write_to_json(activities, "mytimetable")
-    # utils.write_to_ics(get_ical(activities), "mytimetable")
-
-    with open("mytimetable.json", "r") as f:
-        ical = get_ical(json.load(f))
-        utils.write_to_ics(ical, "mytimetable")
+    driver = utils.get_driver()
+    week_patterns = get_week_patterns(driver)
+    activities = [a for a in get_timetable_activities(driver, week_patterns)]
+    driver.quit()
+    utils.write_to_json(activities, "mytimetable")
+    utils.write_to_ics(get_ical(activities), "mytimetable")
 
 
 if __name__ == "__main__":
