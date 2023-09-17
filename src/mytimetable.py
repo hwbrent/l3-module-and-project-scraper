@@ -327,12 +327,6 @@ def get_ical(activities: list) -> icalendar.Calendar:
 
         cal.add_component(event)
 
-    for event, activities in ids.values():
-        print(event)
-        pp.pprint(activities)
-        print()
-        print()
-
     return cal
 
 
