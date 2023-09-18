@@ -1,6 +1,7 @@
 import requests
 import datetime
 import icalendar
+import utils
 from bs4 import BeautifulSoup
 from pprint import PrettyPrinter
 
@@ -101,7 +102,7 @@ def get_ical(formatted):
 def main():
     raw = scrape_raw_term_date_data()
     formatted = format_raw_term_date_data(raw)
-    ical = get_ical(formatted)
+    utils.write_to_ics(get_ical(formatted), "term-dates")
 
 
 if __name__ == "__main__":
