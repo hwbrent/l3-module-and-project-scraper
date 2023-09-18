@@ -1,5 +1,6 @@
 import requests
 import datetime
+import icalendar
 from bs4 import BeautifulSoup
 from pprint import PrettyPrinter
 
@@ -77,9 +78,30 @@ def format_raw_term_date_data(raw):
     return formatted
 
 
+def get_ical(formatted):
+    cal = icalendar.Calendar()
+
+    for name, dates in formatted.items():
+        for date_type, value in dates.items():
+            event = icalendar.Event()
+
+            summary = f"{date_type} of {name}"
+            dtstart = value
+            dtend = value + datetime.timedelta(days=1)
+
+            event.add("summary", summary)
+            event.add("dtstart", dtstart)
+            event.add("dtend", dtend)
+
+            cal.add_component(event)
+
+    return cal
+
+
 def main():
     raw = scrape_raw_term_date_data()
     formatted = format_raw_term_date_data(raw)
+    ical = get_ical(formatted)
 
 
 if __name__ == "__main__":
