@@ -3,6 +3,8 @@ import time
 import json
 import string
 import warnings
+import datetime
+import icalendar
 
 from selenium.webdriver import Chrome
 from selenium.webdriver.chrome.options import Options
@@ -319,3 +321,59 @@ def write_to_markdown(
     destination = os.path.join(_project_root, file_name + ".md")
     with open(destination, "w") as f:
         f.write(file)
+
+
+def add_auth(url: str, username: str, password: str) -> str:
+    # Replace the email extension thingy (if it's there).
+    username = username.replace("@durham.ac.uk", "")
+    # Return the original URL with "<username>:<password>@" put in after the
+    # "http(s)://" part. That's how we provide the basic auth needed to access
+    # certain pages.
+    return url.replace("://", f"://{username}:{password}@")
+
+
+def get_url_with_auth(url: str) -> str:
+    """
+    1. Gets the username and password from `.env`
+    2. Adds them to the provided url
+    3. Returns the modified url
+    """
+    dotenv = parse_dotenv()
+
+    if not bool(dotenv):
+        raise NameError("No .env file found")
+
+    USERNAME = dotenv["USERNAME"]
+    PASSWORD = dotenv["PASSWORD"]
+
+    return add_auth(url, USERNAME, PASSWORD)
+
+
+def login_to_page_with_url_auth(driver: Chrome, url: str) -> None:
+    """
+    Gets the `driver` past the login stage to get to the `url` provided.
+    """
+    url = get_url_with_auth(url)
+    driver.get(url)
+
+
+def calc_time_difference(time1, time2) -> float:
+    """
+    Given two times in the format `'HH:MM'`, this function returns the number of hours between them.
+    """
+    today = datetime.date.today()
+    dtime1 = datetime.datetime.fromisoformat(f"{today}T{time1}")
+    dtime2 = datetime.datetime.fromisoformat(f"{today}T{time2}")
+    delta = dtime2 - dtime1
+    seconds = delta.seconds
+    hours = seconds / 3600
+    return hours
+
+
+def write_to_ics(cal: icalendar.Calendar, file_name: str) -> None:
+    """
+    Outputs `cal` to a `.ics` file.
+    """
+    destination = os.path.join(_project_root, file_name + ".ics")
+    with open(destination, "wb") as f:
+        f.write(cal.to_ical())
