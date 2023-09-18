@@ -83,12 +83,14 @@ def get_ical(formatted):
     cal = icalendar.Calendar()
 
     for name, dates in formatted.items():
-        for date_type, value in dates.items():
+        for date_type, dtstart in dates.items():
             event = icalendar.Event()
 
             summary = f"{date_type} of {name}"
-            dtstart = value
-            dtend = value + datetime.timedelta(days=1)
+
+            # For an event to show up as being an all-day event,
+            # the DTEND has to be the day after the DTSTART
+            dtend = dtstart + datetime.timedelta(days=1)
 
             event.add("summary", summary)
             event.add("dtstart", dtstart)
