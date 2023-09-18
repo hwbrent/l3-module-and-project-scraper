@@ -72,7 +72,7 @@ def format_raw_term_date_data(raw):
         start = convert_to_date_obj(old_entry["Start"])
         end = convert_to_date_obj(old_entry["End"])
 
-        formatted[term] = [start, end]
+        formatted[term] = {"Start": start, "End": end}
 
     return formatted
 
