@@ -1,3 +1,6 @@
+URL = "https://www.durham.ac.uk/academic-dates/"
+
+
 def main():
     pass
 
