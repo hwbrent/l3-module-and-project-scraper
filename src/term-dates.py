@@ -1,4 +1,5 @@
 import requests
+import datetime
 from bs4 import BeautifulSoup
 from pprint import PrettyPrinter
 
@@ -47,9 +48,38 @@ def scrape_raw_term_date_data():
     return data
 
 
+def convert_to_date_obj(s: str) -> datetime.date:
+    """
+    Converts a date string to a `datetime.date` object.
+
+    e.g. `"24 September 2023"` -> `datetime.date(2023, 9, 24)`
+    """
+    number = s.split()[0]
+
+    # We need to left-pad the day number so that we can use strptime
+    if len(number) == 1:
+        s = "0" + s
+
+    datetime_obj = datetime.datetime.strptime(s, "%d %B %Y")
+    return datetime_obj.date()
+
+
+def format_raw_term_date_data(raw):
+    formatted = {}
+
+    for old_entry in raw:
+        term = old_entry["Term"]
+        start = convert_to_date_obj(old_entry["Start"])
+        end = convert_to_date_obj(old_entry["End"])
+
+        formatted[term] = [start, end]
+
+    return formatted
+
+
 def main():
-    term_dates = scrape_raw_term_date_data()
-    pp.pprint(term_dates)
+    raw = scrape_raw_term_date_data()
+    formatted = format_raw_term_date_data(raw)
 
 
 if __name__ == "__main__":
