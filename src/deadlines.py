@@ -111,6 +111,10 @@ def main():
 
         submission_date = strptime(submission_date, "%d/%m/%Y").date()
 
+        deadline["Submission Time"] = submission_time
+        deadline["Submission Date"] = submission_date
+        deadline["_submission"] = combine(submission_date, submission_time)
+
 
 if __name__ == "__main__":
     main()
