@@ -1,5 +1,7 @@
 import os
 import time
+import csv
+from pprint import PrettyPrinter
 from utils import get_driver, login_to_page
 from selenium.webdriver.common.by import By
 
@@ -40,6 +42,21 @@ def main():
 
     if csv_file_path is None:
         return
+
+    # First, we get the deadline data exactly as it's represented in the csv
+    raw_deadlines = []
+    with open(csv_file_path, "r") as f:
+        reader = csv.reader(f)
+
+        col_names = reader.__next__()
+
+        for row in reader:
+            deadline = {}
+
+            for col_name, value in zip(col_names, row):
+                deadline[col_name] = value
+
+            raw_deadlines.append(deadline)
 
 
 if __name__ == "__main__":
