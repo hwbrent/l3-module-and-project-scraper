@@ -18,6 +18,7 @@ DOWNLOADS = "/Users/henrybrent/Downloads"
 FREE = "TRANSPARENT"
 BUSY = "OPAQUE"
 
+
 def main():
     driver = get_driver()
     login_to_page(driver, URL)
