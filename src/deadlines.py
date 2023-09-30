@@ -48,7 +48,7 @@ def main():
         return
 
     # First, we get the deadline data exactly as it's represented in the csv
-    raw_deadlines = []
+    deadlines = []
     with open(csv_file_path, "r") as f:
         reader = csv.reader(f)
 
@@ -60,7 +60,7 @@ def main():
             for col_name, value in zip(col_names, row):
                 deadline[col_name] = value
 
-            raw_deadlines.append(deadline)
+            deadlines.append(deadline)
 
 
 if __name__ == "__main__":
