@@ -40,7 +40,11 @@ def main():
         time.sleep(1)
         timeout -= 1
 
+    # If the csv can't be found in downloads, that means it wasn't downloaded
+    # within the timeout period. So there was probably some kind of issue. So
+    # quit
     if csv_file_path is None:
+        print("No downloaded CSV file was found. Exiting...")
         return
 
     # First, we get the deadline data exactly as it's represented in the csv
