@@ -62,6 +62,23 @@ def main():
 
             deadlines.append(deadline)
 
+    # Then, we clean the data for use later in the ICS file
+    for deadline in deadlines:
+        coursework_title = deadline["Coursework Title"]
+        coursework_credits = deadline["Coursework credits"]
+        coursework_weighting = deadline["Coursework weighting"]
+        estimated_hours = deadline["Estimated hours"]
+        feedback_to_students = deadline["Feedback to Students"]
+        item = deadline["Item"]
+        lecturer = deadline["Lecturer"]
+        module_credits = deadline["Module Credits"]
+        module_title = deadline["Module Title"]
+        release_date = deadline["Release Date"]
+        submission_date = deadline["Submission Date"]
+        submission_method = deadline["Submission Method"]
+        submission_time = deadline["Submission Time"]
+        title = deadline["Title"]  # e.g. 'COMP3467'
+
 
 if __name__ == "__main__":
     main()
