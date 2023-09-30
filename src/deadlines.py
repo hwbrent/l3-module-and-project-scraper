@@ -115,6 +115,13 @@ def main():
         deadline["Submission Date"] = submission_date
         deadline["_submission"] = combine(submission_date, submission_time)
 
+        # Convert "Feedback to Students" into a 'datetime.date' object. As of the
+        # time of writing this code, there is no time associated with the
+        # release. So it can just be a date.
+        deadline["Feedback to Students"] = strptime(
+            feedback_to_students, "%d/%m/%Y"
+        ).date()
+
 
 if __name__ == "__main__":
     main()
