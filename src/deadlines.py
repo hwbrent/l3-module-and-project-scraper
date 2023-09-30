@@ -2,6 +2,7 @@ import os
 import time
 import csv
 import re
+from icalendar import Calendar, Event
 from datetime import datetime
 
 strptime = datetime.strptime
@@ -137,6 +138,19 @@ def main():
         # Remove anything in parentheses from "Module Title", as it's
         # information that's included in "Coursework Title"
         deadline["Module Title"] = re.sub(r" \(.+\)", "", module_title)
+
+    # Create ICS file
+    cal = Calendar()
+
+    for entry in deadlines:
+        # Each deadline will have the following events:
+        # - Release
+        # - Submission
+        # - Feedback
+
+        release = Event()
+        submission = Event()
+        feedback = Event()
 
 
 if __name__ == "__main__":
