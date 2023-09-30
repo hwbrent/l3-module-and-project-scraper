@@ -1,6 +1,7 @@
 import os
 import time
 import csv
+import re
 from datetime import datetime
 
 strptime = datetime.strptime
@@ -121,6 +122,10 @@ def main():
         deadline["Feedback to Students"] = strptime(
             feedback_to_students, "%d/%m/%Y"
         ).date()
+
+        # Remove anything in parentheses from "Module Title", as it's
+        # information that's included in "Coursework Title"
+        deadline["Module Title"] = re.sub(r" \(.+\)", "", module_title)
 
 
 if __name__ == "__main__":
