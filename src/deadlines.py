@@ -15,6 +15,8 @@ from selenium.webdriver.common.by import By
 URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/Lists/Assessment%20schedule%20202324/CS%20Level%201%20deadlines%20202324.aspx?viewid=5ebe17c1%2D9d11%2D4f47%2Db5c7%2D5ebf51debd84"
 DOWNLOADS = "/Users/henrybrent/Downloads"
 
+FREE = "TRANSPARENT"
+BUSY = "OPAQUE"
 
 def main():
     driver = get_driver()
@@ -184,6 +186,11 @@ def main():
         release_dtend = release_dtstart + timedelta(days=1)
         release.add("dtstart", release_dtstart)
         release.add("dtend", release_dtend)
+
+        # Add TRANSP (to indicate whether the events are free/busy)
+        release.add("transp", FREE)
+        submission.add("transp", FREE)
+        feedback.add("transp", FREE)
 
         cal.add_component(release)
         cal.add_component(submission)
