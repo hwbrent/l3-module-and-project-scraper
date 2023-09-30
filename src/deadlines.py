@@ -171,6 +171,10 @@ def main():
         submission.add("description", description)
         feedback.add("description", description)
 
+        cal.add_component(release)
+        cal.add_component(submission)
+        cal.add_component(feedback)
+
 
 if __name__ == "__main__":
     main()
