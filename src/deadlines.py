@@ -1,6 +1,11 @@
 import os
 import time
 import csv
+from datetime import datetime
+
+strptime = datetime.strptime
+combine = datetime.combine
+
 from pprint import PrettyPrinter
 from utils import get_driver, login_to_page
 from selenium.webdriver.common.by import By
