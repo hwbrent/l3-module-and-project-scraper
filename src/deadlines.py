@@ -3,7 +3,7 @@ import time
 import csv
 import re
 from icalendar import Calendar, Event
-from datetime import datetime
+from datetime import datetime, time, timedelta
 
 strptime = datetime.strptime
 combine = datetime.combine
@@ -177,6 +177,13 @@ def main():
         _submission = entry["_submission"]
         submission.add("dtstart", _submission)
         submission.add("dtend", _submission)
+
+        # I'm making the Release event an all-day event since there is no
+        # time specified.
+        release_dtstart = combine(entry["_release_date"], time.min)
+        release_dtend = release_dtstart + timedelta(days=1)
+        release.add("dtstart", release_dtstart)
+        release.add("dtend", release_dtend)
 
         cal.add_component(release)
         cal.add_component(submission)
