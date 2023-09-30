@@ -172,6 +172,12 @@ def main():
         submission.add("description", description)
         feedback.add("description", description)
 
+        # Add DTSTART and DTEND
+        # Putting the same start and end time makes it an "instant" event
+        _submission = entry["_submission"]
+        submission.add("dtstart", _submission)
+        submission.add("dtend", _submission)
+
         cal.add_component(release)
         cal.add_component(submission)
         cal.add_component(feedback)
