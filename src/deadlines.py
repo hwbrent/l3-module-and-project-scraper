@@ -95,7 +95,7 @@ def main():
 
         # Add a new "Title" value, which will be the title of each event.
         # Example: 'COMP3012: "Literature Survey and Project Plan"'
-        deadline["_title"] = f'{title}: "{coursework_title}"'
+        deadline["_title"] = f'{title} - "{coursework_title}"'
 
         # Convert "Release Date" into a 'datetime.date' object. As of the
         # time of writing this code, there is no time associated with the
