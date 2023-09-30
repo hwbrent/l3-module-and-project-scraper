@@ -97,7 +97,7 @@ def main():
         # Convert "Release Date" into a 'datetime.date' object. As of the
         # time of writing this code, there is no time associated with the
         # release. So it can just be a date.
-        deadline["Release Date"] = strptime(release_date, "%d/%m/%Y").date()
+        deadline["Release Date"] = strptime(release_date, "%d/%m/%Y").date().isoformat()
 
         # Combine "Submission Date" and "Submission Time" into one value;
         # "Submission".
@@ -124,9 +124,9 @@ def main():
         # Convert "Feedback to Students" into a 'datetime.date' object. As of the
         # time of writing this code, there is no time associated with the
         # release. So it can just be a date.
-        deadline["Feedback to Students"] = strptime(
-            feedback_to_students, "%d/%m/%Y"
-        ).date()
+        deadline["Feedback to Students"] = (
+            strptime(feedback_to_students, "%d/%m/%Y").date().isoformat()
+        )
 
         # Remove anything in parentheses from "Module Title", as it's
         # information that's included in "Coursework Title"
