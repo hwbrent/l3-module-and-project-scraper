@@ -1,5 +1,5 @@
 import os
-import time
+from time import sleep
 import csv
 import re
 from icalendar import Calendar, Event
@@ -46,7 +46,7 @@ def main():
             if most_recent.endswith(".csv"):
                 csv_file_path = most_recent
                 break
-        time.sleep(1)
+        sleep(1)
         timeout -= 1
 
     # If the csv can't be found in downloads, that means it wasn't downloaded
