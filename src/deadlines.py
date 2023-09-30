@@ -204,6 +204,8 @@ def main():
 
     write_to_ics(cal, "deadlines")
 
+    driver.quit()
+
 
 if __name__ == "__main__":
     main()
