@@ -187,6 +187,12 @@ def main():
         release.add("dtstart", release_dtstart)
         release.add("dtend", release_dtend)
 
+        # I'm making the Feedback event all-day for the same reason as Release
+        feedback_dtstart = combine(entry["_feedback_to_students"], time.min)
+        feedback_dtend = feedback_dtstart + timedelta(days=1)
+        feedback.add("dtstart", feedback_dtstart)
+        feedback.add("dtend", feedback_dtend)
+
         # Add TRANSP (to indicate whether the events are free/busy)
         release.add("transp", FREE)
         submission.add("transp", FREE)
