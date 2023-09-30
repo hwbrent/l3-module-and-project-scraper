@@ -84,6 +84,10 @@ def main():
         del deadline["Title"]
         deadline["Module Code"] = title
 
+        # Add a new "Title" value, which will be the title of each event.
+        # Example: 'COMP3012: "Literature Survey and Project Plan"'
+        deadline["Title"] = f'{title}: "{coursework_title}"'
+
 
 if __name__ == "__main__":
     main()
