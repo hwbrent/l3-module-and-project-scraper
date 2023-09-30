@@ -152,6 +152,11 @@ def main():
         submission = Event()
         feedback = Event()
 
+        _title = entry["_title"]
+        release.add("summary", f"Release: {_title}")
+        submission.add("summary", f"Submission: {_title}")
+        feedback.add("summary", f"Feedback: {_title}")
+
         # Create a description
         description = "Deadline details:\n\n"
         for key, value in entry.items():
