@@ -79,6 +79,11 @@ def main():
         submission_time = deadline["Submission Time"]
         title = deadline["Title"]  # e.g. 'COMP3467'
 
+        # The "Title" value is actually the module code (e.g. 'COMP3467').
+        # So it makes sense to change the key name to "Module Code".
+        del deadline["Title"]
+        deadline["Module Code"] = title
+
 
 if __name__ == "__main__":
     main()
