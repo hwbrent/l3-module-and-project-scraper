@@ -15,6 +15,11 @@ from selenium.webdriver.common.by import By
 URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/Lists/Assessment%20schedule%20202324/CS%20Level%201%20deadlines%20202324.aspx?viewid=5ebe17c1%2D9d11%2D4f47%2Db5c7%2D5ebf51debd84"
 DOWNLOADS = "/Users/henrybrent/Downloads"
 
+BSS_LOGIN = "https://ban-ssb.durham.ac.uk/ssomanager/saml/login?relayState=/c/auth/SSB"
+BSS_STATEMENT_OF_MARKS = (
+    "https://ssb.durham.ac.uk/BLIVE/bwkkspgr.showpage?page=DUR_GRADES_DETAIL"
+)
+
 FREE = "TRANSPARENT"
 BUSY = "OPAQUE"
 
@@ -22,6 +27,15 @@ BUSY = "OPAQUE"
 def main():
     driver = get_driver()
     login_to_page(driver, URL)
+
+    # Figure out the modules we're taking so we can filter out deadlines that
+    # aren't relevant to us.
+    driver.get(BSS_LOGIN)
+    driver.get(BSS_STATEMENT_OF_MARKS)
+    my_modules = set(re.findall(r"[A-Z]{4}[0-9A-Z]{4}", driver.page_source))
+
+    # Now go back and download the CSV.
+    driver.get(URL)
 
     # We need to click the "Export" button to get the "Export to CSV"
     # button to appear
@@ -71,6 +85,8 @@ def main():
                 deadline[col_name] = value
 
             deadlines.append(deadline)
+
+    deadlines = [d for d in deadlines if d["Title"] in my_modules]
 
     # Then, we clean the data for use later in the ICS file
     for deadline in deadlines:
