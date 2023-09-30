@@ -112,9 +112,14 @@ def main():
 
         submission_date = strptime(submission_date, "%d/%m/%Y").date()
 
+        _submission = combine(submission_date, submission_time)
+
+        submission_time = submission_time.strftime("%H:%M")
+        submission_date = submission_date.isoformat()
+
         deadline["Submission Time"] = submission_time
         deadline["Submission Date"] = submission_date
-        deadline["_submission"] = combine(submission_date, submission_time)
+        deadline["_submission"] = _submission
 
         # Convert "Feedback to Students" into a 'datetime.date' object. As of the
         # time of writing this code, there is no time associated with the
