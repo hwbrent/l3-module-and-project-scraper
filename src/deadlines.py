@@ -112,6 +112,9 @@ def main():
 
         submission_date = strptime(submission_date, "%d/%m/%Y").date()
 
+        deadline["_submission_time"] = submission_time
+        deadline["_submission_date"] = submission_date
+
         _submission = combine(submission_date, submission_time)
 
         submission_time = submission_time.strftime("%H:%M")
