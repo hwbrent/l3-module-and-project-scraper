@@ -152,6 +152,7 @@ def main():
         submission = Event()
         feedback = Event()
 
+        # Add SUMMARY
         _title = entry["_title"]
         release.add("summary", f"Release: {_title}")
         submission.add("summary", f"Submission: {_title}")
