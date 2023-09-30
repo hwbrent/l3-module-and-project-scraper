@@ -152,6 +152,20 @@ def main():
         submission = Event()
         feedback = Event()
 
+        # Create a description
+        description = "Deadline details:\n\n"
+        for key, value in entry.items():
+            # Ignore the private variables
+            if key.startswith("_"):
+                continue
+            description += f"{key}: {value}\n"
+        # Get rid of the extra newline at the end
+        description = description[:-1]
+
+        release.add("description", description)
+        submission.add("description", description)
+        feedback.add("description", description)
+
 
 if __name__ == "__main__":
     main()
