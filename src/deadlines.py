@@ -1,7 +1,10 @@
+import os
+import time
 from utils import get_driver, login_to_page
 from selenium.webdriver.common.by import By
 
 URL = "https://durhamuniversity.sharepoint.com/teams/ComputerScienceUndergraduateCommunity/Lists/Assessment%20schedule%20202324/CS%20Level%201%20deadlines%20202324.aspx?viewid=5ebe17c1%2D9d11%2D4f47%2Db5c7%2D5ebf51debd84"
+DOWNLOADS = "/Users/henrybrent/Downloads"
 
 
 def main():
@@ -18,6 +21,25 @@ def main():
         By.CSS_SELECTOR, 'button[name="Export to CSV"]'
     )
     export_to_csv_button.click()
+
+    # Wait for the download to complete
+    csv_file_path = None
+    timeout = 60  # Adjust this timeout as needed
+    while timeout > 0:
+        # Check if the file exists in the download directory
+        files = os.listdir(DOWNLOADS)
+        if files:
+            files = os.listdir(DOWNLOADS)
+            paths = [os.path.join(DOWNLOADS, basename) for basename in files]
+            most_recent = max(paths, key=os.path.getctime)
+            if most_recent.endswith(".csv"):
+                csv_file_path = most_recent
+                break
+        time.sleep(1)
+        timeout -= 1
+
+    if csv_file_path is None:
+        return
 
 
 if __name__ == "__main__":
