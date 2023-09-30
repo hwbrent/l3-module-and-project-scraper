@@ -98,6 +98,17 @@ def main():
         # release. So it can just be a date.
         deadline["Release Date"] = strptime(release_date, "%d/%m/%Y").date()
 
+        # Combine "Submission Date" and "Submission Time" into one value;
+        # "Submission".
+        try:
+            # This will work if the submission time is in the format HH:MM
+            # Example: "14:00"
+            submission_time = datetime.strptime(submission_time, "%H:%M").time()
+        except:
+            # This part will be reached if the time is something like
+            # "11:00:00 am"
+            submission_time = datetime.strptime(submission_time, "%I:%M:%S %p").time()
+
 
 if __name__ == "__main__":
     main()
