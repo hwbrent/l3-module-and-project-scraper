@@ -91,7 +91,7 @@ def main():
         # Convert "Release Date" into a 'datetime.date' object. As of the
         # time of writing this code, there is no time associated with the
         # release. So it can just be a date.
-        deadline["Release Date"] = strptime(release_date, "%d/%m/%Y").date
+        deadline["Release Date"] = strptime(release_date, "%d/%m/%Y").date()
 
 
 if __name__ == "__main__":
