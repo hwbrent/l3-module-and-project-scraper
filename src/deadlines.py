@@ -109,6 +109,8 @@ def main():
             # "11:00:00 am"
             submission_time = datetime.strptime(submission_time, "%I:%M:%S %p").time()
 
+        submission_date = strptime(submission_date, "%d/%m/%Y").date()
+
 
 if __name__ == "__main__":
     main()
