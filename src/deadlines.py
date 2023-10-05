@@ -199,13 +199,13 @@ def main():
 
         # I'm making the Release event an all-day event since there is no
         # time specified.
-        release_dtstart = combine(entry["_release_date"], time.min)
+        release_dtstart = entry["_release_date"]
         release_dtend = release_dtstart + timedelta(days=1)
         release.add("dtstart", release_dtstart)
         release.add("dtend", release_dtend)
 
         # I'm making the Feedback event all-day for the same reason as Release
-        feedback_dtstart = combine(entry["_feedback_to_students"], time.min)
+        feedback_dtstart = entry["_feedback_to_students"]
         feedback_dtend = feedback_dtstart + timedelta(days=1)
         feedback.add("dtstart", feedback_dtstart)
         feedback.add("dtend", feedback_dtend)
